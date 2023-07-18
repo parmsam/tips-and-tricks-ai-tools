@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "AI Assistants Maximized",
     "section": "",
-    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E It collects different use cases that I’ve run into as an R programmer. Example prompts are also provided with a few of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github."
+    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E It collects different use cases that I’ve run into as a programmer. Example prompts are also provided with a few of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github."
   },
   {
     "objectID": "index.html#prerequisites",
@@ -53,35 +53,42 @@
     "href": "intro.html#explain-concepts",
     "title": "1  Uses",
     "section": "1.6 Explain concepts",
-    "text": "1.6 Explain concepts\nAsk AI tool to explain a new concept you are learning in a format of interest or style of interest."
+    "text": "1.6 Explain concepts\nAsk AI tool to explain a new concept you are learning in a format of interest or style of interest.\nExplain how programmers typically use regular expressions. \nGive me a few  situations where it might be applied. \nExplain this to me in the style of Robert Dinero."
+  },
+  {
+    "objectID": "intro.html#explain-code",
+    "href": "intro.html#explain-code",
+    "title": "1  Uses",
+    "section": "1.7 Explain code",
+    "text": "1.7 Explain code\nYou can use AI chat tools to explain blocks of code that you may be have difficulty understanding."
   },
   {
     "objectID": "intro.html#write-documentation",
     "href": "intro.html#write-documentation",
     "title": "1  Uses",
-    "section": "1.7 Write documentation",
-    "text": "1.7 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package."
+    "section": "1.8 Write documentation",
+    "text": "1.8 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
   },
   {
     "objectID": "intro.html#write-a-professional-email",
     "href": "intro.html#write-a-professional-email",
     "title": "1  Uses",
-    "section": "1.8 Write a professional email",
-    "text": "1.8 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
+    "section": "1.9 Write a professional email",
+    "text": "1.9 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
   },
   {
     "objectID": "intro.html#naming-things",
     "href": "intro.html#naming-things",
     "title": "1  Uses",
-    "section": "1.9 Naming things",
-    "text": "1.9 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names."
+    "section": "1.10 Naming things",
+    "text": "1.10 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
   },
   {
     "objectID": "intro.html#generate-art-for-a-logo",
     "href": "intro.html#generate-art-for-a-logo",
     "title": "1  Uses",
-    "section": "1.10 Generate art for a logo",
-    "text": "1.10 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
+    "section": "1.11 Generate art for a logo",
+    "text": "1.11 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
   },
   {
     "objectID": "learn-more.html#prompt-engineering",
@@ -102,6 +109,6 @@
     "href": "learn-more.html#using-github-copilot",
     "title": "2  Learn more",
     "section": "2.3 Using Github Copilot",
-    "text": "2.3 Using Github Copilot\n\nHow to use GitHub Copilot: Prompts, tips, and use cases"
+    "text": "2.3 Using Github Copilot\n\nHow to use GitHub Copilot: Prompts, tips, and use cases\nHow to Use GitHub Copilot to Become a Happier and More Productive Developer"
   }
 ]

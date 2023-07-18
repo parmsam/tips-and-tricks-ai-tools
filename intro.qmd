@@ -43,9 +43,31 @@ Add beacons or useful comments into existing code. Beacons are parts of a script
 
 Ask AI tool to explain a new concept you are learning in a format of interest or style of interest.
 
+```markdown
+Explain how programmers typically use regular expressions. 
+Give me a few  situations where it might be applied. 
+Explain this to me in the style of Robert Dinero.
+```
+## Explain code
+
+You can use AI chat tools to explain blocks of code that you may be have difficulty understanding.
+
 ## Write documentation
 
-Explain what kind of R package or analysis you are working on then ask the AI tool to create a `README.md` template for an R package.
+Explain what kind of R package or analysis you are working on then ask the AI tool to create a `README.md` template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the [roxygen2 package](https://roxygen2.r-lib.org/).
+
+```markdown
+Give me a roxygen2 header for this R function to 
+redact email addresses from a string: 
+
+redact_email_addresses <- function(
+text, 
+replace_with = NULL) {
+    pattern <-
+      "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}(?:\\.[A-Za-z]{2,})?\\b"
+    redact_pattern(text, pattern, replace_with)
+}
+```
 
 ## Write a professional email
 
@@ -62,9 +84,15 @@ professional: `[insert email content here]`
 
 Well, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you're working on then ask the AI tool for one or more informative function names. 
 
+```markdown
+Give me 5 possible names for an function that creates a 
+hex sticker from a reference image. Use snake case 
+for the names.
+```
+
 ## Generate art for a logo
 
-AI tools like DALLE can be used to get creative artwork for later use as book cover art or hex sticker.
+AI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.
 
 ```markdown
 Ukrainian dog wearing a beret and black turtleneck

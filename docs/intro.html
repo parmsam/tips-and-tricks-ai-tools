@@ -210,10 +210,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#regular-expressions" id="toc-regular-expressions" class="nav-link" data-scroll-target="#regular-expressions"><span class="toc-section-number">1.4</span>  Regular expressions</a></li>
   <li><a href="#commenting-code" id="toc-commenting-code" class="nav-link" data-scroll-target="#commenting-code"><span class="toc-section-number">1.5</span>  Commenting code</a></li>
   <li><a href="#explain-concepts" id="toc-explain-concepts" class="nav-link" data-scroll-target="#explain-concepts"><span class="toc-section-number">1.6</span>  Explain concepts</a></li>
-  <li><a href="#write-documentation" id="toc-write-documentation" class="nav-link" data-scroll-target="#write-documentation"><span class="toc-section-number">1.7</span>  Write documentation</a></li>
-  <li><a href="#write-a-professional-email" id="toc-write-a-professional-email" class="nav-link" data-scroll-target="#write-a-professional-email"><span class="toc-section-number">1.8</span>  Write a professional email</a></li>
-  <li><a href="#naming-things" id="toc-naming-things" class="nav-link" data-scroll-target="#naming-things"><span class="toc-section-number">1.9</span>  Naming things</a></li>
-  <li><a href="#generate-art-for-a-logo" id="toc-generate-art-for-a-logo" class="nav-link" data-scroll-target="#generate-art-for-a-logo"><span class="toc-section-number">1.10</span>  Generate art for a logo</a></li>
+  <li><a href="#explain-code" id="toc-explain-code" class="nav-link" data-scroll-target="#explain-code"><span class="toc-section-number">1.7</span>  Explain code</a></li>
+  <li><a href="#write-documentation" id="toc-write-documentation" class="nav-link" data-scroll-target="#write-documentation"><span class="toc-section-number">1.8</span>  Write documentation</a></li>
+  <li><a href="#write-a-professional-email" id="toc-write-a-professional-email" class="nav-link" data-scroll-target="#write-a-professional-email"><span class="toc-section-number">1.9</span>  Write a professional email</a></li>
+  <li><a href="#naming-things" id="toc-naming-things" class="nav-link" data-scroll-target="#naming-things"><span class="toc-section-number">1.10</span>  Naming things</a></li>
+  <li><a href="#generate-art-for-a-logo" id="toc-generate-art-for-a-logo" class="nav-link" data-scroll-target="#generate-art-for-a-logo"><span class="toc-section-number">1.11</span>  Generate art for a logo</a></li>
   </ul>
 </nav>
     </div>
@@ -271,28 +272,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="explain-concepts" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="explain-concepts"><span class="header-section-number">1.6</span> Explain concepts</h2>
 <p>Ask AI tool to explain a new concept you are learning in a format of interest or style of interest.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Explain how programmers typically use regular expressions. </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Give me a few  situations where it might be applied. </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Explain this to me in the style of Robert Dinero.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="write-documentation" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="write-documentation"><span class="header-section-number">1.7</span> Write documentation</h2>
-<p>Explain what kind of R package or analysis you are working on then ask the AI tool to create a <code>README.md</code> template for an R package.</p>
+<section id="explain-code" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="explain-code"><span class="header-section-number">1.7</span> Explain code</h2>
+<p>You can use AI chat tools to explain blocks of code that you may be have difficulty understanding.</p>
 </section>
-<section id="write-a-professional-email" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="write-a-professional-email"><span class="header-section-number">1.8</span> Write a professional email</h2>
+<section id="write-documentation" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="write-documentation"><span class="header-section-number">1.8</span> Write documentation</h2>
+<p>Explain what kind of R package or analysis you are working on then ask the AI tool to create a <code>README.md</code> template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the <a href="https://roxygen2.r-lib.org/">roxygen2 package</a>.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Give me a roxygen2 header for this R function to </span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>redact email addresses from a string: </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>redact_email_addresses &lt;- function(</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>text, </span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>replace_with = NULL) {</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    pattern &lt;-</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      "<span class="sc">\\</span>b<span class="co">[</span><span class="ot">A-Za-z0-9._%+-</span><span class="co">]</span>+@<span class="co">[</span><span class="ot">A-Za-z0-9.-</span><span class="co">]</span>+<span class="sc">\\</span>.<span class="co">[</span><span class="ot">A-Za-z</span><span class="co">]</span>{2,}(?:<span class="sc">\\</span>.<span class="co">[</span><span class="ot">A-Za-z</span><span class="co">]</span>{2,})?<span class="sc">\\</span>b"</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    redact_pattern(text, pattern, replace_with)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="write-a-professional-email" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="write-a-professional-email"><span class="header-section-number">1.9</span> Write a professional email</h2>
 <p>Provide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>Please update the following email to ensure it is business </span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>professional: <span class="in">`[insert email content here]`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Please update the following email to ensure it is business </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>professional: <span class="in">`[insert email content here]`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="naming-things" class="level2" data-number="1.9">
-<h2 data-number="1.9" class="anchored" data-anchor-id="naming-things"><span class="header-section-number">1.9</span> Naming things</h2>
+<section id="naming-things" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="naming-things"><span class="header-section-number">1.10</span> Naming things</h2>
 <blockquote class="blockquote">
 <p>There are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton</p>
 </blockquote>
 <p>Well, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Give me 5 possible names for an function that creates a </span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>hex sticker from a reference image. Use snake case </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>for the names.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="generate-art-for-a-logo" class="level2" data-number="1.10">
-<h2 data-number="1.10" class="anchored" data-anchor-id="generate-art-for-a-logo"><span class="header-section-number">1.10</span> Generate art for a logo</h2>
-<p>AI tools like DALLE can be used to get creative artwork for later use as book cover art or hex sticker.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Ukrainian dog wearing a beret and black turtleneck</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="generate-art-for-a-logo" class="level2" data-number="1.11">
+<h2 data-number="1.11" class="anchored" data-anchor-id="generate-art-for-a-logo"><span class="header-section-number">1.11</span> Generate art for a logo</h2>
+<p>AI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Ukrainian dog wearing a beret and black turtleneck</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-doge" class="quarto-layout-panel">
 <figure class="figure">
 <div class="quarto-layout-row quarto-layout-valign-top">
