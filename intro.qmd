@@ -1,0 +1,65 @@
+# Uses
+
+## Memory aid
+
+Obtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.
+
+### Example prompt
+
+``` markdown
+Give me a list of 5 memory devices to remember
+$ vs ^ in regular expressions
+```
+
+## Transforming information
+
+Summarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.
+
+## Unit testing
+
+Provide function(s) in your prompt and ask for unit tests. This is useful for package development or data analyses involving custom functions.
+
+```markdown
+Give me few unit tests for the following R function using 
+the testthat package: `[insert function here]`
+```
+
+## Regular expressions
+
+Get a regular expression for pattern matching. Share an example string and the subset you would like to capture then ask for a pattern to match for it. Ensure that you create or obtain one or more unit tests to confirm it is working as expected.
+
+``` markdown
+Regex pattern in R that looks for function names that are 
+not prefixed by package name. For example it should not 
+detect `dplyr::count(iris, Species)` or 
+`dplyr::glimpse(iris)`
+```
+
+## Commenting code
+
+Add beacons or useful comments into existing code. Beacons are parts of a script that can help a programmer understand what the code does. These could be as a simple, one-line comment explaining a section of code or a function. Alternatively, they could be variables using words that help explain what the code is doing. This could mean variables like tree or root for a code involving a binary tree.
+
+## Explain concepts
+
+Ask AI tool to explain a new concept you are learning in a format of interest or style of interest.
+
+## Write documentation
+
+Explain what kind of R package or analysis you are working on then ask the AI tool to create a `README.md` template for an R package.
+
+## Write a professional email
+
+Provide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.
+
+```markdown 
+Please update the following email to ensure it is business 
+professional: `[insert email content here]`
+```
+
+## Naming things
+
+> There are only two hard things in Computer Science: cache invalidation and naming things. -- Phil Karlton
+
+Well, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you're working on then ask the AI tool for one or more informative function names. 
+
+

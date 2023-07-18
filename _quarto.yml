@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "AI Assistants Maximized"
+  subtitle: "Tips and Tricks for R programmers"
+  author: "Sam Parmar"
+  # date: "7/17/2023"
+  repo-url: https://github.com/parmsam/tips-and-tricks-ai-tools
+  sharing: [twitter, facebook]
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - learn-more.qmd
+    # - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    code-copy: true
+  pdf:
+    documentclass: scrreprt
+
+code-copy: true
+
