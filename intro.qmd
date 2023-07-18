@@ -50,7 +50,7 @@ Explain this to me in the style of Robert Dinero.
 ```
 ## Explain code
 
-You can use AI chat tools to explain blocks of code that you may be have difficulty understanding.
+You can use AI chat tools to explain blocks of code that you may have difficulty understanding.
 
 ## Write documentation
 
