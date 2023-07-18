@@ -1,6 +1,7 @@
 project:
   type: book
-
+  output-dir: docs
+  
 book:
   title: "AI Assistants Maximized"
   subtitle: "Tips and Tricks for R programmers"
