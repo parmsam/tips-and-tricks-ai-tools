@@ -62,4 +62,18 @@ professional: `[insert email content here]`
 
 Well, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you're working on then ask the AI tool for one or more informative function names. 
 
+## Generate art for logo
 
+AI tools like DALLE can be used to get creative artwork for later use as book cover art or hex sticker.
+
+```markdown
+Ukrainian dog wearing a beret and black turtleneck
+```
+::: {#fig-doge layout-ncol=2}
+
+![cover art](images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png){width=40%}
+
+![hex sticker](images/hex.png){width=40%}
+
+The best doge
+:::

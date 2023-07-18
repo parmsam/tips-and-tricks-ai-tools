@@ -1,6 +1,6 @@
 # Preface {.unnumbered}
 
-This is a guidance book with tips and tricks for use of AI tools such as [ChatGPT](https://chat.openai.com/), [Bard](https://bard.google.com/) or [Github Copilot](https://github.com/features/copilot). It collects different use cases that I've run into as an R programmer. Example prompts are also provided with a few of the use cases. This book is created using [Quarto](https://quarto.org/). It's hosted on Github pages, with the source code available on [Github](https:://www.github.com/parmsam/tips-and-tricks-ai-tools).
+This is a guidance book with tips and tricks for use of AI tools such as [ChatGPT](https://chat.openai.com/), [Bard](https://bard.google.com/), [Github Copilot](https://github.com/features/copilot) or [DALL-E](https://openai.com/dall-e-2) It collects different use cases that I've run into as an R programmer. Example prompts are also provided with a few of the use cases. This book is created using [Quarto](https://quarto.org/). It's hosted on Github pages, with the source code available on [Github](https:://www.github.com/parmsam/tips-and-tricks-ai-tools).
 
 ## Prerequisites
 
