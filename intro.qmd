@@ -4,8 +4,6 @@
 
 Obtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.
 
-### Example prompt
-
 ``` markdown
 Give me a list of 5 memory devices to remember
 $ vs ^ in regular expressions
@@ -14,6 +12,29 @@ $ vs ^ in regular expressions
 ## Transforming information
 
 Summarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.
+
+```markdown
+Here's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:
+
+We're no strangers to love
+You know the rules and so do I (do I)
+A full commitment's what I'm thinking of
+You wouldn't get this from any other guy
+I just wanna tell you how I'm feeling
+Gotta make you understand
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+```
+
+```markdown
+- The lyrics are from the song "Never Gonna Give You Up" by Rick Astley.
+- The song talks about a person's commitment and dedication to their loved one.
+- The singer emphasizes that they will never give up, let down, or hurt their partner.
+- The overall message is about reassurance, trust, and the desire to make their loved one happy.
+```
+
 
 ## Unit testing
 
@@ -51,6 +72,28 @@ Explain this to me in the style of Robert Dinero.
 ## Explain code
 
 You can use AI chat tools to explain blocks of code that you may have difficulty understanding.
+
+## Translate from language to language
+
+Convert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.
+
+```markdown
+Convert the following R code into python using 
+packages like pandas or numpy:
+flights |> 
+  mutate(
+    gain = dep_delay - arr_delay,
+    speed = distance / air_time * 60
+  )
+```
+
+```python
+import pandas as pd
+
+# Assuming you have a DataFrame called 'flights'
+flights['gain'] = flights['dep_delay'] - flights['arr_delay']
+flights['speed'] = flights['distance'] / flights['air_time'] * 60
+```
 
 ## Write documentation
 

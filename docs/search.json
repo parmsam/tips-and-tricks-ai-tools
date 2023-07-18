@@ -18,14 +18,14 @@
     "href": "intro.html#memory-aid",
     "title": "1  Uses",
     "section": "1.1 Memory aid",
-    "text": "1.1 Memory aid\nObtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.\n\n1.1.1 Example prompt\nGive me a list of 5 memory devices to remember\n$ vs ^ in regular expressions"
+    "text": "1.1 Memory aid\nObtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.\nGive me a list of 5 memory devices to remember\n$ vs ^ in regular expressions"
   },
   {
     "objectID": "intro.html#transforming-information",
     "href": "intro.html#transforming-information",
     "title": "1  Uses",
     "section": "1.2 Transforming information",
-    "text": "1.2 Transforming information\nSummarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points."
+    "text": "1.2 Transforming information\nSummarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.\nHere's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:\n\nWe're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\n- The lyrics are from the song \"Never Gonna Give You Up\" by Rick Astley.\n- The song talks about a person's commitment and dedication to their loved one.\n- The singer emphasizes that they will never give up, let down, or hurt their partner.\n- The overall message is about reassurance, trust, and the desire to make their loved one happy."
   },
   {
     "objectID": "intro.html#unit-testing",
@@ -63,32 +63,39 @@
     "text": "1.7 Explain code\nYou can use AI chat tools to explain blocks of code that you may have difficulty understanding."
   },
   {
+    "objectID": "intro.html#translate-from-language-to-language",
+    "href": "intro.html#translate-from-language-to-language",
+    "title": "1  Uses",
+    "section": "1.8 Translate from language to language",
+    "text": "1.8 Translate from language to language\nConvert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.\nConvert the following R code into python using \npackages like pandas or numpy:\nflights |> \n  mutate(\n    gain = dep_delay - arr_delay,\n    speed = distance / air_time * 60\n  )\nimport pandas as pd\n\n# Assuming you have a DataFrame called 'flights'\nflights['gain'] = flights['dep_delay'] - flights['arr_delay']\nflights['speed'] = flights['distance'] / flights['air_time'] * 60"
+  },
+  {
     "objectID": "intro.html#write-documentation",
     "href": "intro.html#write-documentation",
     "title": "1  Uses",
-    "section": "1.8 Write documentation",
-    "text": "1.8 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
+    "section": "1.9 Write documentation",
+    "text": "1.9 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
   },
   {
     "objectID": "intro.html#write-a-professional-email",
     "href": "intro.html#write-a-professional-email",
     "title": "1  Uses",
-    "section": "1.9 Write a professional email",
-    "text": "1.9 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
+    "section": "1.10 Write a professional email",
+    "text": "1.10 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
   },
   {
     "objectID": "intro.html#naming-things",
     "href": "intro.html#naming-things",
     "title": "1  Uses",
-    "section": "1.10 Naming things",
-    "text": "1.10 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
+    "section": "1.11 Naming things",
+    "text": "1.11 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
   },
   {
     "objectID": "intro.html#generate-art-for-a-logo",
     "href": "intro.html#generate-art-for-a-logo",
     "title": "1  Uses",
-    "section": "1.11 Generate art for a logo",
-    "text": "1.11 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
+    "section": "1.12 Generate art for a logo",
+    "text": "1.12 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
   },
   {
     "objectID": "learn-more.html#prompt-engineering",
