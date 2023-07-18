@@ -35,6 +35,26 @@ Never gonna make you cry
 - The overall message is about reassurance, trust, and the desire to make their loved one happy.
 ```
 
+## Add emojis as visual aids into text
+
+Ask the AI tool to include relevant emojis within the requested content. These emojis can serve as nice visual aids to written content like notes.
+
+```markdown
+Steps to make a PBJ sandwich. 
+Add helpful emojis into steps. 
+```
+```markdown
+
+Sure, here are the steps to make a PBJ sandwich with emojis:
+
+1. 🥪 Gather your supplies: two slices of bread, peanut butter, jelly, and a knife. 🍞
+2. 🥜 Spread peanut butter on one slice of bread. 🥪
+3. 🥜 Wash the knife. 🧼
+4. 🍓 Spread jelly on the other slice of bread. 🥪
+5. 🥪 Put the two slices of bread together, peanut butter and jelly sides facing each other. 🥪
+6. ✂️ Cut the sandwich in half. 🥪
+7. 🥪 Enjoy! 😋
+```
 
 ## Unit testing
 
@@ -72,6 +92,27 @@ Explain this to me in the style of Robert Dinero.
 ## Explain code
 
 You can use AI chat tools to explain blocks of code that you may have difficulty understanding.
+
+## Refactor code
+
+AI chat tools can help you refactor your code. For example, maybe you are defaulting to looping structures like for or while loops when you could be using vectorized solutions. 
+
+```markdown
+Refactor this R code to take advantage of vectorization:
+x <- 1:5
+y <- 10:15
+output_vector <- c()
+for (i in 1:length(x)) {
+  output_vector[i] <- x[i] + y[i]
+}
+output_vector
+```
+```markdown
+x <- 1:5
+y <- 10:15
+output_vector <- x + y
+output_vector
+```
 
 ## Translate from language to language
 
