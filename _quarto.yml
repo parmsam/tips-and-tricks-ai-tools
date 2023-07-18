@@ -13,6 +13,8 @@ book:
     - intro.qmd
     - learn-more.qmd
     # - references.qmd
+  sidebar:
+    logo: "images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png"
 
 bibliography: references.bib
 
@@ -20,8 +22,6 @@ format:
   html:
     theme: cosmo
     code-copy: true
-  pdf:
-    documentclass: scrreprt
 
 code-copy: true
 

@@ -1,5 +1,10 @@
 # Learn more
 
+## Prompt engineering
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
+
+## How ChatGPT works
 - [What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
+
+## Using Github Copilot
 - [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
