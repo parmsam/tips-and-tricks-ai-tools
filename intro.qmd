@@ -89,6 +89,36 @@ Explain how programmers typically use regular expressions.
 Give me a few  situations where it might be applied. 
 Explain this to me in the style of Robert Dinero.
 ```
+## Write code
+
+AI assistance tools can help you write code and automate repetitive coding tasks. The key is to provide an accurate technical specification for the tool to work with. In other cases, you could get an example on how to do something, similar to a tutorial, then apply it to your situation.
+
+``` markdown
+Show me how to read a set of CSV files from a folder in R using list.files(), readr::read_csv(), and the purrr package. 
+Set the element names as the csv file names. 
+Note that I dont want to change the working directory and dont want to set the element names at the full file paths.
+```
+
+```markdown
+# Load required libraries
+library(readr)
+library(purrr)
+
+# Specify the folder path where the CSV files are located
+folder_path <- "/path/to/your/folder"
+
+# Get a list of CSV files in the folder
+csv_files <- list.files(path = folder_path, pattern = "\\.csv$", full.names = TRUE)
+
+# Read CSV files and set element names
+csv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))
+
+# Now, csv_data_list is a named list where each element contains the data from the corresponding CSV file.
+# The names of the elements are set to the CSV file names without the full file paths.
+```
+
+
+
 ## Explain code
 
 You can use AI chat tools to explain blocks of code that you may have difficulty understanding.
