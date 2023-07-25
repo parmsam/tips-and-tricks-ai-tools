@@ -80,6 +80,27 @@ detect `dplyr::count(iris, Species)` or
 
 Add beacons or useful comments into existing code. Beacons are parts of a script that can help a programmer understand what the code does. These could be as a simple, one-line comment explaining a section of code or a function. Alternatively, they could be variables using words that help explain what the code is doing. This could mean variables like tree or root for a code involving a binary tree.
 
+```markdown
+Add short comments after each line in the R code explaining what is going on:
+flights |> 
+  filter(dest == "IAH") |> 
+  mutate(speed = distance / air_time * 60) |> 
+  select(year:day, dep_time, carrier, flight, speed) |> 
+  arrange(desc(speed))
+```
+
+```markdown
+# Pipe operator (|>) is used to chain functions together for data manipulation.
+# Filter rows where the 'dest' column is equal to "IAH".
+flights |> 
+  filter(dest == "IAH") |> 
+# Calculate the 'speed' column by dividing 'distance' by 'air_time' and then multiplying by 60 to convert to minutes.
+  mutate(speed = distance / air_time * 60) |> 
+# Select specific columns 'year' to 'day', 'dep_time', 'carrier', 'flight', and the newly calculated 'speed'.
+  select(year:day, dep_time, carrier, flight, speed) |> 
+# Arrange the rows in descending order based on the 'speed' column.
+  arrange(desc(speed))
+```
 ## Explain concepts
 
 Ask to explain a new concept you are learning in a format of interest or style of interest.
@@ -120,9 +141,21 @@ csv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))
 
 Get help to identify, understand, or fix problems in your code. Here it helps to define expectations.  
 
+```markdown
+Help me debug this R code:
+library(ggplot2)
+library(palmerpenguins)
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) %>%
+  geom_point(aes(color = species, shape = island))
+```
 ## Explain code
 
 Get explanations for blocks of code that you may have difficulty understanding.
+
+```markdown
+Explain the following code to me:
+stringr::str_view(words, "^[^aeiou]+$")
+```
 
 ## Refactor code
 

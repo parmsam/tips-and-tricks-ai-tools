@@ -53,7 +53,7 @@
     "href": "intro.html#commenting-code",
     "title": "1  Uses",
     "section": "1.6 Commenting code",
-    "text": "1.6 Commenting code\nAdd beacons or useful comments into existing code. Beacons are parts of a script that can help a programmer understand what the code does. These could be as a simple, one-line comment explaining a section of code or a function. Alternatively, they could be variables using words that help explain what the code is doing. This could mean variables like tree or root for a code involving a binary tree."
+    "text": "1.6 Commenting code\nAdd beacons or useful comments into existing code. Beacons are parts of a script that can help a programmer understand what the code does. These could be as a simple, one-line comment explaining a section of code or a function. Alternatively, they could be variables using words that help explain what the code is doing. This could mean variables like tree or root for a code involving a binary tree.\nAdd short comments after each line in the R code explaining what is going on:\nflights |> \n  filter(dest == \"IAH\") |> \n  mutate(speed = distance / air_time * 60) |> \n  select(year:day, dep_time, carrier, flight, speed) |> \n  arrange(desc(speed))\n# Pipe operator (|>) is used to chain functions together for data manipulation.\n# Filter rows where the 'dest' column is equal to \"IAH\".\nflights |> \n  filter(dest == \"IAH\") |> \n# Calculate the 'speed' column by dividing 'distance' by 'air_time' and then multiplying by 60 to convert to minutes.\n  mutate(speed = distance / air_time * 60) |> \n# Select specific columns 'year' to 'day', 'dep_time', 'carrier', 'flight', and the newly calculated 'speed'.\n  select(year:day, dep_time, carrier, flight, speed) |> \n# Arrange the rows in descending order based on the 'speed' column.\n  arrange(desc(speed))"
   },
   {
     "objectID": "intro.html#explain-concepts",
@@ -74,14 +74,14 @@
     "href": "intro.html#debug-code",
     "title": "1  Uses",
     "section": "1.9 Debug code",
-    "text": "1.9 Debug code\nGet help to identify, understand, or fix problems in your code. Here it helps to define expectations."
+    "text": "1.9 Debug code\nGet help to identify, understand, or fix problems in your code. Here it helps to define expectations.\nHelp me debug this R code:\nlibrary(ggplot2)\nlibrary(palmerpenguins)\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) %>%\n  geom_point(aes(color = species, shape = island))"
   },
   {
     "objectID": "intro.html#explain-code",
     "href": "intro.html#explain-code",
     "title": "1  Uses",
     "section": "1.10 Explain code",
-    "text": "1.10 Explain code\nGet explanations for blocks of code that you may have difficulty understanding."
+    "text": "1.10 Explain code\nGet explanations for blocks of code that you may have difficulty understanding.\nExplain the following code to me:\nstringr::str_view(words, \"^[^aeiou]+$\")"
   },
   {
     "objectID": "intro.html#refactor-code",

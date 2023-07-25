@@ -19,6 +19,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    # - considerations.qmd
     - learn-more.qmd
     # - references.qmd
   favicon: "images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png"
