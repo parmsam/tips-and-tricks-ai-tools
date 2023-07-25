@@ -60,63 +60,70 @@
     "href": "intro.html#explain-concepts",
     "title": "1  Uses",
     "section": "1.7 Explain concepts",
-    "text": "1.7 Explain concepts\nAsk AI tool to explain a new concept you are learning in a format of interest or style of interest.\nExplain how programmers typically use regular expressions. \nGive me a few  situations where it might be applied. \nExplain this to me in the style of Robert Dinero."
+    "text": "1.7 Explain concepts\nAsk to explain a new concept you are learning in a format of interest or style of interest.\nExplain how programmers typically use regular expressions. \nGive me a few  situations where it might be applied. \nExplain this to me in the style of Robert Dinero."
   },
   {
     "objectID": "intro.html#write-code",
     "href": "intro.html#write-code",
     "title": "1  Uses",
     "section": "1.8 Write code",
-    "text": "1.8 Write code\nAI assistance tools can help you write code and automate repetitive coding tasks. The key is to provide an accurate technical specification for the tool to work with. In other cases, you could get an example on how to do something, similar to a tutorial, then apply it to your situation.\nShow me how to read a set of CSV files from a folder in R using list.files(), readr::read_csv(), and the purrr package. \nSet the element names as the csv file names. \nNote that I dont want to change the working directory and dont want to set the element names at the full file paths.\n# Load required libraries\nlibrary(readr)\nlibrary(purrr)\n\n# Specify the folder path where the CSV files are located\nfolder_path <- \"/path/to/your/folder\"\n\n# Get a list of CSV files in the folder\ncsv_files <- list.files(path = folder_path, pattern = \"\\\\.csv$\", full.names = TRUE)\n\n# Read CSV files and set element names\ncsv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))\n\n# Now, csv_data_list is a named list where each element contains the data from the corresponding CSV file.\n# The names of the elements are set to the CSV file names without the full file paths."
+    "text": "1.8 Write code\nAsk for help to write code and automate repetitive coding tasks. The key is to provide an accurate technical specification for the tool to work with. In other cases, you could get an example on how to do something, similar to a tutorial, then apply it to your situation.\nShow me how to read a set of CSV files from a folder in R using list.files(), readr::read_csv(), and the purrr package. \nSet the element names as the csv file names. \nNote that I dont want to change the working directory and dont want to set the element names at the full file paths.\n# Load required libraries\nlibrary(readr)\nlibrary(purrr)\n\n# Specify the folder path where the CSV files are located\nfolder_path <- \"/path/to/your/folder\"\n\n# Get a list of CSV files in the folder\ncsv_files <- list.files(path = folder_path, pattern = \"\\\\.csv$\", full.names = TRUE)\n\n# Read CSV files and set element names\ncsv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))\n\n# Now, csv_data_list is a named list where each element contains the data from the corresponding CSV file.\n# The names of the elements are set to the CSV file names without the full file paths."
+  },
+  {
+    "objectID": "intro.html#debug-code",
+    "href": "intro.html#debug-code",
+    "title": "1  Uses",
+    "section": "1.9 Debug code",
+    "text": "1.9 Debug code\nGet help to identify, understand, or fix problems in your code. Here it helps to define expectations."
   },
   {
     "objectID": "intro.html#explain-code",
     "href": "intro.html#explain-code",
     "title": "1  Uses",
-    "section": "1.9 Explain code",
-    "text": "1.9 Explain code\nYou can use AI chat tools to explain blocks of code that you may have difficulty understanding."
+    "section": "1.10 Explain code",
+    "text": "1.10 Explain code\nGet explanations for blocks of code that you may have difficulty understanding."
   },
   {
     "objectID": "intro.html#refactor-code",
     "href": "intro.html#refactor-code",
     "title": "1  Uses",
-    "section": "1.10 Refactor code",
-    "text": "1.10 Refactor code\nAI chat tools can help you refactor your code. For example, maybe you are defaulting to looping structures like for or while loops when you could be using vectorized solutions.\nRefactor this R code to take advantage of vectorization:\nx <- 1:5\ny <- 10:15\noutput_vector <- c()\nfor (i in 1:length(x)) {\n  output_vector[i] <- x[i] + y[i]\n}\noutput_vector\nx <- 1:5\ny <- 10:15\noutput_vector <- x + y\noutput_vector"
+    "section": "1.11 Refactor code",
+    "text": "1.11 Refactor code\nRefactor your code that may be inefficient or unnecessarily complicated. For example, maybe you are defaulting to looping structures like for or while loops when you could be using vectorized solutions.\nRefactor this R code to take advantage of vectorization:\nx <- 1:5\ny <- 10:15\noutput_vector <- c()\nfor (i in 1:length(x)) {\n  output_vector[i] <- x[i] + y[i]\n}\noutput_vector\nx <- 1:5\ny <- 10:15\noutput_vector <- x + y\noutput_vector"
   },
   {
     "objectID": "intro.html#translate-from-language-to-language",
     "href": "intro.html#translate-from-language-to-language",
     "title": "1  Uses",
-    "section": "1.11 Translate from language to language",
-    "text": "1.11 Translate from language to language\nConvert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.\nConvert the following R code into python using \npackages like pandas or numpy:\nflights |> \n  mutate(\n    gain = dep_delay - arr_delay,\n    speed = distance / air_time * 60\n  )\nimport pandas as pd\n\n# Assuming you have a DataFrame called 'flights'\nflights['gain'] = flights['dep_delay'] - flights['arr_delay']\nflights['speed'] = flights['distance'] / flights['air_time'] * 60"
+    "section": "1.12 Translate from language to language",
+    "text": "1.12 Translate from language to language\nConvert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.\nConvert the following R code into python using \npackages like pandas or numpy:\nflights |> \n  mutate(\n    gain = dep_delay - arr_delay,\n    speed = distance / air_time * 60\n  )\nimport pandas as pd\n\n# Assuming you have a DataFrame called 'flights'\nflights['gain'] = flights['dep_delay'] - flights['arr_delay']\nflights['speed'] = flights['distance'] / flights['air_time'] * 60"
   },
   {
     "objectID": "intro.html#write-documentation",
     "href": "intro.html#write-documentation",
     "title": "1  Uses",
-    "section": "1.12 Write documentation",
-    "text": "1.12 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
+    "section": "1.13 Write documentation",
+    "text": "1.13 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
   },
   {
     "objectID": "intro.html#write-a-professional-email",
     "href": "intro.html#write-a-professional-email",
     "title": "1  Uses",
-    "section": "1.13 Write a professional email",
-    "text": "1.13 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
+    "section": "1.14 Write a professional email",
+    "text": "1.14 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
   },
   {
     "objectID": "intro.html#naming-things",
     "href": "intro.html#naming-things",
     "title": "1  Uses",
-    "section": "1.14 Naming things",
-    "text": "1.14 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
+    "section": "1.15 Naming things",
+    "text": "1.15 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
   },
   {
     "objectID": "intro.html#generate-art-for-a-logo",
     "href": "intro.html#generate-art-for-a-logo",
     "title": "1  Uses",
-    "section": "1.15 Generate art for a logo",
-    "text": "1.15 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
+    "section": "1.16 Generate art for a logo",
+    "text": "1.16 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
   },
   {
     "objectID": "learn-more.html#prompt-engineering",
