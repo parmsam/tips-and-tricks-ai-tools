@@ -1,12 +1,20 @@
 # Learn more
 
-## Prompt engineering
-- [Prompt Engineering Guide](https://www.promptingguide.ai/)
-
-## How ChatGPT works
-- [What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
-
 ## Using Github Copilot
 - [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
 
 - [How to Use GitHub Copilot to Become a Happier and More Productive Developer](https://www.freecodecamp.org/news/developer-productivity-with-github-copilot/)
+
+## Using DALL-E 2
+
+- [How to use DALL·E 2 to create AI images](https://zapier.com/blog/how-to-use-dall-e-2/)
+
+## Prompt engineering
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+
+- [Six tips for better coding with ChatGPT](https://www.nature.com/articles/d41586-023-01833-0)
+
+- [How to write an effective GPT-3 or GPT-4 prompt](https://zapier.com/blog/gpt-prompt/)
+
+## How ChatGPT works
+- [What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
