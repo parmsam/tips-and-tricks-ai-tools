@@ -34,6 +34,43 @@ Never gonna make you cry
 - The singer emphasizes that they will never give up, let down, or hurt their partner.
 - The overall message is about reassurance, trust, and the desire to make their loved one happy.
 ```
+### Generate diagrams
+
+Visualize code, relationships or project info as a diagrams or charts in Mermaid.
+
+```markdown
+Give me an accurate Mermaid flow chart for this R code: 
+for (i in 1:10) {
+  if (i < 3) 
+    next
+  print(i)
+  if (i >= 5)
+    break
+}
+```
+
+```{mermaid}
+%%| fig-height: 6
+graph TD
+    Start(Start)
+    ForLoop[For i in 1:10]
+    Condition1{i < 3}
+    Next[Next iteration]
+    Print[Print i]
+    Condition2{i >= 5}
+    Break[Break loop]
+    End(End)
+    
+    Start --> ForLoop
+    ForLoop --> Condition1
+    Condition1 -- Yes --> Next
+    Condition1 -- No --> Print
+    Print --> Condition2
+    Condition2 -- Yes --> Break
+    Break --> End
+    Condition2 -- No --> ForLoop
+    Next --> ForLoop
+```
 
 ## Add emojis as visual aids into text
 
@@ -176,6 +213,33 @@ x <- 1:5
 y <- 10:15
 output_vector <- x + y
 output_vector
+```
+
+## Reformat code
+
+Rearrange code so that it is more readable and understandable.
+
+```markdown
+Reformat this R code so that is more readable and follows good R conventions:
+1+            1
+x=1:10#some users prefer '<-' as the assignment operator
+if(TRUE){
+print('Hello world!') # HI!
+}
+```
+
+```{r}
+#| eval=FALSE
+# Adding two numbers
+result <- 1 + 1
+
+# Creating a sequence from 1 to 10
+x <- 1:10 # some users prefer '<-' as the assignment operator
+
+# Conditional statement with a print statement
+if (TRUE) {
+  print('Hello world!') # HI!
+}
 ```
 
 ## Translate from language to language

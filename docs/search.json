@@ -25,7 +25,7 @@
     "href": "intro.html#transforming-information",
     "title": "1  Uses",
     "section": "1.2 Transforming information",
-    "text": "1.2 Transforming information\nSummarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.\nHere's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:\n\nWe're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\n- The lyrics are from the song \"Never Gonna Give You Up\" by Rick Astley.\n- The song talks about a person's commitment and dedication to their loved one.\n- The singer emphasizes that they will never give up, let down, or hurt their partner.\n- The overall message is about reassurance, trust, and the desire to make their loved one happy."
+    "text": "1.2 Transforming information\nSummarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.\nHere's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:\n\nWe're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\n- The lyrics are from the song \"Never Gonna Give You Up\" by Rick Astley.\n- The song talks about a person's commitment and dedication to their loved one.\n- The singer emphasizes that they will never give up, let down, or hurt their partner.\n- The overall message is about reassurance, trust, and the desire to make their loved one happy.\n\n1.2.1 Generate diagrams\nVisualize code, relationships or project info as a diagrams or charts in Mermaid.\nGive me an accurate Mermaid flow chart for this R code: \nfor (i in 1:10) {\n  if (i < 3) \n    next\n  print(i)\n  if (i >= 5)\n    break\n}\n\n\n\n\ngraph TD\n    Start(Start)\n    ForLoop[For i in 1:10]\n    Condition1{i < 3}\n    Next[Next iteration]\n    Print[Print i]\n    Condition2{i >= 5}\n    Break[Break loop]\n    End(End)\n    \n    Start --> ForLoop\n    ForLoop --> Condition1\n    Condition1 -- Yes --> Next\n    Condition1 -- No --> Print\n    Print --> Condition2\n    Condition2 -- Yes --> Break\n    Break --> End\n    Condition2 -- No --> ForLoop\n    Next --> ForLoop"
   },
   {
     "objectID": "intro.html#add-emojis-as-visual-aids-into-text",
@@ -94,36 +94,36 @@
     "objectID": "intro.html#translate-from-language-to-language",
     "href": "intro.html#translate-from-language-to-language",
     "title": "1  Uses",
-    "section": "1.12 Translate from language to language",
-    "text": "1.12 Translate from language to language\nConvert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.\nConvert the following R code into python using \npackages like pandas or numpy:\nflights |> \n  mutate(\n    gain = dep_delay - arr_delay,\n    speed = distance / air_time * 60\n  )\nimport pandas as pd\n\n# Assuming you have a DataFrame called 'flights'\nflights['gain'] = flights['dep_delay'] - flights['arr_delay']\nflights['speed'] = flights['distance'] / flights['air_time'] * 60"
+    "section": "1.13 Translate from language to language",
+    "text": "1.13 Translate from language to language\nConvert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.\nConvert the following R code into python using \npackages like pandas or numpy:\nflights |> \n  mutate(\n    gain = dep_delay - arr_delay,\n    speed = distance / air_time * 60\n  )\nimport pandas as pd\n\n# Assuming you have a DataFrame called 'flights'\nflights['gain'] = flights['dep_delay'] - flights['arr_delay']\nflights['speed'] = flights['distance'] / flights['air_time'] * 60"
   },
   {
     "objectID": "intro.html#write-documentation",
     "href": "intro.html#write-documentation",
     "title": "1  Uses",
-    "section": "1.13 Write documentation",
-    "text": "1.13 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
+    "section": "1.14 Write documentation",
+    "text": "1.14 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
   },
   {
     "objectID": "intro.html#write-a-professional-email",
     "href": "intro.html#write-a-professional-email",
     "title": "1  Uses",
-    "section": "1.14 Write a professional email",
-    "text": "1.14 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
+    "section": "1.15 Write a professional email",
+    "text": "1.15 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
   },
   {
     "objectID": "intro.html#naming-things",
     "href": "intro.html#naming-things",
     "title": "1  Uses",
-    "section": "1.15 Naming things",
-    "text": "1.15 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
+    "section": "1.16 Naming things",
+    "text": "1.16 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
   },
   {
     "objectID": "intro.html#generate-art-for-a-logo",
     "href": "intro.html#generate-art-for-a-logo",
     "title": "1  Uses",
-    "section": "1.16 Generate art for a logo",
-    "text": "1.16 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
+    "section": "1.17 Generate art for a logo",
+    "text": "1.17 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
   },
   {
     "objectID": "learn-more.html#using-github-copilot",
@@ -152,5 +152,12 @@
     "title": "2  Learn more",
     "section": "2.4 How ChatGPT works",
     "text": "2.4 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?"
+  },
+  {
+    "objectID": "intro.html#reformat-code",
+    "href": "intro.html#reformat-code",
+    "title": "1  Uses",
+    "section": "1.12 Reformat code",
+    "text": "1.12 Reformat code\nRearrange code so that it is more readable and understandable.\nReformat this R code so that is more readable and follows good R conventions:\n1+            1\nx=1:10#some users prefer '<-' as the assignment operator\nif(TRUE){\nprint('Hello world!') # HI!\n}\n\n# Adding two numbers\nresult <- 1 + 1\n\n# Creating a sequence from 1 to 10\nx <- 1:10 # some users prefer '<-' as the assignment operator\n\n# Conditional statement with a print statement\nif (TRUE) {\n  print('Hello world!') # HI!\n}"
   }
 ]
