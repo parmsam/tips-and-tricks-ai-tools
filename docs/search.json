@@ -91,6 +91,13 @@
     "text": "1.11 Refactor code\nRefactor your code that may be inefficient or unnecessarily complicated. For example, maybe you are defaulting to looping structures like for or while loops when you could be using vectorized solutions.\nRefactor this R code to take advantage of vectorization:\nx <- 1:5\ny <- 10:15\noutput_vector <- c()\nfor (i in 1:length(x)) {\n  output_vector[i] <- x[i] + y[i]\n}\noutput_vector\nx <- 1:5\ny <- 10:15\noutput_vector <- x + y\noutput_vector"
   },
   {
+    "objectID": "intro.html#reformat-code",
+    "href": "intro.html#reformat-code",
+    "title": "1  Uses",
+    "section": "1.12 Reformat code",
+    "text": "1.12 Reformat code\nRearrange code so that it is more readable and understandable.\nReformat this R code so that is more readable and follows good R conventions:\n1+            1\nx=1:10#some users prefer '<-' as the assignment operator\nif(TRUE){\nprint('Hello world!') # HI!\n}\n\n# Adding two numbers\nresult <- 1 + 1\n\n# Creating a sequence from 1 to 10\nx <- 1:10 # some users prefer '<-' as the assignment operator\n\n# Conditional statement with a print statement\nif (TRUE) {\n  print('Hello world!') # HI!\n}"
+  },
+  {
     "objectID": "intro.html#translate-from-language-to-language",
     "href": "intro.html#translate-from-language-to-language",
     "title": "1  Uses",
@@ -152,12 +159,5 @@
     "title": "2  Learn more",
     "section": "2.4 How ChatGPT works",
     "text": "2.4 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?"
-  },
-  {
-    "objectID": "intro.html#reformat-code",
-    "href": "intro.html#reformat-code",
-    "title": "1  Uses",
-    "section": "1.12 Reformat code",
-    "text": "1.12 Reformat code\nRearrange code so that it is more readable and understandable.\nReformat this R code so that is more readable and follows good R conventions:\n1+            1\nx=1:10#some users prefer '<-' as the assignment operator\nif(TRUE){\nprint('Hello world!') # HI!\n}\n\n# Adding two numbers\nresult <- 1 + 1\n\n# Creating a sequence from 1 to 10\nx <- 1:10 # some users prefer '<-' as the assignment operator\n\n# Conditional statement with a print statement\nif (TRUE) {\n  print('Hello world!') # HI!\n}"
   }
 ]
