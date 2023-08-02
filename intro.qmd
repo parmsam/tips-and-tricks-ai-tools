@@ -9,6 +9,22 @@ Give me a list of 5 memory devices to remember
 $ vs ^ in regular expressions
 ```
 
+```markdown
+Dollar Sign "Catcher":
+Remember that the dollar sign ($) catches the end of the line in regular expressions. "Catcher" and "end" both have the letter "E" in them, which can help you remember.
+
+"Carat Starts":
+The carat symbol (^) resembles an upward-pointing arrow, pointing to the start of the line. It's like an arrow showing you the way to the beginning of the line.
+
+Carat to Ceiling, Dollar to Down:
+Associate the shape of the ^ (caret) to ceiling and $ (dollar) to down or the floor. This way you remember the caret matches the start (top/ceiling) and the dollar matches the end (bottom/down).
+
+"$" at the End of a Price:
+When we list prices, we often write the dollar sign at the end (especially in some non-English-speaking countries). So, the dollar sign can remind you of the end of the line.
+
+Alphabetical Order:
+In terms of alphabetical order, Carat comes before Dollar. This can be associated with the order in a line: Carat (^) represents the start (before), and Dollar ($) represents the end (after).
+```
 ## Transforming information
 
 Summarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.
@@ -51,6 +67,7 @@ for (i in 1:10) {
 
 ```{mermaid}
 %%| fig-height: 6
+%%| echo: true
 graph TD
     Start(Start)
     ForLoop[For i in 1:10]
@@ -99,7 +116,7 @@ Provide function(s) in your prompt and ask for unit tests. This is useful for pa
 
 ```markdown
 Give me few unit tests for the following R function using 
-the testthat package: `[insert function here]`
+the testthat package: `insert function here`
 ```
 
 ## Regular expressions
@@ -111,6 +128,19 @@ Regex pattern in R that looks for function names that are
 not prefixed by package name. For example it should not 
 detect `dplyr::count(iris, Species)` or 
 `dplyr::glimpse(iris)`
+```
+
+```markdown
+You can use the following regex pattern in R to look for function names that are not prefixed by a package name:
+
+`\b(?<!\w::)\w+\(`
+
+Explanation:
+
+\b: Matches a word boundary to ensure the match is a whole word.
+(?<!\w::): Negative lookbehind to assert that there is no word character before ::, which indicates a package prefix.
+\w+: Matches one or more word characters, representing the function name.
+\(: Matches the opening parenthesis to complete the function call.
 ```
 
 ## Commenting code
@@ -145,8 +175,17 @@ Ask to explain a new concept you are learning in a format of interest or style o
 ```markdown
 Explain how programmers typically use regular expressions. 
 Give me a few  situations where it might be applied. 
-Explain this to me in the style of Robert Dinero.
+Explain this to me in the style of Robert Dinero and keep it short.
 ```
+
+```markdown
+Hey, you talkin' to me? Alright, let me break it down for you. We got these things called regular expressions, or regex for short. Think of them like a matchmaker for data. Programmers use 'em to find, replace, or manipulate strings of text in data, you follow? 
+
+Now, I'm talking about situations like validating input fields. Yeah, like checking if an email address or phone number entered by a user is legit. Or let's say you got a huge text file, a real tome, and you need to find specific patterns or keywords in there, that's when regex comes in handy. 
+
+Also, consider renaming a bulk of files, or parsing logs. Big headache, right? Not with regex, it's a piece of cake. These things are versatile, you get me? So next time you got a mountain of data to deal with, remember regular expressions, capisce?
+```
+
 ## Write code
 
 Ask for help to write code and automate repetitive coding tasks. The key is to provide an accurate technical specification for the tool to work with. In other cases, you could get an example on how to do something, similar to a tutorial, then apply it to your situation.
@@ -179,21 +218,33 @@ csv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))
 Get help to identify, understand, or fix problems in your code. Here it helps to define expectations.  
 
 ```markdown
-Help me debug this R code:
+Help me debug this R code and keep it short:
 library(ggplot2)
 library(palmerpenguins)
 ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) %>%
   geom_point(aes(color = species, shape = island))
 ```
+
+```markdown
+library(ggplot2)
+library(palmerpenguins)
+
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(aes(color = species, shape = island))
+```
+
 ## Explain code
 
 Get explanations for blocks of code that you may have difficulty understanding.
 
 ```markdown
-Explain the following code to me:
+Explain the following code to me. Keep it short:
 stringr::str_view(words, "^[^aeiou]+$")
 ```
 
+```markdown
+The code uses the stringr package in R to find and display non-vowel words in the words string. It uses str_view function to visually highlight (view) the non-vowel words that match the regex pattern "^[^aeiou]+$". The regex pattern means it will match any string that consists entirely of characters that are not vowels (i.e., only consonants).
+```
 ## Refactor code
 
 Refactor your code that may be inefficient or unnecessarily complicated. For example, maybe you are defaulting to looping structures like for or while loops when you could be using vectorized solutions. 
@@ -281,13 +332,39 @@ replace_with = NULL) {
 }
 ```
 
+```{r}
+#' Redact email addresses from a string.
+#'
+#' This function searches for email addresses in the input text and replaces them with the specified 'replace_with' value if provided, otherwise redacts them.
+#'
+#' @param text The input text containing email addresses to be redacted.
+#' @param replace_with A character string used to replace the found email addresses. If set to NULL (default), the email addresses will be redacted.
+#' @return The text with email addresses redacted or replaced.
+#' @importFrom stringr str_replace_all
+#' @export
+#' @examples
+#' redact_email_addresses("Contact us at john.doe@example.com or jane.smith@example.com", "[email]")
+#' redact_email_addresses("Email support: support@example.com", "REDACTED")
+#' redact_email_addresses("No emails here!")
+#'
+#' @seealso \code{\link[stringr]{str_replace_all}}
+#' @keywords redact email addresses
+redact_email_addresses <- function(
+  text,
+  replace_with = NULL
+) {
+  pattern <- "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}(?:\\.[A-Za-z]{2,})?\\b"
+  redact_pattern(text, pattern, replace_with)
+}
+```
+
 ## Write a professional email
 
 Provide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.
 
 ```markdown 
 Please update the following email to ensure it is business 
-professional: `[insert email content here]`
+professional: `insert email content here`
 ```
 
 ## Naming things
@@ -299,7 +376,15 @@ Well, AI tools can help you name things. For example, you could ask the AI tool 
 ```markdown
 Give me 5 possible names for an function that creates a 
 hex sticker from a reference image. Use snake case 
-for the names.
+for the names. Keep it at three words max.
+```
+
+```markdown
+create_hex_sticker
+generate_hex_sticker
+make_hex_sticker
+build_hex_sticker
+design_hex_sticker
 ```
 
 ## Generate art for a logo

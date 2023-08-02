@@ -18,14 +18,14 @@
     "href": "intro.html#memory-aid",
     "title": "1  Uses",
     "section": "1.1 Memory aid",
-    "text": "1.1 Memory aid\nObtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.\nGive me a list of 5 memory devices to remember\n$ vs ^ in regular expressions"
+    "text": "1.1 Memory aid\nObtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.\nGive me a list of 5 memory devices to remember\n$ vs ^ in regular expressions\nDollar Sign \"Catcher\":\nRemember that the dollar sign ($) catches the end of the line in regular expressions. \"Catcher\" and \"end\" both have the letter \"E\" in them, which can help you remember.\n\n\"Carat Starts\":\nThe carat symbol (^) resembles an upward-pointing arrow, pointing to the start of the line. It's like an arrow showing you the way to the beginning of the line.\n\nCarat to Ceiling, Dollar to Down:\nAssociate the shape of the ^ (caret) to ceiling and $ (dollar) to down or the floor. This way you remember the caret matches the start (top/ceiling) and the dollar matches the end (bottom/down).\n\n\"$\" at the End of a Price:\nWhen we list prices, we often write the dollar sign at the end (especially in some non-English-speaking countries). So, the dollar sign can remind you of the end of the line.\n\nAlphabetical Order:\nIn terms of alphabetical order, Carat comes before Dollar. This can be associated with the order in a line: Carat (^) represents the start (before), and Dollar ($) represents the end (after)."
   },
   {
     "objectID": "intro.html#transforming-information",
     "href": "intro.html#transforming-information",
     "title": "1  Uses",
     "section": "1.2 Transforming information",
-    "text": "1.2 Transforming information\nSummarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.\nHere's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:\n\nWe're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\n- The lyrics are from the song \"Never Gonna Give You Up\" by Rick Astley.\n- The song talks about a person's commitment and dedication to their loved one.\n- The singer emphasizes that they will never give up, let down, or hurt their partner.\n- The overall message is about reassurance, trust, and the desire to make their loved one happy.\n\n1.2.1 Generate diagrams\nVisualize code, relationships or project info as a diagrams or charts in Mermaid.\nGive me an accurate Mermaid flow chart for this R code: \nfor (i in 1:10) {\n  if (i < 3) \n    next\n  print(i)\n  if (i >= 5)\n    break\n}\n\n\n\n\ngraph TD\n    Start(Start)\n    ForLoop[For i in 1:10]\n    Condition1{i < 3}\n    Next[Next iteration]\n    Print[Print i]\n    Condition2{i >= 5}\n    Break[Break loop]\n    End(End)\n    \n    Start --> ForLoop\n    ForLoop --> Condition1\n    Condition1 -- Yes --> Next\n    Condition1 -- No --> Print\n    Print --> Condition2\n    Condition2 -- Yes --> Break\n    Break --> End\n    Condition2 -- No --> ForLoop\n    Next --> ForLoop"
+    "text": "1.2 Transforming information\nSummarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.\nHere's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:\n\nWe're no strangers to love\nYou know the rules and so do I (do I)\nA full commitment's what I'm thinking of\nYou wouldn't get this from any other guy\nI just wanna tell you how I'm feeling\nGotta make you understand\nNever gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\n- The lyrics are from the song \"Never Gonna Give You Up\" by Rick Astley.\n- The song talks about a person's commitment and dedication to their loved one.\n- The singer emphasizes that they will never give up, let down, or hurt their partner.\n- The overall message is about reassurance, trust, and the desire to make their loved one happy.\n\n1.2.1 Generate diagrams\nVisualize code, relationships or project info as a diagrams or charts in Mermaid.\nGive me an accurate Mermaid flow chart for this R code: \nfor (i in 1:10) {\n  if (i < 3) \n    next\n  print(i)\n  if (i >= 5)\n    break\n}\n\ngraph TD\n    Start(Start)\n    ForLoop[For i in 1:10]\n    Condition1{i < 3}\n    Next[Next iteration]\n    Print[Print i]\n    Condition2{i >= 5}\n    Break[Break loop]\n    End(End)\n    \n    Start --> ForLoop\n    ForLoop --> Condition1\n    Condition1 -- Yes --> Next\n    Condition1 -- No --> Print\n    Print --> Condition2\n    Condition2 -- Yes --> Break\n    Break --> End\n    Condition2 -- No --> ForLoop\n    Next --> ForLoop\n\n\n\ngraph TD\n    Start(Start)\n    ForLoop[For i in 1:10]\n    Condition1{i < 3}\n    Next[Next iteration]\n    Print[Print i]\n    Condition2{i >= 5}\n    Break[Break loop]\n    End(End)\n    \n    Start --> ForLoop\n    ForLoop --> Condition1\n    Condition1 -- Yes --> Next\n    Condition1 -- No --> Print\n    Print --> Condition2\n    Condition2 -- Yes --> Break\n    Break --> End\n    Condition2 -- No --> ForLoop\n    Next --> ForLoop"
   },
   {
     "objectID": "intro.html#add-emojis-as-visual-aids-into-text",
@@ -39,14 +39,14 @@
     "href": "intro.html#unit-testing",
     "title": "1  Uses",
     "section": "1.4 Unit testing",
-    "text": "1.4 Unit testing\nProvide function(s) in your prompt and ask for unit tests. This is useful for package development or data analyses involving custom functions.\nGive me few unit tests for the following R function using \nthe testthat package: `[insert function here]`"
+    "text": "1.4 Unit testing\nProvide function(s) in your prompt and ask for unit tests. This is useful for package development or data analyses involving custom functions.\nGive me few unit tests for the following R function using \nthe testthat package: `insert function here`"
   },
   {
     "objectID": "intro.html#regular-expressions",
     "href": "intro.html#regular-expressions",
     "title": "1  Uses",
     "section": "1.5 Regular expressions",
-    "text": "1.5 Regular expressions\nGet a regular expression for pattern matching. Share an example string and the subset you would like to capture then ask for a pattern to match for it. Ensure that you create or obtain one or more unit tests to confirm it is working as expected.\nRegex pattern in R that looks for function names that are \nnot prefixed by package name. For example it should not \ndetect `dplyr::count(iris, Species)` or \n`dplyr::glimpse(iris)`"
+    "text": "1.5 Regular expressions\nGet a regular expression for pattern matching. Share an example string and the subset you would like to capture then ask for a pattern to match for it. Ensure that you create or obtain one or more unit tests to confirm it is working as expected.\nRegex pattern in R that looks for function names that are \nnot prefixed by package name. For example it should not \ndetect `dplyr::count(iris, Species)` or \n`dplyr::glimpse(iris)`\nYou can use the following regex pattern in R to look for function names that are not prefixed by a package name:\n\n`\\b(?<!\\w::)\\w+\\(`\n\nExplanation:\n\n\\b: Matches a word boundary to ensure the match is a whole word.\n(?<!\\w::): Negative lookbehind to assert that there is no word character before ::, which indicates a package prefix.\n\\w+: Matches one or more word characters, representing the function name.\n\\(: Matches the opening parenthesis to complete the function call."
   },
   {
     "objectID": "intro.html#commenting-code",
@@ -60,7 +60,7 @@
     "href": "intro.html#explain-concepts",
     "title": "1  Uses",
     "section": "1.7 Explain concepts",
-    "text": "1.7 Explain concepts\nAsk to explain a new concept you are learning in a format of interest or style of interest.\nExplain how programmers typically use regular expressions. \nGive me a few  situations where it might be applied. \nExplain this to me in the style of Robert Dinero."
+    "text": "1.7 Explain concepts\nAsk to explain a new concept you are learning in a format of interest or style of interest.\nExplain how programmers typically use regular expressions. \nGive me a few  situations where it might be applied. \nExplain this to me in the style of Robert Dinero and keep it short.\nHey, you talkin' to me? Alright, let me break it down for you. We got these things called regular expressions, or regex for short. Think of them like a matchmaker for data. Programmers use 'em to find, replace, or manipulate strings of text in data, you follow? \n\nNow, I'm talking about situations like validating input fields. Yeah, like checking if an email address or phone number entered by a user is legit. Or let's say you got a huge text file, a real tome, and you need to find specific patterns or keywords in there, that's when regex comes in handy. \n\nAlso, consider renaming a bulk of files, or parsing logs. Big headache, right? Not with regex, it's a piece of cake. These things are versatile, you get me? So next time you got a mountain of data to deal with, remember regular expressions, capisce?"
   },
   {
     "objectID": "intro.html#write-code",
@@ -74,14 +74,14 @@
     "href": "intro.html#debug-code",
     "title": "1  Uses",
     "section": "1.9 Debug code",
-    "text": "1.9 Debug code\nGet help to identify, understand, or fix problems in your code. Here it helps to define expectations.\nHelp me debug this R code:\nlibrary(ggplot2)\nlibrary(palmerpenguins)\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) %>%\n  geom_point(aes(color = species, shape = island))"
+    "text": "1.9 Debug code\nGet help to identify, understand, or fix problems in your code. Here it helps to define expectations.\nHelp me debug this R code and keep it short:\nlibrary(ggplot2)\nlibrary(palmerpenguins)\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) %>%\n  geom_point(aes(color = species, shape = island))\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\nggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +\n  geom_point(aes(color = species, shape = island))"
   },
   {
     "objectID": "intro.html#explain-code",
     "href": "intro.html#explain-code",
     "title": "1  Uses",
     "section": "1.10 Explain code",
-    "text": "1.10 Explain code\nGet explanations for blocks of code that you may have difficulty understanding.\nExplain the following code to me:\nstringr::str_view(words, \"^[^aeiou]+$\")"
+    "text": "1.10 Explain code\nGet explanations for blocks of code that you may have difficulty understanding.\nExplain the following code to me. Keep it short:\nstringr::str_view(words, \"^[^aeiou]+$\")\nThe code uses the stringr package in R to find and display non-vowel words in the words string. It uses str_view function to visually highlight (view) the non-vowel words that match the regex pattern \"^[^aeiou]+$\". The regex pattern means it will match any string that consists entirely of characters that are not vowels (i.e., only consonants)."
   },
   {
     "objectID": "intro.html#refactor-code",
@@ -102,21 +102,21 @@
     "href": "intro.html#write-documentation",
     "title": "1  Uses",
     "section": "1.14 Write documentation",
-    "text": "1.14 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}"
+    "text": "1.14 Write documentation\nExplain what kind of R package or analysis you are working on then ask the AI tool to create a README.md template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the roxygen2 package.\nGive me a roxygen2 header for this R function to \nredact email addresses from a string: \n\nredact_email_addresses <- function(\ntext, \nreplace_with = NULL) {\n    pattern <-\n      \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n    redact_pattern(text, pattern, replace_with)\n}\n\n#' Redact email addresses from a string.\n#'\n#' This function searches for email addresses in the input text and replaces them with the specified 'replace_with' value if provided, otherwise redacts them.\n#'\n#' @param text The input text containing email addresses to be redacted.\n#' @param replace_with A character string used to replace the found email addresses. If set to NULL (default), the email addresses will be redacted.\n#' @return The text with email addresses redacted or replaced.\n#' @importFrom stringr str_replace_all\n#' @export\n#' @examples\n#' redact_email_addresses(\"Contact us at john.doe@example.com or jane.smith@example.com\", \"[email]\")\n#' redact_email_addresses(\"Email support: support@example.com\", \"REDACTED\")\n#' redact_email_addresses(\"No emails here!\")\n#'\n#' @seealso \\code{\\link[stringr]{str_replace_all}}\n#' @keywords redact email addresses\nredact_email_addresses <- function(\n  text,\n  replace_with = NULL\n) {\n  pattern <- \"\\\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,}(?:\\\\.[A-Za-z]{2,})?\\\\b\"\n  redact_pattern(text, pattern, replace_with)\n}"
   },
   {
     "objectID": "intro.html#write-a-professional-email",
     "href": "intro.html#write-a-professional-email",
     "title": "1  Uses",
     "section": "1.15 Write a professional email",
-    "text": "1.15 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `[insert email content here]`"
+    "text": "1.15 Write a professional email\nProvide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.\nPlease update the following email to ensure it is business \nprofessional: `insert email content here`"
   },
   {
     "objectID": "intro.html#naming-things",
     "href": "intro.html#naming-things",
     "title": "1  Uses",
     "section": "1.16 Naming things",
-    "text": "1.16 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names."
+    "text": "1.16 Naming things\n\nThere are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton\n\nWell, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.\nGive me 5 possible names for an function that creates a \nhex sticker from a reference image. Use snake case \nfor the names. Keep it at three words max.\ncreate_hex_sticker\ngenerate_hex_sticker\nmake_hex_sticker\nbuild_hex_sticker\ndesign_hex_sticker"
   },
   {
     "objectID": "intro.html#generate-art-for-a-logo",
