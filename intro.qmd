@@ -243,7 +243,9 @@ stringr::str_view(words, "^[^aeiou]+$")
 ```
 
 ```markdown
-The code uses the stringr package in R to find and display non-vowel words in the words string. It uses str_view function to visually highlight (view) the non-vowel words that match the regex pattern "^[^aeiou]+$". The regex pattern means it will match any string that consists entirely of characters that are not vowels (i.e., only consonants).
+The code uses the stringr package in R to find and display non-vowel words in the words string. 
+It uses str_view function to visually highlight (view) the non-vowel words that match the regex pattern "^[^aeiou]+$". 
+The regex pattern means it will match any string that consists entirely of characters that are not vowels (i.e., only consonants).
 ```
 ## Refactor code
 

@@ -1,1 +1,24 @@
 # Considerations
+
+## Personal learning
+
+AI assistants shouldn’t replace good understanding of your code and selected programming language. Developers should be aware of [common failures](https://arxiv.org/abs/2302.03494) of of systems they may be using. You should also be cautious about use of tools like [ChatGPT to avoid learning](https://youtu.be/IgxzcOugvEI?t=214).
+
+## Sensitive data and plaigarism
+
+Ensure that you don’t provide AI code assistants such as ChatGPT or Github CoPilot with sensitive code or data. There have been many cases of [employees pasting sensitive data](https://www.darkreading.com/risk/employees-feeding-sensitive-business-data-chatgpt-raising-security-fears), with some [estimates of how common this is](https://www.cyberhaven.com/blog/4-2-of-workers-have-pasted-company-data-into-chatgpt/). Consider reading the privacy policy for the AI assistant that you’re using and ensure sensitive data is kept separate from such systems. 
+
+Consider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The [story of sumplete](https://www.digitaltrends.com/gaming/sumplete-chatgpt-ai-game-design-ethics/), [numerous ongoing lawsuits](https://www.theverge.com/2022/11/8/23446821/microsoft-openai-github-copilot-class-action-lawsuit-ai-copyright-violation-training-data), and numerous [ethical issues](https://arxiv.org/abs/2305.10646); show us that these tools should used with care.
+
+## Trust by verify
+
+Just because something sounds right, doesn't mean it is right. 
+Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucaitons (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but should be an active part of it. Use unit testing and assertive programming to ensure what you get performs as expected in the cases you need to cover.
+
+## Iterate on it
+
+As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want. You might even need to start all over again. It often doesn't work on the first try. Consider changing settings for the tool you're using like temperature in ChatGPT. 
+
+## Keep it simple
+
+Break your problem into small pieces, as suggested [in Nature](https://www.nature.com/articles/d41586-023-01833-0). This is similar to the strategy you should when working on a complex project. Be a good designer and keep your prompts specific and clear. Keeping it simple is a good rule of thumb here.
