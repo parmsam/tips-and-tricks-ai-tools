@@ -13,7 +13,7 @@ Consider risk of unintentional plagiarism or copyright violation associated with
 ## Trust by verify
 
 Just because something sounds right, doesn't mean it is right. 
-Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucaitons (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but should be an active part of it. Use unit testing and assertive programming to ensure what you get performs as expected in the cases you need to cover.
+Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucinations (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but should be an active part of it. Use unit testing and assertive programming to ensure what you get performs as expected in the cases you need to cover.
 
 ## Iterate on it
 
