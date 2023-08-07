@@ -1,12 +1,14 @@
 # Considerations
 
-## Personal learning
+## Understanding
 
-AI assistants shouldn’t replace good understanding of your code and selected programming language. Developers should be aware of [common failures](https://arxiv.org/abs/2302.03494) of of systems they may be using. You should also be cautious about use of tools like [ChatGPT to avoid learning](https://youtu.be/IgxzcOugvEI?t=214).
+AI assistants shouldn’t replace good understanding of your code and selected programming language. Developers should be aware of [common failures](https://arxiv.org/abs/2302.03494) of systems they may be using. You should also be cautious about use of tools like [ChatGPT to avoid learning](https://youtu.be/IgxzcOugvEI?t=214).
 
-## Sensitive data and plaigarism
+## Sensitive data
 
 Ensure that you don’t provide AI code assistants such as ChatGPT or Github CoPilot with sensitive code or data. There have been many cases of [employees pasting sensitive data](https://www.darkreading.com/risk/employees-feeding-sensitive-business-data-chatgpt-raising-security-fears), with some [estimates of how common this is](https://www.cyberhaven.com/blog/4-2-of-workers-have-pasted-company-data-into-chatgpt/). Consider reading the privacy policy for the AI assistant that you’re using and ensure sensitive data is kept separate from such systems. 
+
+## Plagiarism
 
 Consider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The [story of sumplete](https://www.digitaltrends.com/gaming/sumplete-chatgpt-ai-game-design-ethics/), [numerous ongoing lawsuits](https://www.theverge.com/2022/11/8/23446821/microsoft-openai-github-copilot-class-action-lawsuit-ai-copyright-violation-training-data), and numerous [ethical issues](https://arxiv.org/abs/2305.10646); show us that these tools should used with care.
 
