@@ -16,5 +16,7 @@
 
 - [How to write an effective GPT-3 or GPT-4 prompt](https://zapier.com/blog/gpt-prompt/)
 
+- [Catching up on the weird world of LLMs](https://simonwillison.net/2023/Aug/3/weird-world-of-llms/)
+
 ## How ChatGPT works
 - [What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)

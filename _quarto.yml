@@ -18,7 +18,8 @@ book:
   search: true
   chapters:
     - index.qmd
-    - intro.qmd
+    # - intro.qmd
+    - uses.qmd
     - considerations.qmd
     - learn-more.qmd
     # - references.qmd

@@ -19,7 +19,7 @@ Sometimes AI tools provide incorrect answers, so it's your responsibility to che
 
 ## Iterate on it
 
-As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want. You might even need to start all over again. It often doesn't work on the first try. Consider changing settings for the tool you're using like temperature in ChatGPT. 
+As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want. You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like temperature in ChatGPT. 
 
 ## Keep it simple
 
