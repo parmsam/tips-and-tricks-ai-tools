@@ -3,3 +3,25 @@
 This chapter provides an overview of AI assistance tools.
 
 ## Overview
+
+### ChatGPT
+
+[ChatGPT](https://chat.openai.com/)
+
+### DALLE 2
+
+[DALLE 2](https://openai.com/dall-e-2)
+
+### Bard
+
+[Bard](https://bard.google.com/)
+
+### Llama 2
+
+[Llama 2](https://ai.meta.com/llama/)
+
+### Github Copilot
+
+[Github Copilot](https://github.com/features/copilot)
+
+
