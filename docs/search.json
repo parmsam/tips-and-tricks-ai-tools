@@ -158,14 +158,14 @@
     "href": "considerations.html#iterate-on-it",
     "title": "2  Considerations",
     "section": "2.5 Iterate on it",
-    "text": "2.5 Iterate on it\nAs noted in Nature, Sometimes you’ll need to have a conversation with an AI tool to get what you want. You might even need to start all over again. It often doesn’t work on the first try. Try changing your approach. Consider changing settings for the tool you’re using like temperature in ChatGPT."
+    "text": "2.5 Iterate on it\nAs noted in Nature, Sometimes you’ll need to have a conversation with an AI tool to get what you want (this is out prompt chaining). You might even need to start all over again. It often doesn’t work on the first try. Try changing your approach. Consider changing settings for the tool you’re using like temperature in ChatGPT."
   },
   {
     "objectID": "considerations.html#keep-it-simple",
     "href": "considerations.html#keep-it-simple",
     "title": "2  Considerations",
-    "section": "2.6 Keep it simple",
-    "text": "2.6 Keep it simple\nBreak your problem into small pieces, as suggested in Nature. This is similar to the strategy you should when working on a complex project. Be a good designer and keep your prompts specific and clear. Keeping it simple is a good rule of thumb here."
+    "section": "2.9 Keep it simple",
+    "text": "2.9 Keep it simple\nBreak your problem into small pieces, as suggested in Nature. This is similar to the strategy you should when working on a complex project. Keeping it simple is a good rule of thumb here. Prompt chaining or chained prompting can be used to solve more complex problems."
   },
   {
     "objectID": "learn-more.html#using-github-copilot",
@@ -186,7 +186,7 @@
     "href": "learn-more.html#prompt-engineering",
     "title": "3  Learn more",
     "section": "3.3 Prompt engineering",
-    "text": "3.3 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nCatching up on the weird world of LLMs"
+    "text": "3.3 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nCatching up on the weird world of LLMs\nChatGPT Guide: Use these prompt strategies to maximize your results"
   },
   {
     "objectID": "learn-more.html#how-chatgpt-works",
@@ -347,6 +347,34 @@
     "href": "uses.html#generate-art-for-a-logo",
     "title": "1  Uses",
     "section": "1.17 Generate art for a logo",
-    "text": "1.17 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge"
+    "text": "1.17 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n Using a package from my person utility package to generate the hex sticker.\n\n\n\n\n# install.packages(\"devtools\")\ndevtools::install_github(\"parmsam/psam\")\npsam::gen_hex_sticker(\n  ref_image = \"images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png\",\n  file_name = \"images/hex2.png\",\n  pkg_name = \"bestdoge\",\n  txt_main_color = \"white\"\n)\n\n\nFigure 1.1: The best doge"
+  },
+  {
+    "objectID": "considerations.html#list-out-multiple-possibilities",
+    "href": "considerations.html#list-out-multiple-possibilities",
+    "title": "2  Considerations",
+    "section": "2.6 List out multiple possibilities",
+    "text": "2.6 List out multiple possibilities\nAsk the platform to list of multiple different options. You can specify how many results you want to be generated."
+  },
+  {
+    "objectID": "considerations.html#use-seperators",
+    "href": "considerations.html#use-seperators",
+    "title": "2  Considerations",
+    "section": "2.7 Use seperators",
+    "text": "2.7 Use seperators\nConsider using separators like quotation marks (\"\" or '') or backticks (`) to separate sections of text that should get treated differently in the prompt, as indicated from the-decoder."
+  },
+  {
+    "objectID": "considerations.html#summarize-the-conversation",
+    "href": "considerations.html#summarize-the-conversation",
+    "title": "2  Considerations",
+    "section": "2.8 Summarize the conversation",
+    "text": "2.8 Summarize the conversation\nAsk the AI tools to summarize the conversation at completion. This can help recap the tasks accomplished and reflect on what could have been done better."
+  },
+  {
+    "objectID": "considerations.html#be-specific",
+    "href": "considerations.html#be-specific",
+    "title": "2  Considerations",
+    "section": "2.10 Be specific",
+    "text": "2.10 Be specific\nBe a good designer and keep your prompts specific and clear. You can even include the response format or an example response you expect to receive."
   }
 ]

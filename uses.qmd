@@ -401,6 +401,19 @@ Ukrainian dog wearing a beret and black turtleneck
 ![cover art](images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png){width=40%}
 
 ![hex sticker](images/hex.png){width=40%}
+Using a package from my person utility package to generate the hex sticker.
+
+```{r}
+#| eval = FALSE
+# install.packages("devtools")
+devtools::install_github("parmsam/psam")
+psam::gen_hex_sticker(
+  ref_image = "images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png",
+  file_name = "images/hex2.png",
+  pkg_name = "bestdoge",
+  txt_main_color = "white"
+)
+```
 
 The best doge
 :::
