@@ -398,9 +398,13 @@ Ukrainian dog wearing a beret and black turtleneck
 ```
 ::: {#fig-doge layout-ncol=2}
 
-![cover art](images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png){width=40%}
+![cover art](images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png){width=30%}
 
-![hex sticker](images/hex.png){width=40%}
+![hex sticker](images/hex2.png){width=30%}
+
+The best doge
+:::
+
 Using a package from my person utility package to generate the hex sticker.
 
 ```{r}
@@ -414,6 +418,3 @@ psam::gen_hex_sticker(
   txt_main_color = "white"
 )
 ```
-
-The best doge
-:::

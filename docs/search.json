@@ -347,7 +347,7 @@
     "href": "uses.html#generate-art-for-a-logo",
     "title": "1  Uses",
     "section": "1.17 Generate art for a logo",
-    "text": "1.17 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n Using a package from my person utility package to generate the hex sticker.\n\n\n\n\n# install.packages(\"devtools\")\ndevtools::install_github(\"parmsam/psam\")\npsam::gen_hex_sticker(\n  ref_image = \"images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png\",\n  file_name = \"images/hex2.png\",\n  pkg_name = \"bestdoge\",\n  txt_main_color = \"white\"\n)\n\n\nFigure 1.1: The best doge"
+    "text": "1.17 Generate art for a logo\nAI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.\nUkrainian dog wearing a beret and black turtleneck\n\n\n\n\n\n\n\ncover art\n\n\n\n\n\n\n\nhex sticker\n\n\n\n\nFigure 1.1: The best doge\n\n\nUsing a package from my person utility package to generate the hex sticker.\n\n# install.packages(\"devtools\")\ndevtools::install_github(\"parmsam/psam\")\npsam::gen_hex_sticker(\n  ref_image = \"images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png\",\n  file_name = \"images/hex2.png\",\n  pkg_name = \"bestdoge\",\n  txt_main_color = \"white\"\n)"
   },
   {
     "objectID": "considerations.html#list-out-multiple-possibilities",
