@@ -151,21 +151,21 @@
     "href": "considerations.html#trust-by-verify",
     "title": "2  Considerations",
     "section": "2.4 Trust by verify",
-    "text": "2.4 Trust by verify\nJust because something sounds right, doesn’t mean it is right. Sometimes AI tools provide incorrect answers, so it’s your responsibility to check the results, as recommended in Nature. Check if there are any bugs or hallucinations (such as functions that don’t exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but should be an active part of it. Use unit testing and assertive programming to ensure what you get performs as expected in the cases you need to cover."
+    "text": "2.4 Trust by verify\nJust because something sounds right, doesn’t mean it is right. Sometimes AI tools provide incorrect answers, so it’s your responsibility to check the results, as recommended in Nature. Check if there are any bugs or hallucinations (such as functions that don’t exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and assertive programming to ensure results perform as expected in the cases you need to cover."
   },
   {
     "objectID": "considerations.html#iterate-on-it",
     "href": "considerations.html#iterate-on-it",
     "title": "2  Considerations",
     "section": "2.5 Iterate on it",
-    "text": "2.5 Iterate on it\nAs noted in Nature, Sometimes you’ll need to have a conversation with an AI tool to get what you want (this is called prompt chaining). You might even need to start all over again. It often doesn’t work on the first try. Try changing your approach. Consider changing settings for the tool you’re using like temperature in ChatGPT."
+    "text": "2.5 Iterate on it\nAs noted in Nature, Sometimes you’ll need to have a conversation with an AI tool to get what you want (this is called prompt chaining). You might even need to start all over again. It often doesn’t work on the first try. Try changing your approach. Consider changing settings for the tool you’re using like temperature in ChatGPT. Try using different tools."
   },
   {
     "objectID": "considerations.html#keep-it-simple",
     "href": "considerations.html#keep-it-simple",
     "title": "2  Considerations",
     "section": "2.9 Keep it simple",
-    "text": "2.9 Keep it simple\nBreak your problem into small pieces, as suggested in Nature. This is similar to the strategy you should when working on a complex project. Keeping it simple is a good rule of thumb here. As mentioned before, prompt chaining or chained prompting can be used to solve more complex problems."
+    "text": "2.9 Keep it simple\nBreak your problem into small pieces or tasks, as suggested in Nature. This is similar to the strategy you should use when working on any complex project. Keeping it simple is a good rule of thumb here. As mentioned before, prompt chaining or chained prompting can be used to solve more complex problems."
   },
   {
     "objectID": "learn-more.html#using-github-copilot",
@@ -207,7 +207,7 @@
     "href": "considerations.html#plagiarism",
     "title": "2  Considerations",
     "section": "2.3 Plagiarism",
-    "text": "2.3 Plagiarism\nConsider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The story of sumplete, numerous ongoing lawsuits, and numerous ethical issues; show us that these tools should used with care."
+    "text": "2.3 Plagiarism\nConsider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The story of sumplete, numerous ongoing lawsuits, and numerous ethical issues show us that these tools should used with care."
   },
   {
     "objectID": "considerations.html#learning",
@@ -354,7 +354,7 @@
     "href": "considerations.html#list-out-multiple-possibilities",
     "title": "2  Considerations",
     "section": "2.6 List out multiple possibilities",
-    "text": "2.6 List out multiple possibilities\nAsk the platform to list of multiple different options. You can specify how many results you want to be generated."
+    "text": "2.6 List out multiple possibilities\nAsk the platform to list out multiple different options. You can specify how many results you want to be generated. You can serve as the curator deciding what is useful vs. throwaway information."
   },
   {
     "objectID": "considerations.html#use-seperators",

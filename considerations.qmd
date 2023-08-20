@@ -10,19 +10,19 @@ Ensure that you don't provide AI code assistants such as ChatGPT or Github CoPil
 
 ## Plagiarism
 
-Consider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The [story of sumplete](https://www.digitaltrends.com/gaming/sumplete-chatgpt-ai-game-design-ethics/), [numerous ongoing lawsuits](https://www.theverge.com/2022/11/8/23446821/microsoft-openai-github-copilot-class-action-lawsuit-ai-copyright-violation-training-data), and numerous [ethical issues](https://arxiv.org/abs/2305.10646); show us that these tools should used with care.
+Consider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The [story of sumplete](https://www.digitaltrends.com/gaming/sumplete-chatgpt-ai-game-design-ethics/), [numerous ongoing lawsuits](https://www.theverge.com/2022/11/8/23446821/microsoft-openai-github-copilot-class-action-lawsuit-ai-copyright-violation-training-data), and numerous [ethical issues](https://arxiv.org/abs/2305.10646) show us that these tools should used with care.
 
 ## Trust by verify
 
-Just because something sounds right, doesn't mean it is right. Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucinations (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but should be an active part of it. Use unit testing and assertive programming to ensure what you get performs as expected in the cases you need to cover.
+Just because something sounds right, doesn't mean it is right. Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucinations (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and assertive programming to ensure results perform as expected in the cases you need to cover.
 
 ## Iterate on it
 
-As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like temperature in ChatGPT.
+As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like temperature in ChatGPT. Try using different tools.
 
 ## List out multiple possibilities
 
-Ask the platform to list of multiple different options. You can specify how many results you want to be generated.
+Ask the platform to list out multiple different options. You can specify how many results you want to be generated. You can serve as the curator deciding what is useful vs. throwaway information.
 
 ## Use seperators
 
@@ -34,7 +34,7 @@ Ask the AI tools to summarize the conversation at completion. This can help reca
 
 ## Keep it simple
 
-Break your problem into small pieces, as suggested [in Nature](https://www.nature.com/articles/d41586-023-01833-0). This is similar to the strategy you should when working on a complex project. Keeping it simple is a good rule of thumb here. As mentioned before, [*prompt chaining* or *chained prompting*](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai) can be used to solve more complex problems.
+Break your problem into small pieces or tasks, as suggested [in Nature](https://www.nature.com/articles/d41586-023-01833-0). This is similar to the [strategy you should use](https://www.indeed.com/career-advice/career-development/how-to-break-down-project-into-tasks) when working on any complex project. Keeping it simple is a good rule of thumb here. As mentioned before, [*prompt chaining* or *chained prompting*](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai) can be used to solve more complex problems.
 
 ## Be specific
 
