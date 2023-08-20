@@ -18,7 +18,7 @@ Just because something sounds right, doesn't mean it is right. Sometimes AI tool
 
 ## Iterate on it
 
-As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is out [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like temperature in ChatGPT.
+As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like temperature in ChatGPT.
 
 ## List out multiple possibilities
 
@@ -34,7 +34,7 @@ Ask the AI tools to summarize the conversation at completion. This can help reca
 
 ## Keep it simple
 
-Break your problem into small pieces, as suggested [in Nature](https://www.nature.com/articles/d41586-023-01833-0). This is similar to the strategy you should when working on a complex project. Keeping it simple is a good rule of thumb here. [*Prompt chaining* or *chained prompting*](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai) can be used to solve more complex problems.
+Break your problem into small pieces, as suggested [in Nature](https://www.nature.com/articles/d41586-023-01833-0). This is similar to the strategy you should when working on a complex project. Keeping it simple is a good rule of thumb here. As mentioned before, [*prompt chaining* or *chained prompting*](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai) can be used to solve more complex problems.
 
 ## Be specific
 
