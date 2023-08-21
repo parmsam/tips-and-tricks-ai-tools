@@ -375,6 +375,6 @@
     "href": "considerations.html#be-specific",
     "title": "2  Considerations",
     "section": "2.10 Be specific",
-    "text": "2.10 Be specific\nBe a good designer and keep your prompts specific and clear. You can even include the response format or an example response you expect to receive."
+    "text": "2.10 Be specific\nBe a good designer and keep your prompts specific and clear. As part of that, you can include the response format or an example response you expect to receive. You could add a word limit or readability level (keep responses at a middle school level for example). You could mention the target audience, desired tone, or a persona the tool should adopt. There are a lot of these different response settings you can define to mold the responses. Some experimentation is required here, but that’s the fun part."
   }
 ]
