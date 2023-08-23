@@ -1,27 +1,27 @@
 # Intro
 
-This chapter provides an overview of AI assistance tools.
+This chapter provides an overview to commonly used AI assistance tools.
 
-## Overview
+## ChatGPT
 
-### ChatGPT
+[ChatGPT](https://chat.openai.com/) is a large language model chatbot developed by OpenAI. It can be used for a variety of tasks, such as generating text, translating languages, and writing different kinds of creative content. ChatGPT is still under development, but it has learned to perform many kinds of tasks, including 
 
-[ChatGPT](https://chat.openai.com/)
+- Following instructions and completing requests thoughtfully.
 
-### DALLE 2
+- Using its knowledge to answer questions in an informative way, even if they are open ended, challenging, or strange.
 
-[DALLE 2](https://openai.com/dall-e-2)
+- Generating different creative text formats of text content, like poems, code, scripts, musical pieces, email, letters, etc.
 
-### Bard
+## DALLE 2
 
-[Bard](https://bard.google.com/)
+[DALLE 2](https://openai.com/dall-e-2) is a text-to-image diffusion model developed by OpenAI. It can be used to create realistic images from text descriptions. DALLE 2 is still under development, but it has been shown to be able to create high-quality images of a variety of objects and scenes.
 
-### Llama 2
+## Bard
 
-[Llama 2](https://ai.meta.com/llama/)
+[Bard](https://bard.google.com/) is a large language model chatbot developed by Google AI. It is a powerful tool that can be used for a variety of tasks, including generating text, translating languages, and writing different kinds of creative content. Bard is still under development, but it has learned to perform many kinds of tasks with a high degree of accuracy and fluency.
 
-### Github Copilot
+## Github Copilot
 
-[Github Copilot](https://github.com/features/copilot)
+[Github Copilot](https://github.com/features/copilot) is a code completion tool developed by GitHub and OpenAI. It uses a large language model to suggest code completions as a user types. GitHub Copilot is still under development, but it has been shown to be able to suggest accurate and relevant code completions for a variety of programming languages.
 
-
+These are just a few of the many AI assistance tools that are available. As AI technology continues to develop, we can expect to see even more powerful and sophisticated tools that can help developers with a variety of tasks.
