@@ -1,6 +1,6 @@
 # Intro
 
-This chapter provides an overview to commonly used AI assistance tools.
+This chapter provides an overview of commonly used AI assistance tools.
 
 ## ChatGPT
 
