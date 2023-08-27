@@ -25,6 +25,11 @@ When we list prices, we often write the dollar sign at the end (especially in so
 Alphabetical Order:
 In terms of alphabetical order, Carat comes before Dollar. This can be associated with the order in a line: Carat (^) represents the start (before), and Dollar ($) represents the end (after).
 ```
+
+## Notetaking
+
+Markdown files are a useful file format for notetaking. They're text files so they can be easily version controlled and shared. I personally love the [Obsidian flavor of Markdown](https://www.markdownguide.org/tools/obsidian/). What's nice about the format is that you can [link notes together](https://help.obsidian.md/Getting+started/Link+notes) and gain access to a large library of open-source [community plugins](https://obsidian.md/plugins). The key here is that you can also open the file format in [VS Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) and activate Github Copilot as a notetaking assistant This is very useful for  autocompleting, rewriting, or summarizing notes. Alternatively, [Microsoft 365 Copilot in OneNote](https://www.theverge.com/2023/4/6/23672357/microsoft-onenote-copilot-ai-feature) can serve a similar role.
+
 ## Transforming information
 
 Summarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.
