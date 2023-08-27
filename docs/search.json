@@ -186,7 +186,7 @@
     "href": "learn-more.html#prompt-engineering",
     "title": "4  Learn more",
     "section": "4.3 Prompt engineering",
-    "text": "4.3 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nCatching up on the weird world of LLMs\nChatGPT Guide: Use these prompt strategies to maximize your results"
+    "text": "4.3 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nChatGPT Guide: Use these prompt strategies to maximize your results\n\n\n4.3.1 Simon Willison’s talks on LLMs\n\nCatching up on the weird world of LLMs\nMaking Large Language Models work for you"
   },
   {
     "objectID": "learn-more.html#how-chatgpt-works",
@@ -277,7 +277,7 @@
     "href": "uses.html#explain-concepts",
     "title": "2  Uses",
     "section": "2.8 Explain concepts",
-    "text": "2.8 Explain concepts\nAsk to explain a new concept you are learning in a format of interest or style of interest. This is useful when there’s a lot of technical jargon you don’t understand in a piece of text.\nExplain how programmers typically use regular expressions. \nGive me a few  situations where it might be applied. \nExplain this to me in the style of Robert Dinero and keep it short.\nHey, you talkin' to me? Alright, let me break it down for you. We got these things called regular expressions, or regex for short. Think of them like a matchmaker for data. Programmers use 'em to find, replace, or manipulate strings of text in data, you follow? \n\nNow, I'm talking about situations like validating input fields. Yeah, like checking if an email address or phone number entered by a user is legit. Or let's say you got a huge text file, a real tome, and you need to find specific patterns or keywords in there, that's when regex comes in handy. \n\nAlso, consider renaming a bulk of files, or parsing logs. Big headache, right? Not with regex, it's a piece of cake. These things are versatile, you get me? So next time you got a mountain of data to deal with, remember regular expressions, capisce?"
+    "text": "2.8 Explain concepts\nAsk to explain a new concept you are learning in a format of interest or style of interest. This is useful when there’s a lot of technical jargon or acronyms you don’t understand in a piece of text.\nExplain how programmers typically use regular expressions. \nGive me a few  situations where it might be applied. \nExplain this to me in the style of Robert Dinero and keep it short.\nHey, you talkin' to me? Alright, let me break it down for you. We got these things called regular expressions, or regex for short. Think of them like a matchmaker for data. Programmers use 'em to find, replace, or manipulate strings of text in data, you follow? \n\nNow, I'm talking about situations like validating input fields. Yeah, like checking if an email address or phone number entered by a user is legit. Or let's say you got a huge text file, a real tome, and you need to find specific patterns or keywords in there, that's when regex comes in handy. \n\nAlso, consider renaming a bulk of files, or parsing logs. Big headache, right? Not with regex, it's a piece of cake. These things are versatile, you get me? So next time you got a mountain of data to deal with, remember regular expressions, capisce?"
   },
   {
     "objectID": "uses.html#write-code",
@@ -425,5 +425,26 @@
     "title": "2  Uses",
     "section": "2.2 Notetaking",
     "text": "2.2 Notetaking\nMarkdown files are a useful file format for notetaking. They’re text files so they can be easily version controlled and shared. I personally love the Obsidian flavor of Markdown. What’s nice about the format is that you can link notes together and gain access to a large library of open-source community plugins. The key here is that you can also open the file format in VS Code and activate Github Copilot as a notetaking assistant This is very useful for autocompleting, rewriting, or summarizing notes. Alternatively, Microsoft 365 Copilot in OneNote can serve a similar role."
+  },
+  {
+    "objectID": "considerations.html#be-aware-of-limitations",
+    "href": "considerations.html#be-aware-of-limitations",
+    "title": "3  Considerations",
+    "section": "3.11 Be aware of limitations",
+    "text": "3.11 Be aware of limitations\nYou should consider the training cutt-off dates for the LLM models that you are using. The training cutoff date for OpenAI’s GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results. Other platforms like Bing and Bard can have more recent results since they can search the internet."
+  },
+  {
+    "objectID": "considerations.html#follow-simon-willisons",
+    "href": "considerations.html#follow-simon-willisons",
+    "title": "3  Considerations",
+    "section": "3.12 Follow Simon Willison’s",
+    "text": "3.12 Follow Simon Willison’s"
+  },
+  {
+    "objectID": "considerations.html#adhere-to-simon-willisons-personal-ai-ethics",
+    "href": "considerations.html#adhere-to-simon-willisons-personal-ai-ethics",
+    "title": "3  Considerations",
+    "section": "3.12 Adhere to Simon Willison’s Personal AI Ethics",
+    "text": "3.12 Adhere to Simon Willison’s Personal AI Ethics\nSimon Willison had a great talk in August 2023 on Making Large Language Models work for you. In the talk, he shared his personal AI ethical guidelines which included the following (watch the talk to learn why):\n\nDon’t publish anything that will take someone longer to read than it took you to write.\nNever commit code you can’t understand and explain every line of.\nShare your prompts and help spread knowledge of how to use these tools\nBe aware of the harm of these AI tools to believable mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The response are way better, safer, and more entertaining."
   }
 ]

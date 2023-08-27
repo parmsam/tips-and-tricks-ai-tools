@@ -175,7 +175,7 @@ flights |>
 ```
 ## Explain concepts
 
-Ask to explain a new concept you are learning in a format of interest or style of interest. This is useful when there's a lot of technical jargon you don't understand in a piece of text.
+Ask to explain a new concept you are learning in a format of interest or style of interest. This is useful when there's a lot of technical jargon or acronyms you don't understand in a piece of text.
 
 ```markdown
 Explain how programmers typically use regular expressions. 

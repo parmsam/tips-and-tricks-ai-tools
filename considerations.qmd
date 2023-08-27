@@ -39,3 +39,19 @@ Break your problem into small pieces or tasks, as suggested [in Nature](https://
 ## Be specific
 
 Be a good designer and keep your prompts specific and clear. As part of that, you can include the response format or an example response you expect to receive. You could add a word limit or readability level (keep responses at a middle school level for example). You could mention the target audience, desired tone, or a [persona](https://www.howtogeek.com/881659/how-to-create-chatgpt-personas-for-every-occasion/) the tool should adopt. There are a lot of these different *response settings* you can define to mold the responses. Some experimentation is required here, but that's the fun part.
+
+## Be aware of limitations
+
+You should consider the training cutt-off dates for the LLM models that you are using. The training cutoff date for OpenAI's GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results. Other platforms like Bing and Bard can have more recent results since they can search the internet.
+
+## Adhere to Simon Willison's Personal AI Ethics
+
+Simon Willison had a great talk in August 2023 on [Making Large Language Models work for you](https://simonwillison.net/2023/Aug/27/wordcamp-llms/). In the talk, he shared his personal AI ethical guidelines which included the following (watch [the talk](https://www.youtube.com/watch?v=LpDulftMkew&t=29900s&ab_channel=WordPress) to learn why):
+
+- Don't publish anything that will take someone longer to read than it took you to write. 
+- Never commit code you can't understand and explain every line of.
+- Share your prompts and help spread knowledge of how to use these tools
+- Be aware of the harm of these AI tools to believable mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The response are way better, safer, and more entertaining.
+
+
+
