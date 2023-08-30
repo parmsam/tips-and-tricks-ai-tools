@@ -6,11 +6,11 @@ This chapter provides an overview of commonly used AI assistance tools.
 
 [ChatGPT](https://chat.openai.com/) is a large language model chatbot developed by OpenAI. It can be used for a variety of tasks, such as generating text, translating languages, and writing different kinds of creative content. ChatGPT is still under development, but it has learned to perform many kinds of tasks, including 
 
-- Following instructions and completing requests thoughtfully.
+- Following instructions and completing requests
 
-- Using its knowledge to answer questions in an informative way, even if they are open ended, challenging, or strange.
+- Answering questions in an informative way, even if they are open ended, challenging, or strange.
 
-- Generating different creative text formats of text content, like poems, code, scripts, musical pieces, email, letters, etc.
+- Generating different creative text formats of text content, like poems, code, scripts, emails, or letters
 
 ## DALLE 2
 
@@ -22,6 +22,8 @@ This chapter provides an overview of commonly used AI assistance tools.
 
 ## Github Copilot
 
-[Github Copilot](https://github.com/features/copilot) is a code completion tool developed by GitHub and OpenAI. It uses a large language model to suggest code completions as a user types. GitHub Copilot is still under development, but it has been shown to be able to suggest accurate and relevant code completions for a variety of programming languages.
+[Github Copilot](https://github.com/features/copilot) is a code completion tool developed by GitHub and OpenAI. It uses a large language model to suggest code completions as a user types. GitHub Copilot is still under development, but it has been shown to be able to suggest accurate and relevant code completions for a variety of programming languages. It works with code editors such as [VSCode](https://en.wikipedia.org/wiki/Visual_Studio_Code) and [Jetbrains IDEs](https://en.wikipedia.org/wiki/JetBrains).
+
+## Summary
 
 These are just a few of the many AI assistance tools that are available. As AI technology continues to develop, we can expect to see even more powerful and sophisticated tools that can help developers with a variety of tasks.

@@ -10,15 +10,15 @@ Ensure that you don't provide AI code assistants such as ChatGPT or Github CoPil
 
 ## Plagiarism
 
-Consider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The [story of sumplete](https://www.digitaltrends.com/gaming/sumplete-chatgpt-ai-game-design-ethics/), [numerous ongoing lawsuits](https://www.theverge.com/2022/11/8/23446821/microsoft-openai-github-copilot-class-action-lawsuit-ai-copyright-violation-training-data), and numerous [ethical issues](https://arxiv.org/abs/2305.10646) show us that these tools should used with care.
+Consider risk of unintentional plagiarism or copyright violation associated with overuse of tools like ChatGPT. The [story of sumplete](https://www.digitaltrends.com/gaming/sumplete-chatgpt-ai-game-design-ethics/), [numerous ongoing lawsuits](https://www.theverge.com/2022/11/8/23446821/microsoft-openai-github-copilot-class-action-lawsuit-ai-copyright-violation-training-data), and numerous [ethical issues](https://arxiv.org/abs/2305.10646) show us that these tools should be used with care.
 
 ## Trust by verify
 
-Just because something sounds right, doesn't mean it is right. Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucinations (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and assertive programming to ensure results perform as expected in the cases you need to cover.
+Just because something sounds right, doesn't mean it's right. Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucinations (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and assertive programming to ensure results perform as expected in the cases you need to cover.
 
 ## Iterate on it
 
-As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like temperature in ChatGPT. Try using different tools.
+As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like [temperature in ChatGPT](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/#:~:text=particular%20so%2Dcalled%20%E2%80%9C-,temperature,-%E2%80%9D%20parameter%20that%20determines). Try using different tools.
 
 ## List out multiple possibilities
 
@@ -26,7 +26,7 @@ Ask the platform to list out multiple different options. You can specify how man
 
 ## Use seperators
 
-Consider using separators like quotation marks (`""` or `''`) or backticks (\`) to separate sections of text that should get treated differently in the prompt, as indicated from [the-decoder](https://the-decoder.com/chatgpt-guide-prompt-strategies/).
+Consider using separators like quotation marks (`""` or `''`) or backticks (\`\`) to separate sections of text that should get treated differently in the prompt, as indicated from [the-decoder](https://the-decoder.com/chatgpt-guide-prompt-strategies/).
 
 ## Summarize the conversation
 
@@ -51,7 +51,8 @@ Simon Willison had a great talk in August 2023 on [Making Large Language Models 
 - Don't publish anything that will take someone longer to read than it took you to write. 
 - Never commit code you can't understand and explain every line of.
 - Share your prompts and help spread knowledge of how to use these tools
-- Be aware of the harm of these AI tools to believable mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The responses are way better, safer, and more entertaining.
+- Be aware of the harm of these AI tools to believably mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The responses are safer, more entertaining, and stick better.
 
+## Summary
 
-
+In this chapter, you explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you'll be able to use these principles to more safely use AI assistance tools.
