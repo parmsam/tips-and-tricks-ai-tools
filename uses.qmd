@@ -2,7 +2,7 @@
 
 ## Memory aid
 
-Obtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.
+Obtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace. This can be helpful when you need to remember new programming concepts so you can code faster.
 
 ``` markdown
 Give me a list of 5 memory devices to remember
@@ -96,7 +96,7 @@ graph TD
 
 ## Add emojis as visual aids into text
 
-Ask the AI tool to include relevant emojis within the requested content. These emojis can serve as nice visual aids to written content like notes.
+Ask the AI tool to include relevant emojis within the requested content. These emojis can serve as nice visual aids to written content like notes or documentation.
 
 ```markdown
 Steps to make a PBJ sandwich. 
@@ -423,3 +423,7 @@ psam::gen_hex_sticker(
   txt_main_color = "white"
 )
 ```
+
+## Summary
+
+In this chapter, we explored a bunch of ways to use AI tools to help you learn, create, and share. You learned that these tools can help you name things, write code, and even generate art. The key is to be creative and think outside the box. Combine ideas from this chapter or other materials to create your own unique workflows. Most importantly, be sure to read and verify the output from these tools. I hope you found this post useful and that it inspires you to try out some of these ideas.

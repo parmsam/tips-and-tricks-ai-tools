@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "AI Assistants Maximized",
     "section": "",
-    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E It collects different use cases that I’ve run into as a programmer. Example prompts are also provided with a few of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github."
+    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E It collects different use cases that I’ve run into as a programmer. Example prompts are also provided with most of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code also available on Github."
   },
   {
     "objectID": "index.html#prerequisites",
     "href": "index.html#prerequisites",
     "title": "AI Assistants Maximized",
     "section": "Prerequisites",
-    "text": "Prerequisites\nThe book assumes you already have access to one more of the already specified AI tools or a variant of them."
+    "text": "Prerequisites\nThe book assumes you already have access to one or more of the already specified AI tools or a variant of them."
   },
   {
     "objectID": "intro.html#memory-aid",
@@ -235,7 +235,7 @@
     "href": "uses.html#memory-aid",
     "title": "2  Uses",
     "section": "2.1 Memory aid",
-    "text": "2.1 Memory aid\nObtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace.\nGive me a list of 5 memory devices to remember\n$ vs ^ in regular expressions\nDollar Sign \"Catcher\":\nRemember that the dollar sign ($) catches the end of the line in regular expressions. \"Catcher\" and \"end\" both have the letter \"E\" in them, which can help you remember.\n\n\"Carat Starts\":\nThe carat symbol (^) resembles an upward-pointing arrow, pointing to the start of the line. It's like an arrow showing you the way to the beginning of the line.\n\nCarat to Ceiling, Dollar to Down:\nAssociate the shape of the ^ (caret) to ceiling and $ (dollar) to down or the floor. This way you remember the caret matches the start (top/ceiling) and the dollar matches the end (bottom/down).\n\n\"$\" at the End of a Price:\nWhen we list prices, we often write the dollar sign at the end (especially in some non-English-speaking countries). So, the dollar sign can remind you of the end of the line.\n\nAlphabetical Order:\nIn terms of alphabetical order, Carat comes before Dollar. This can be associated with the order in a line: Carat (^) represents the start (before), and Dollar ($) represents the end (after)."
+    "text": "2.1 Memory aid\nObtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace. This can be helpful when you need to remember new programming concepts so you can code faster.\nGive me a list of 5 memory devices to remember\n$ vs ^ in regular expressions\nDollar Sign \"Catcher\":\nRemember that the dollar sign ($) catches the end of the line in regular expressions. \"Catcher\" and \"end\" both have the letter \"E\" in them, which can help you remember.\n\n\"Carat Starts\":\nThe carat symbol (^) resembles an upward-pointing arrow, pointing to the start of the line. It's like an arrow showing you the way to the beginning of the line.\n\nCarat to Ceiling, Dollar to Down:\nAssociate the shape of the ^ (caret) to ceiling and $ (dollar) to down or the floor. This way you remember the caret matches the start (top/ceiling) and the dollar matches the end (bottom/down).\n\n\"$\" at the End of a Price:\nWhen we list prices, we often write the dollar sign at the end (especially in some non-English-speaking countries). So, the dollar sign can remind you of the end of the line.\n\nAlphabetical Order:\nIn terms of alphabetical order, Carat comes before Dollar. This can be associated with the order in a line: Carat (^) represents the start (before), and Dollar ($) represents the end (after)."
   },
   {
     "objectID": "uses.html#transforming-information",
@@ -249,7 +249,7 @@
     "href": "uses.html#add-emojis-as-visual-aids-into-text",
     "title": "2  Uses",
     "section": "2.4 Add emojis as visual aids into text",
-    "text": "2.4 Add emojis as visual aids into text\nAsk the AI tool to include relevant emojis within the requested content. These emojis can serve as nice visual aids to written content like notes.\nSteps to make a PBJ sandwich. \nAdd helpful emojis into steps. \n\nSure, here are the steps to make a PBJ sandwich with emojis:\n\n1. 🥪 Gather your supplies: two slices of bread, peanut butter, jelly, and a knife. 🍞\n2. 🥜 Spread peanut butter on one slice of bread. 🥪\n3. 🥜 Wash the knife. 🧼\n4. 🍓 Spread jelly on the other slice of bread. 🥪\n5. 🥪 Put the two slices of bread together, peanut butter and jelly sides facing each other. 🥪\n6. ✂️ Cut the sandwich in half. 🥪\n7. 🥪 Enjoy! 😋"
+    "text": "2.4 Add emojis as visual aids into text\nAsk the AI tool to include relevant emojis within the requested content. These emojis can serve as nice visual aids to written content like notes or documentation.\nSteps to make a PBJ sandwich. \nAdd helpful emojis into steps. \n\nSure, here are the steps to make a PBJ sandwich with emojis:\n\n1. 🥪 Gather your supplies: two slices of bread, peanut butter, jelly, and a knife. 🍞\n2. 🥜 Spread peanut butter on one slice of bread. 🥪\n3. 🥜 Wash the knife. 🧼\n4. 🍓 Spread jelly on the other slice of bread. 🥪\n5. 🥪 Put the two slices of bread together, peanut butter and jelly sides facing each other. 🥪\n6. ✂️ Cut the sandwich in half. 🥪\n7. 🥪 Enjoy! 😋"
   },
   {
     "objectID": "uses.html#unit-testing",
@@ -417,7 +417,7 @@
     "href": "intro.html#github-copilot",
     "title": "1  Intro",
     "section": "1.4 Github Copilot",
-    "text": "1.4 Github Copilot\nGithub Copilot is a code completion tool developed by GitHub and OpenAI. It uses a large language model to suggest code completions as a user types. GitHub Copilot is still under development, but it has been shown to be able to suggest accurate and relevant code completions for a variety of programming languages.\nThese are just a few of the many AI assistance tools that are available. As AI technology continues to develop, we can expect to see even more powerful and sophisticated tools that can help developers with a variety of tasks."
+    "text": "1.4 Github Copilot\nGithub Copilot is a code completion tool developed by GitHub and OpenAI. It uses a large language model to suggest code completions as a user types. GitHub Copilot is still under development, but it has been shown to be able to suggest accurate and relevant code completions for a variety of programming languages. It works with code editors such as VSCode and Jetbrains IDEs."
   },
   {
     "objectID": "uses.html#notetaking",
@@ -446,5 +446,54 @@
     "title": "3  Considerations",
     "section": "3.12 Adhere to Simon Willison’s Personal AI Ethics",
     "text": "3.12 Adhere to Simon Willison’s Personal AI Ethics\nSimon Willison had a great talk in August 2023 on Making Large Language Models work for you. In the talk, he shared his personal AI ethical guidelines which included the following (watch the talk to learn why):\n\nDon’t publish anything that will take someone longer to read than it took you to write.\nNever commit code you can’t understand and explain every line of.\nShare your prompts and help spread knowledge of how to use these tools\nBe aware of the harm of these AI tools to believable mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The responses are way better, safer, and more entertaining."
+  },
+  {
+    "objectID": "intro.html#conclusion",
+    "href": "intro.html#conclusion",
+    "title": "1  Intro",
+    "section": "1.5 Conclusion",
+    "text": "1.5 Conclusion\nThese are just a few of the many AI assistance tools that are available. As AI technology continues to develop, we can expect to see even more powerful and sophisticated tools that can help developers with a variety of tasks."
+  },
+  {
+    "objectID": "considerations.html#conclusion",
+    "href": "considerations.html#conclusion",
+    "title": "3  Considerations",
+    "section": "3.13 Conclusion",
+    "text": "3.13 Conclusion\nThis is a living document. Please feel free to submit a pull request to add to this list of considerations. I hope this helps you get started with AI code assistants. I’m excited to see what you build with them."
+  },
+  {
+    "objectID": "uses.html#summary",
+    "href": "uses.html#summary",
+    "title": "2  Uses",
+    "section": "2.19 Summary",
+    "text": "2.19 Summary\nIn this chapter, we explored a bunch of ways to use AI tools to help you learn, create, and share. You learned that these tools can help you name things, write code, and even generate art. The key is to be creative and think outside the box. Combine ideas from this chapter or other materials to create your own unique workflows. Most importantly, be sure to read and verify the output from these tools. I hope you found this post useful and that it inspires you to try out some of these ideas."
+  },
+  {
+    "objectID": "uses.html",
+    "href": "uses.html",
+    "title": "2  Uses",
+    "section": "",
+    "text": "3 Summary\nIn this chapter, we explored a bunch of ways to use AI tools to help you learn, create, and share. The key is to be creative and think outside the box. Combine ideas from this chapter or other materials to create your own unique workflows. I hope you found this post useful and that it inspires you to try out some of these ideas. If you have any other ideas, please share them via an issue or pull request."
+  },
+  {
+    "objectID": "considerations.html",
+    "href": "considerations.html",
+    "title": "3  Considerations",
+    "section": "",
+    "text": "4 Summary\nIn this chapter, you learned about a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful ideas. I hope you found this chapter helpful and that you’ll be able to use these concepts to help you more safely use AI assistance tools."
+  },
+  {
+    "objectID": "considerations.html#summary",
+    "href": "considerations.html#summary",
+    "title": "3  Considerations",
+    "section": "3.13 Summary",
+    "text": "3.13 Summary\nIn this chapter, you explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you’ll be able to use these principles to more safely use AI assistance tools."
+  },
+  {
+    "objectID": "index.html#contributing",
+    "href": "index.html#contributing",
+    "title": "AI Assistants Maximized",
+    "section": "Contributing",
+    "text": "Contributing\nIf you have any suggestions please feel free to open an issue or pull requests on Github."
   }
 ]
