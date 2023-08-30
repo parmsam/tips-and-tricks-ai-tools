@@ -55,4 +55,4 @@ Simon Willison had a great talk in August 2023 on [Making Large Language Models 
 
 ## Summary
 
-In this chapter, you explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you'll be able to use these principles to more safely use AI assistance tools.
+In this chapter, we explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you'll be able to use these principles to more safely use AI assistance tools.
