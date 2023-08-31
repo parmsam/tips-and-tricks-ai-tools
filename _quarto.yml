@@ -6,7 +6,7 @@ book:
   title: "AI Assistants Maximized"
   subtitle: "Tips and Tricks for Programmers"
   author: "Sam Parmar"
-  reader-mode: true
+  reader-mode: false
   page-footer:
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>
@@ -16,6 +16,7 @@ book:
   repo-actions: [edit, issue]
   sharing: [twitter, facebook]
   search: true
+  page-navigation: true
   chapters:
     - index.qmd
     - intro.qmd
@@ -34,6 +35,7 @@ format:
     theme:
       light: cosmo
       dark: [cosmo, theme-dark.scss]
+    code-link: true
 
 code-copy: true
 

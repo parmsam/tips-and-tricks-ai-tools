@@ -120,8 +120,35 @@ Sure, here are the steps to make a PBJ sandwich with emojis:
 Provide function(s) in your prompt and ask for unit tests. This is useful for package development or data analyses involving custom functions.
 
 ```markdown
-Give me few unit tests for the following R function using 
-the testthat package: `insert function here`
+Give me unit tests for the following R function using 
+the testthat package: 
+`
+is_over_9000 <- function(x){
+  stopifnot(is.numeric(x))
+  x > 9000
+}
+`
+```
+
+```{r}
+#| eval: FALSE
+is_over_9000 <- function(x){
+  stopifnot(is.numeric(x))
+  x > 9000
+}
+library(testthat)
+test_that("is_over_9000 works correctly", {
+  # Test case 1: x > 9000
+  expect_true(is_over_9000(9001))
+  # Test case 2: x <= 9000
+  expect_false(is_over_9000(9000))
+  expect_false(is_over_9000(1))
+  expect_false(is_over_9000(-9001))
+  # Test case 3: x is not numeric
+  expect_error(is_over_9000("not_a_number"))
+  expect_error(is_over_9000(NULL))
+  expect_error(is_over_9000(c(1, "a")))
+})
 ```
 
 ## Regular expressions
@@ -161,7 +188,10 @@ flights |>
   arrange(desc(speed))
 ```
 
-```markdown
+```{r}
+#| eval: FALSE
+library(nycflights13)
+library(dplyr)
 # Pipe operator (|>) is used to chain functions together for data manipulation.
 # Filter rows where the 'dest' column is equal to "IAH".
 flights |> 
@@ -201,7 +231,8 @@ Set the element names as the csv file names.
 Note that I dont want to change the working directory and dont want to set the element names at the full file paths.
 ```
 
-```markdown
+```{r}
+#| eval: FALSE
 # Load required libraries
 library(readr)
 library(purrr)
@@ -218,6 +249,7 @@ csv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))
 # Now, csv_data_list is a named list where each element contains the data from the corresponding CSV file.
 # The names of the elements are set to the CSV file names without the full file paths.
 ```
+
 ## Debug code
 
 Get help to identify, understand, or fix problems in your code. Here it helps to define expectations.  
@@ -230,7 +262,8 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) %>%
   geom_point(aes(color = species, shape = island))
 ```
 
-```markdown
+```{r}
+#| warning: FALSE
 library(ggplot2)
 library(palmerpenguins)
 
@@ -266,7 +299,8 @@ for (i in 1:length(x)) {
 }
 output_vector
 ```
-```markdown
+```{r}
+#| eval: FALSE
 x <- 1:5
 y <- 10:15
 output_vector <- x + y
@@ -371,7 +405,39 @@ Provide an informal email or message to the AI tool and ask the tool to make it 
 
 ```markdown 
 Please update the following email to ensure it is business 
-professional: `insert email content here`
+professional: 
+`
+Subject: Hey! Long Time No Talk!
+
+Hey [Friend's Name],
+
+How've you been? It feels like ages since we caught up. How's everything on your end?
+
+Let's grab coffee sometime soon. I miss our chats!
+
+Take care,
+[Your Name]
+
+Feel free to adapt it as you see fit!
+`
+```
+
+```markdown
+Subject: Reconnecting to Discuss Ongoing Projects and Industry Developments
+
+Dear [Colleague's Name],
+
+I hope this email finds you well. It has been some time since we last connected, and I am eager to catch up on your recent accomplishments and the progress of your ongoing projects.
+
+Would you be interested in scheduling a meeting to discuss industry trends and potential collaborative opportunities? A coffee catch-up would be an excellent way to facilitate this discussion.
+
+Please let me know your availability for the coming weeks, and I would be happy to coordinate a meeting accordingly.
+
+Thank you for your time, and I look forward to reconnecting soon.
+
+Best regards,
+[Your Name]
+[Your Position]
 ```
 
 ## Naming things
@@ -416,7 +482,8 @@ Using a package from my person utility package to generate the hex sticker.
 #| eval = FALSE
 # install.packages("devtools")
 devtools::install_github("parmsam/psam")
-psam::gen_hex_sticker(
+library(psam)
+gen_hex_sticker(
   ref_image = "images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png",
   file_name = "images/hex2.png",
   pkg_name = "bestdoge",
