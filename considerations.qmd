@@ -44,7 +44,9 @@ Be a good designer and keep your prompts specific and clear. As part of that, yo
 
 You should consider the training cutoff dates for the LLM models that you are using. The training cutoff date for OpenAI's GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results. Other platforms like Bing and Bard can have more recent results since they can search the internet. 
 
-Also be aware that [many of these LLMs do not disclose](https://simonwillison.net/2023/Aug/27/wordcamp-llms/#how-they-are-trained) the training data used. This makes it unclear what it is probably good at answer and isn't good at answering out of box.
+Also be aware that [many of these LLMs do not disclose](https://simonwillison.net/2023/Aug/27/wordcamp-llms/#how-they-are-trained) the training data used. This makes it unclear what it is probably good at answer and isn't good at answering out of box. 
+
+You can augment ChatGPT via [various plugins](https://openai.com/blog/chatgpt-plugins) that are available such as one for [Wolfram Alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/) or [Wikipedia](https://diff.wikimedia.org/2023/07/13/exploring-paths-for-the-future-of-free-knowledge-new-wikipedia-chatgpt-plugin-leveraging-rich-media-social-apps-and-other-experiments/).
 
 ## Adhere to Simon Willison's Personal AI Ethics
 

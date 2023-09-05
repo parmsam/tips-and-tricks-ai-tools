@@ -334,6 +334,10 @@ if (TRUE) {
 }
 ```
 
+## Support independent replication
+
+AI assistance tools could aid validation programmers or replicators in speeding up independent replication time. This is relevant [in the pharma industry](https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Standard+Analyses+and+Code+Sharing/Best+Practices+for+Quality+Control+%26+Validation.pdf) for clinical trial reporting, but could also be useful broadly [in academia](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7403855/) for internal or external replication of code. In the future, one could imagine a code validation LLM tool that could run in parallel or as a replacement to the validation programmers. This needs to be approached with care to ensure the production and validation programmer are not using an AI assistance tool for their work which may lead to errors being missed in the validation process.
+
 ## Translate from language to language
 
 Convert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.
