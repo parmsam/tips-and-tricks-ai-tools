@@ -24,9 +24,15 @@ Check out these resources to dive deeper into the tools and tricks covered in th
 
 - [Hamel's notebooks from the deeplearning.ai course on Prompt Engineering](https://hamel.dev/notes/prompt-eng/course/)
 
+- [OpenAI Cookbook](https://github.com/openai/openai-cookbook)
+
+- [GPT Best Practices from OpenAI](https://platform.openai.com/docs/guides/gpt-best-practices)
+
 ### Videos
 
 - [Prompt Engineering Tutorial – Master ChatGPT and LLM Responses](https://www.youtube.com/watch?v=_ZvnD73m40o)
+
+- [Andrew Ng: Opportunities in AI - 2023](https://www.youtube.com/watch?v=5p248yoa3oE)
 
 ### Simon Willison's talks on LLMs
 
