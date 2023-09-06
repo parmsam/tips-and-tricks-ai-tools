@@ -1,5 +1,7 @@
 # Considerations
 
+Establishing guardrails for the effective and responsible use of AI assistance tools is essential. This section outlines key considerations, including the need to comprehend the outputs these tools generate and the significance of using separators in prompt crafting. By delving into these elements, the framework aims to equip you with the means to both optimize the utility of AI assistance tools and safeguard their ethical and precise application in diverse tasks.
+
 ## Understanding
 
 AI assistants shouldn't replace good understanding of your code and selected programming language. Developers should be aware of [common failures](https://arxiv.org/abs/2302.03494) of systems they may be using. You should also be cautious about use of tools like [ChatGPT to avoid learning](https://youtu.be/IgxzcOugvEI?t=214).

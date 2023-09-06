@@ -1,6 +1,6 @@
 # Learn more
 
-Here are some resources you can use to learn more about the tools or techniques used in this short book.
+Check out these resources to dive deeper into the tools and tricks covered in this guide.
 
 ## Using Github Copilot
 

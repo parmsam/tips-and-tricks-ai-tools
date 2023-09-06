@@ -1,5 +1,7 @@
 # Uses
 
+This chapter explores several applications of AI assistance tools, from unit testing and code commenting to explaining code and writing documentation. The goal is to showcase the breadth of these tools' capabilities, empowering you to make the most of AI in your projects.
+
 ## Memory aid
 
 Obtain list of possible mnemonics to help memorize a concept. These could be an acronym or funny story. Alternatively, you could ask for a description to help you map the information into your memory palace. This can be helpful when you need to remember new programming concepts so you can code faster.
@@ -106,7 +108,7 @@ Add helpful emojis into steps.
 
 Sure, here are the steps to make a PBJ sandwich with emojis:
 
-1. 🥪 Gather your supplies: two slices of bread, peanut butter, jelly, and a knife. 🍞
+1. 🥪 Gather your supcplies: two slices of bread, peanut butter, jelly, and a knife. 🍞
 2. 🥜 Spread peanut butter on one slice of bread. 🥪
 3. 🥜 Wash the knife. 🧼
 4. 🍓 Spread jelly on the other slice of bread. 🥪

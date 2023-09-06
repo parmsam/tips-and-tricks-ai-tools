@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "AI Assistants Maximized",
     "section": "",
-    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E. It collects different use cases that I’ve run into as a programmer. Example prompts are also provided with most of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code also available on Github."
+    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E. It collects different use cases that I’ve run into as a programmer. Example prompts are provided with most of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github."
   },
   {
     "objectID": "index.html#prerequisites",
@@ -25,28 +25,28 @@
     "href": "intro.html#chatgpt",
     "title": "1  Intro",
     "section": "1.1 ChatGPT",
-    "text": "1.1 ChatGPT\nChatGPT is a large language model chatbot developed by OpenAI. It can be used for a variety of tasks, such as generating text, translating languages, and writing different kinds of creative content. ChatGPT is still under development, but it has learned to perform many kinds of tasks, including\n\nFollowing instructions and completing requests\nAnswering questions in an informative way, even if they are open ended, challenging, or strange.\nGenerating different creative text formats of text content, like poems, code, scripts, emails, or letters"
+    "text": "1.1 ChatGPT\nChatGPT is a large language model chatbot developed by OpenAI. It can be used for a multitude of tasks, such as:\n\nFollowing instructions and completing requests\nAnswering questions in an informative way, even if they are open-ended, challenging, or strange\nGenerating different creative text formats like poems, code, scripts, emails, or letters\n\nYou can augment ChatGPT via various plugins, which extend its capabilities to specialized tasks like coding assistance, real-time translation, and more.\nAs of 2023, ChatGPT has seen improvements in its conversational depth, allowing for more nuanced and context-aware responses. It has also expanded its range of plugins, offering even more specialized functionalities."
   },
   {
     "objectID": "intro.html#dalle-2",
     "href": "intro.html#dalle-2",
     "title": "1  Intro",
     "section": "1.2 DALLE 2",
-    "text": "1.2 DALLE 2\nDALLE 2 is a text-to-image diffusion model developed by OpenAI. It can be used to create realistic images from text descriptions. DALLE 2 is still under development, but it has been shown to be able to create high-quality images of a variety of objects and scenes."
+    "text": "1.2 DALLE 2\nDALLE 2 is a text-to-image diffusion model developed by OpenAI. It can be used to create realistic images from text descriptions. DALLE 2 has been shown to be able to create high-quality images of a variety of objects and scenes."
   },
   {
     "objectID": "intro.html#bard",
     "href": "intro.html#bard",
     "title": "1  Intro",
     "section": "1.3 Bard",
-    "text": "1.3 Bard\nBard is a large language model chatbot developed by Google AI. It is a powerful tool that can be used for a variety of tasks, including generating text, translating languages, and writing different kinds of creative content. Bard is still under development, but it has learned to perform many kinds of tasks with a high degree of accuracy and fluency."
+    "text": "1.3 Bard\nBard is a large language model chatbot developed by Google AI. It is a powerful tool that can be used for a variety of tasks, including generating text, translating languages, and writing different kinds of creative content. It was developed by Google as a direct response to ChatGPT."
   },
   {
     "objectID": "intro.html#github-copilot",
     "href": "intro.html#github-copilot",
     "title": "1  Intro",
     "section": "1.4 Github Copilot",
-    "text": "1.4 Github Copilot\nGithub Copilot is a code completion tool developed by GitHub and OpenAI. It uses a large language model to suggest code completions as a user types. GitHub Copilot is still under development, but it has been shown to be able to suggest accurate and relevant code completions for a variety of programming languages. It works with code editors such as VSCode and Jetbrains IDEs."
+    "text": "1.4 Github Copilot\nGithub Copilot is a code completion tool developed by GitHub and OpenAI. It uses a large language model to suggest code completions as a user types. GitHub Copilot has also been shown to be able to suggest accurate and relevant code completions for a variety of programming languages. It works with code editors such as VSCode and Jetbrains IDEs.\nA Github Copilot Chat integration is also supported via a VSCode extension."
   },
   {
     "objectID": "intro.html#summary",
@@ -81,7 +81,7 @@
     "href": "uses.html#add-emojis-as-visual-aids-into-text",
     "title": "\n2  Uses\n",
     "section": "\n2.4 Add emojis as visual aids into text",
-    "text": "2.4 Add emojis as visual aids into text\nAsk the AI tool to include relevant emojis within the requested content. These emojis can serve as nice visual aids to written content like notes or documentation.\nSteps to make a PBJ sandwich. \nAdd helpful emojis into steps. \n\nSure, here are the steps to make a PBJ sandwich with emojis:\n\n1. 🥪 Gather your supplies: two slices of bread, peanut butter, jelly, and a knife. 🍞\n2. 🥜 Spread peanut butter on one slice of bread. 🥪\n3. 🥜 Wash the knife. 🧼\n4. 🍓 Spread jelly on the other slice of bread. 🥪\n5. 🥪 Put the two slices of bread together, peanut butter and jelly sides facing each other. 🥪\n6. ✂️ Cut the sandwich in half. 🥪\n7. 🥪 Enjoy! 😋"
+    "text": "2.4 Add emojis as visual aids into text\nAsk the AI tool to include relevant emojis within the requested content. These emojis can serve as nice visual aids to written content like notes or documentation.\nSteps to make a PBJ sandwich. \nAdd helpful emojis into steps. \n\nSure, here are the steps to make a PBJ sandwich with emojis:\n\n1. 🥪 Gather your supcplies: two slices of bread, peanut butter, jelly, and a knife. 🍞\n2. 🥜 Spread peanut butter on one slice of bread. 🥪\n3. 🥜 Wash the knife. 🧼\n4. 🍓 Spread jelly on the other slice of bread. 🥪\n5. 🥪 Put the two slices of bread together, peanut butter and jelly sides facing each other. 🥪\n6. ✂️ Cut the sandwich in half. 🥪\n7. 🥪 Enjoy! 😋"
   },
   {
     "objectID": "uses.html#unit-testing",
