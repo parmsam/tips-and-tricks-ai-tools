@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "AI Assistants Maximized",
     "section": "",
-    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E It collects different use cases that I’ve run into as a programmer. Example prompts are also provided with most of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code also available on Github."
+    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E. It collects different use cases that I’ve run into as a programmer. Example prompts are also provided with most of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code also available on Github."
   },
   {
     "objectID": "index.html#prerequisites",
@@ -298,7 +298,7 @@
     "href": "learn-more.html#prompt-engineering",
     "title": "4  Learn more",
     "section": "4.3 Prompt engineering",
-    "text": "4.3 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nChatGPT Guide: Use these prompt strategies to maximize your results\n\n\n4.3.1 Simon Willison’s talks on LLMs\n\nCatching up on the weird world of LLMs\nMaking Large Language Models work for you"
+    "text": "4.3 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nChatGPT Guide: Use these prompt strategies to maximize your results\nHamel’s notebooks from the deeplearning.ai course on Prompt Engineering\n\n\n4.3.1 Videos\n\nPrompt Engineering Tutorial – Master ChatGPT and LLM Responses\n\n\n\n4.3.2 Simon Willison’s talks on LLMs\n\nCatching up on the weird world of LLMs\nMaking Large Language Models work for you"
   },
   {
     "objectID": "learn-more.html#how-chatgpt-works",
