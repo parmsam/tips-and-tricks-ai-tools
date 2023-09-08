@@ -215,15 +215,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#write-code" id="toc-write-code" class="nav-link" data-scroll-target="#write-code"><span class="toc-section-number">2.9</span>  Write code</a></li>
   <li><a href="#debug-code" id="toc-debug-code" class="nav-link" data-scroll-target="#debug-code"><span class="toc-section-number">2.10</span>  Debug code</a></li>
   <li><a href="#explain-code" id="toc-explain-code" class="nav-link" data-scroll-target="#explain-code"><span class="toc-section-number">2.11</span>  Explain code</a></li>
-  <li><a href="#refactor-code" id="toc-refactor-code" class="nav-link" data-scroll-target="#refactor-code"><span class="toc-section-number">2.12</span>  Refactor code</a></li>
-  <li><a href="#reformat-code" id="toc-reformat-code" class="nav-link" data-scroll-target="#reformat-code"><span class="toc-section-number">2.13</span>  Reformat code</a></li>
-  <li><a href="#support-independent-replication" id="toc-support-independent-replication" class="nav-link" data-scroll-target="#support-independent-replication"><span class="toc-section-number">2.14</span>  Support independent replication</a></li>
-  <li><a href="#translate-from-language-to-language" id="toc-translate-from-language-to-language" class="nav-link" data-scroll-target="#translate-from-language-to-language"><span class="toc-section-number">2.15</span>  Translate from language to language</a></li>
-  <li><a href="#write-documentation" id="toc-write-documentation" class="nav-link" data-scroll-target="#write-documentation"><span class="toc-section-number">2.16</span>  Write documentation</a></li>
-  <li><a href="#write-a-professional-email" id="toc-write-a-professional-email" class="nav-link" data-scroll-target="#write-a-professional-email"><span class="toc-section-number">2.17</span>  Write a professional email</a></li>
-  <li><a href="#naming-things" id="toc-naming-things" class="nav-link" data-scroll-target="#naming-things"><span class="toc-section-number">2.18</span>  Naming things</a></li>
-  <li><a href="#generate-art-for-a-logo" id="toc-generate-art-for-a-logo" class="nav-link" data-scroll-target="#generate-art-for-a-logo"><span class="toc-section-number">2.19</span>  Generate art for a logo</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">2.20</span>  Summary</a></li>
+  <li><a href="#get-feedback" id="toc-get-feedback" class="nav-link" data-scroll-target="#get-feedback"><span class="toc-section-number">2.12</span>  Get feedback</a></li>
+  <li><a href="#refactor-code" id="toc-refactor-code" class="nav-link" data-scroll-target="#refactor-code"><span class="toc-section-number">2.13</span>  Refactor code</a></li>
+  <li><a href="#reformat-code" id="toc-reformat-code" class="nav-link" data-scroll-target="#reformat-code"><span class="toc-section-number">2.14</span>  Reformat code</a></li>
+  <li><a href="#reverse-prompt-engineering" id="toc-reverse-prompt-engineering" class="nav-link" data-scroll-target="#reverse-prompt-engineering"><span class="toc-section-number">2.15</span>  Reverse prompt engineering</a></li>
+  <li><a href="#support-independent-replication" id="toc-support-independent-replication" class="nav-link" data-scroll-target="#support-independent-replication"><span class="toc-section-number">2.16</span>  Support independent replication</a></li>
+  <li><a href="#translate-from-language-to-language" id="toc-translate-from-language-to-language" class="nav-link" data-scroll-target="#translate-from-language-to-language"><span class="toc-section-number">2.17</span>  Translate from language to language</a></li>
+  <li><a href="#write-documentation" id="toc-write-documentation" class="nav-link" data-scroll-target="#write-documentation"><span class="toc-section-number">2.18</span>  Write documentation</a></li>
+  <li><a href="#write-articles" id="toc-write-articles" class="nav-link" data-scroll-target="#write-articles"><span class="toc-section-number">2.19</span>  Write articles</a></li>
+  <li><a href="#write-a-professional-email" id="toc-write-a-professional-email" class="nav-link" data-scroll-target="#write-a-professional-email"><span class="toc-section-number">2.20</span>  Write a professional email</a></li>
+  <li><a href="#naming-things" id="toc-naming-things" class="nav-link" data-scroll-target="#naming-things"><span class="toc-section-number">2.21</span>  Naming things</a></li>
+  <li><a href="#generate-art-for-a-logo" id="toc-generate-art-for-a-logo" class="nav-link" data-scroll-target="#generate-art-for-a-logo"><span class="toc-section-number">2.22</span>  Generate art for a logo</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">2.23</span>  Summary</a></li>
   </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/parmsam/tips-and-tricks-ai-tools/edit/master/uses.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/parmsam/tips-and-tricks-ai-tools/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
@@ -492,34 +495,65 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb22"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>The code uses the stringr package in R to find and display non-vowel words in the words string. </span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>It uses str_view function to visually highlight (view) the non-vowel words that match the regex pattern "^<span class="ot">[^aeiou]</span>+$". </span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>The regex pattern means it will match any string that consists entirely of characters that are not vowels (i.e., only consonants).</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section><section id="refactor-code" class="level2" data-number="2.12"><h2 data-number="2.12" class="anchored" data-anchor-id="refactor-code">
-<span class="header-section-number">2.12</span> Refactor code</h2>
+</section><section id="get-feedback" class="level2" data-number="2.12"><h2 data-number="2.12" class="anchored" data-anchor-id="get-feedback">
+<span class="header-section-number">2.12</span> Get feedback</h2>
+<p>Get suggestions or feedback on your code or writing. Maybe you want some ideas on how you can improve readability or performance.</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="an">Give me suggestions and feedback on this R code:</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>a &lt;- 11:14</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>b &lt;- 26:29</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>c &lt;- numeric(length(a))</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>for(i in seq_along(a)) {</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>      c<span class="co">[</span><span class="ot">i</span><span class="co">]</span> &lt;- a<span class="co">[</span><span class="ot">i</span><span class="co">]</span> + b<span class="co">[</span><span class="ot">i</span><span class="co">]</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>Your R code snippet is generally well-written and should accomplish its goal of adding corresponding elements in vectors a and b and storing them in vector c. However, there are some improvements and best practices you might consider:</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>Suggestions:</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>Comments: Adding comments to your code helps improve its readability and maintainability.</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>Vectorization: R is optimized for vectorized operations, and using a for loop for element-wise addition is less efficient than using vectorized operations.</span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>Pre-allocation: You've already done this by pre-allocating c using numeric(length(a)), which is good practice in R to speed up the loop.</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>Check for Equal Lengths: Before performing operations on two vectors, you might want to ensure they have the same length to avoid unexpected results or errors.</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>Improved Code:</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>Here's how you might rewrite your code with these considerations:</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a><span class="fu"># Ensure both vectors have the same length</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>if(length(a) != length(b)) {</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>  stop("Vectors a and b must have the same length")</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="fu"># Perform element-wise addition using vectorized operations</span></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>c &lt;- a + b</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>As you can see, I've replaced the for loop with a vectorized operation (<span class="in">`a + b`</span>), which is more efficient and easier to read. I've also added a check to make sure that the lengths of <span class="in">`a`</span> and <span class="in">`b`</span> are the same before performing the addition.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="refactor-code" class="level2" data-number="2.13"><h2 data-number="2.13" class="anchored" data-anchor-id="refactor-code">
+<span class="header-section-number">2.13</span> Refactor code</h2>
 <p>Refactor your code that may be inefficient or unnecessarily complicated. For example, maybe you are defaulting to looping structures like for or while loops when you could be using vectorized solutions.</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="an">Refactor this R code to take advantage of vectorization:</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>x &lt;- 1:5</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>y &lt;- 10:15</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>output_vector &lt;- c()</span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>for (i in 1:length(x)) {</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>  output_vector<span class="co">[</span><span class="ot">i</span><span class="co">]</span> &lt;- x<span class="co">[</span><span class="ot">i</span><span class="co">]</span> + y<span class="co">[</span><span class="ot">i</span><span class="co">]</span></span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>output_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="an">Refactor this R code to take advantage of vectorization:</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>x &lt;- 1:5</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>y &lt;- 10:15</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>output_vector &lt;- c()</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>for (i in 1:length(x)) {</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  output_vector<span class="co">[</span><span class="ot">i</span><span class="co">]</span> &lt;- x<span class="co">[</span><span class="ot">i</span><span class="co">]</span> + y<span class="co">[</span><span class="ot">i</span><span class="co">]</span></span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>output_vector</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span></span>
 <span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fl">10</span><span class="op">:</span><span class="fl">15</span></span>
 <span><span class="va">output_vector</span> <span class="op">&lt;-</span> <span class="va">x</span> <span class="op">+</span> <span class="va">y</span></span>
 <span><span class="va">output_vector</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="reformat-code" class="level2" data-number="2.13"><h2 data-number="2.13" class="anchored" data-anchor-id="reformat-code">
-<span class="header-section-number">2.13</span> Reformat code</h2>
+</section><section id="reformat-code" class="level2" data-number="2.14"><h2 data-number="2.14" class="anchored" data-anchor-id="reformat-code">
+<span class="header-section-number">2.14</span> Reformat code</h2>
 <p>Rearrange code so that it is more readable and understandable.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="an">Reformat this R code so that is more readable and follows good R conventions:</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>1+            1</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>x=1:10#some users prefer '&lt;-' as the assignment operator</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>if(TRUE){</span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>print('Hello world!') # HI!</span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="an">Reformat this R code so that is more readable and follows good R conventions:</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>1+            1</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>x=1:10#some users prefer '&lt;-' as the assignment operator</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>if(TRUE){</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>print('Hello world!') # HI!</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
-<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Adding two numbers</span></span>
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># Adding two numbers</span></span>
 <span><span class="va">result</span> <span class="op">&lt;-</span> <span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span></span>
 <span></span>
 <span><span class="co"># Creating a sequence from 1 to 10</span></span>
@@ -530,39 +564,53 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span><span class="op">(</span><span class="st">'Hello world!'</span><span class="op">)</span> <span class="co"># HI!</span></span>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="support-independent-replication" class="level2" data-number="2.14"><h2 data-number="2.14" class="anchored" data-anchor-id="support-independent-replication">
-<span class="header-section-number">2.14</span> Support independent replication</h2>
+</section><section id="reverse-prompt-engineering" class="level2" data-number="2.15"><h2 data-number="2.15" class="anchored" data-anchor-id="reverse-prompt-engineering">
+<span class="header-section-number">2.15</span> Reverse prompt engineering</h2>
+<p>You can an output and generating a prompt that would produce something resembling that output. This is useful if you have a reference output on hand but don’t know how to get there.</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="an">Give me a prompt to generate text resembling this persona:</span><span class="co"> </span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>"You talkin’ to me? You talkin’ to me?"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>Certainly! If you're looking to generate text in the persona of a character who famously says, "You talkin' to me? You talkin' to me?", you're likely channeling the vibe of Travis Bickle from the movie "Taxi Driver." Here's a writing prompt to help you generate text in that persona:</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>Writing Prompt:</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>You're Travis Bickle, a taxi driver in New York City. It's late at night, and you've just picked up a passenger who seems a bit sketchy. They ask you to take them to a location that's notorious for illegal activities. As you drive, you start talking to yourself, contemplating the morality of your actions and the state of the world around you. What do you say?</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>Feel free to use this prompt to generate text that captures the essence of this persona.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="support-independent-replication" class="level2" data-number="2.16"><h2 data-number="2.16" class="anchored" data-anchor-id="support-independent-replication">
+<span class="header-section-number">2.16</span> Support independent replication</h2>
 <p>AI assistance tools could aid validation programmers or replicators in speeding up independent replication time. This is relevant <a href="https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Standard+Analyses+and+Code+Sharing/Best+Practices+for+Quality+Control+%26+Validation.pdf">in the pharma industry</a> for clinical trial reporting, but could also be useful broadly <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7403855/">in academia</a> for internal or external replication of code. In the future, one could imagine a code validation LLM tool that could run in parallel or as a replacement to the validation programmers. This needs to be approached with care to ensure the production and validation programmer are not using an AI assistance tool for their work which may lead to errors being missed in the validation process.</p>
-</section><section id="translate-from-language-to-language" class="level2" data-number="2.15"><h2 data-number="2.15" class="anchored" data-anchor-id="translate-from-language-to-language">
-<span class="header-section-number">2.15</span> Translate from language to language</h2>
+</section><section id="translate-from-language-to-language" class="level2" data-number="2.17"><h2 data-number="2.17" class="anchored" data-anchor-id="translate-from-language-to-language">
+<span class="header-section-number">2.17</span> Translate from language to language</h2>
 <p>Convert code from one language to another. Of course, here you want to ensure you have unit tests in place and the ability to understand both languages.</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>Convert the following R code into python using </span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>packages like pandas or numpy:</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>flights |&gt; </span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>  mutate(</span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>    gain = dep_delay - arr_delay,</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>    speed = distance / air_time * 60</span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming you have a DataFrame called 'flights'</span></span>
-<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>flights[<span class="st">'gain'</span>] <span class="op">=</span> flights[<span class="st">'dep_delay'</span>] <span class="op">-</span> flights[<span class="st">'arr_delay'</span>]</span>
-<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>flights[<span class="st">'speed'</span>] <span class="op">=</span> flights[<span class="st">'distance'</span>] <span class="op">/</span> flights[<span class="st">'air_time'</span>] <span class="op">*</span> <span class="dv">60</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section><section id="write-documentation" class="level2" data-number="2.16"><h2 data-number="2.16" class="anchored" data-anchor-id="write-documentation">
-<span class="header-section-number">2.16</span> Write documentation</h2>
-<p>Explain what kind of R package or analysis you are working on then ask the AI tool to create a <code>README.md</code> template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the <a href="https://roxygen2.r-lib.org/">roxygen2 package</a>.</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>Give me a roxygen2 header for this R function to </span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>redact email addresses from a string: </span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>redact_email_addresses &lt;- function(</span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>text, </span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>replace_with = NULL) {</span>
-<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>    pattern &lt;-</span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>      "<span class="sc">\\</span>b<span class="co">[</span><span class="ot">A-Za-z0-9._%+-</span><span class="co">]</span>+@<span class="co">[</span><span class="ot">A-Za-z0-9.-</span><span class="co">]</span>+<span class="sc">\\</span>.<span class="co">[</span><span class="ot">A-Za-z</span><span class="co">]</span>{2,}(?:<span class="sc">\\</span>.<span class="co">[</span><span class="ot">A-Za-z</span><span class="co">]</span>{2,})?<span class="sc">\\</span>b"</span>
-<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>    redact_pattern(text, pattern, replace_with)</span>
-<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>Convert the following R code into python using 
+packages like pandas or numpy:
+flights |&gt; 
+  mutate(
+    gain = dep_delay - arr_delay,
+    speed = distance / air_time * 60
+  )</code></pre>
 <div class="cell">
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#' Redact email addresses from a string.</span></span>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming you have a DataFrame called 'flights'</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>flights[<span class="st">'gain'</span>] <span class="op">=</span> flights[<span class="st">'dep_delay'</span>] <span class="op">-</span> flights[<span class="st">'arr_delay'</span>]</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>flights[<span class="st">'speed'</span>] <span class="op">=</span> flights[<span class="st">'distance'</span>] <span class="op">/</span> flights[<span class="st">'air_time'</span>] <span class="op">*</span> <span class="dv">60</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section><section id="write-documentation" class="level2" data-number="2.18"><h2 data-number="2.18" class="anchored" data-anchor-id="write-documentation">
+<span class="header-section-number">2.18</span> Write documentation</h2>
+<p>Explain what kind of R package or analysis you are working on then ask the AI tool to create a <code>README.md</code> template for an R package. Additionally, you could use it to create in-line documentation as comments for your functions. This is commonly done in R using the <a href="https://roxygen2.r-lib.org/">roxygen2 package</a>.</p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>Give me a roxygen2 header for this R function to </span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>redact email addresses from a string: </span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>redact_email_addresses &lt;- function(</span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>text, </span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>replace_with = NULL) {</span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>    pattern &lt;-</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>      "<span class="sc">\\</span>b<span class="co">[</span><span class="ot">A-Za-z0-9._%+-</span><span class="co">]</span>+@<span class="co">[</span><span class="ot">A-Za-z0-9.-</span><span class="co">]</span>+<span class="sc">\\</span>.<span class="co">[</span><span class="ot">A-Za-z</span><span class="co">]</span>{2,}(?:<span class="sc">\\</span>.<span class="co">[</span><span class="ot">A-Za-z</span><span class="co">]</span>{2,})?<span class="sc">\\</span>b"</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>    redact_pattern(text, pattern, replace_with)</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co">#' Redact email addresses from a string.</span></span>
 <span><span class="co">#'</span></span>
 <span><span class="co">#' This function searches for email addresses in the input text and replaces them with the specified 'replace_with' value if provided, otherwise redacts them.</span></span>
 <span><span class="co">#'</span></span>
@@ -586,58 +634,61 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  <span class="fu">redact_pattern</span><span class="op">(</span><span class="va">text</span>, <span class="va">pattern</span>, <span class="va">replace_with</span><span class="op">)</span></span>
 <span><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="write-a-professional-email" class="level2" data-number="2.17"><h2 data-number="2.17" class="anchored" data-anchor-id="write-a-professional-email">
-<span class="header-section-number">2.17</span> Write a professional email</h2>
+</section><section id="write-articles" class="level2" data-number="2.19"><h2 data-number="2.19" class="anchored" data-anchor-id="write-articles">
+<span class="header-section-number">2.19</span> Write articles</h2>
+<p>Blog posts provide a useful medium to share projects and results. Additionally, vignettes serve as long form guides to using an package. Both are common for R and can serve as useful training materials to orient new users to custom software. With enough context and careful prompting, ChatGPT can help provide such types of articles. See <a href="https://github.com/parmsam/redacted">this repo</a> for an example of an R package generated primarily (including the README and vignettes) using ChatGPT.</p>
+</section><section id="write-a-professional-email" class="level2" data-number="2.20"><h2 data-number="2.20" class="anchored" data-anchor-id="write-a-professional-email">
+<span class="header-section-number">2.20</span> Write a professional email</h2>
 <p>Provide an informal email or message to the AI tool and ask the tool to make it professional based on the intended audience or recipient.</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>Please update the following email to ensure it is business </span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>professional: </span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>`</span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>Subject: Hey! Long Time No Talk!</span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>Hey <span class="co">[</span><span class="ot">Friend's Name</span><span class="co">]</span>,</span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>How've you been? It feels like ages since we caught up. How's everything on your end?</span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>Let's grab coffee sometime soon. I miss our chats!</span>
-<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>Take care,</span>
-<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Your Name</span><span class="co">]</span></span>
-<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>Feel free to adapt it as you see fit!</span>
-<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>`</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb32"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="an">Subject:</span><span class="co"> Reconnecting to Discuss Ongoing Projects and Industry Developments</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>Dear <span class="co">[</span><span class="ot">Colleague's Name</span><span class="co">]</span>,</span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>I hope this email finds you well. It has been some time since we last connected, and I am eager to catch up on your recent accomplishments and the progress of your ongoing projects.</span>
-<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>Would you be interested in scheduling a meeting to discuss industry trends and potential collaborative opportunities? A coffee catch-up would be an excellent way to facilitate this discussion.</span>
-<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>Please let me know your availability for the coming weeks, and I would be happy to coordinate a meeting accordingly.</span>
-<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>Thank you for your time, and I look forward to reconnecting soon.</span>
-<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a>Best regards,</span>
-<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Your Name</span><span class="co">]</span></span>
-<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Your Position</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section><section id="naming-things" class="level2" data-number="2.18"><h2 data-number="2.18" class="anchored" data-anchor-id="naming-things">
-<span class="header-section-number">2.18</span> Naming things</h2>
+<div class="sourceCode" id="cb35"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>Please update the following email to ensure it is business </span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>professional: </span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>`</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>Subject: Hey! Long Time No Talk!</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>Hey <span class="co">[</span><span class="ot">Friend's Name</span><span class="co">]</span>,</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>How've you been? It feels like ages since we caught up. How's everything on your end?</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>Let's grab coffee sometime soon. I miss our chats!</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>Take care,</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Your Name</span><span class="co">]</span></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>Feel free to adapt it as you see fit!</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>`</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb36"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="an">Subject:</span><span class="co"> Reconnecting to Discuss Ongoing Projects and Industry Developments</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>Dear <span class="co">[</span><span class="ot">Colleague's Name</span><span class="co">]</span>,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>I hope this email finds you well. It has been some time since we last connected, and I am eager to catch up on your recent accomplishments and the progress of your ongoing projects.</span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>Would you be interested in scheduling a meeting to discuss industry trends and potential collaborative opportunities? A coffee catch-up would be an excellent way to facilitate this discussion.</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>Please let me know your availability for the coming weeks, and I would be happy to coordinate a meeting accordingly.</span>
+<span id="cb36-10"><a href="#cb36-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-11"><a href="#cb36-11" aria-hidden="true" tabindex="-1"></a>Thank you for your time, and I look forward to reconnecting soon.</span>
+<span id="cb36-12"><a href="#cb36-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-13"><a href="#cb36-13" aria-hidden="true" tabindex="-1"></a>Best regards,</span>
+<span id="cb36-14"><a href="#cb36-14" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Your Name</span><span class="co">]</span></span>
+<span id="cb36-15"><a href="#cb36-15" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Your Position</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="naming-things" class="level2" data-number="2.21"><h2 data-number="2.21" class="anchored" data-anchor-id="naming-things">
+<span class="header-section-number">2.21</span> Naming things</h2>
 <blockquote class="blockquote">
 <p>There are only two hard things in Computer Science: cache invalidation and naming things. – Phil Karlton</p>
 </blockquote>
 <p>Well, AI tools can help you name things. For example, you could ask the AI tool to provide you could share the intended purpose for the function you’re working on then ask the AI tool for one or more informative function names.</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>Give me 5 possible names for an function that creates a </span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>hex sticker from a reference image. Use snake case </span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>for the names. Keep it at three words max.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb34"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>create_hex_sticker</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>generate_hex_sticker</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>make_hex_sticker</span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>build_hex_sticker</span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>design_hex_sticker</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section><section id="generate-art-for-a-logo" class="level2" data-number="2.19"><h2 data-number="2.19" class="anchored" data-anchor-id="generate-art-for-a-logo">
-<span class="header-section-number">2.19</span> Generate art for a logo</h2>
+<div class="sourceCode" id="cb37"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>Give me 5 possible names for an function that creates a </span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>hex sticker from a reference image. Use snake case </span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>for the names. Keep it at three words max.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>create_hex_sticker</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>generate_hex_sticker</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>make_hex_sticker</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>build_hex_sticker</span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>design_hex_sticker</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section><section id="generate-art-for-a-logo" class="level2" data-number="2.22"><h2 data-number="2.22" class="anchored" data-anchor-id="generate-art-for-a-logo">
+<span class="header-section-number">2.22</span> Generate art for a logo</h2>
 <p>AI tools like DALLE can be used to get creative artwork for later use as book cover art or a hex sticker.</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>Ukrainian dog wearing a beret and black turtleneck</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>Ukrainian dog wearing a beret and black turtleneck</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-doge" class="quarto-layout-panel">
 <figure class="figure"><div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -660,7 +711,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <p>Using a package from my person utility package to generate the hex sticker.</p>
 <div class="cell">
-<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"parmsam/psam"</span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/parmsam/psam">psam</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/pkg/psam/man/gen_hex_sticker.html">gen_hex_sticker</a></span><span class="op">(</span></span>
@@ -670,8 +721,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span>  txt_main_color <span class="op">=</span> <span class="st">"white"</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</section><section id="summary" class="level2" data-number="2.20"><h2 data-number="2.20" class="anchored" data-anchor-id="summary">
-<span class="header-section-number">2.20</span> Summary</h2>
+<p>Alternatively, there is now a <a href="https://decrypt.co/154923/chatgpt-canva-plugin-openai-design-tool">ChatGPT plugin for Canva</a> to identify relevant Canva templates which can then be edited and downloaded.</p>
+</section><section id="summary" class="level2" data-number="2.23"><h2 data-number="2.23" class="anchored" data-anchor-id="summary">
+<span class="header-section-number">2.23</span> Summary</h2>
 <p>In this chapter, we explored a bunch of ways to use AI tools to help you learn, create, and share. You learned that these tools can help you name things, write code, and even generate art. The key is to be creative and think outside the box. Combine ideas from this chapter or other materials to create your own unique workflows. Most importantly, be sure to read and verify the output from these tools. I hope you found this post useful and that it inspires you to try out some of these ideas.</p>
 
 

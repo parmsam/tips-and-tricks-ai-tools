@@ -36,6 +36,7 @@ format:
       light: cosmo
       dark: [cosmo, theme-dark.scss]
     code-link: true
-
-code-copy: true
+    code-copy: true
+    code-overflow: wrap
+    
 
