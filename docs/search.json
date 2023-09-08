@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "AI Assistants Maximized",
     "section": "",
-    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E. It collects different use cases that I’ve run into as a programmer. Example prompts are provided with most of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github."
+    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E. It collects different use cases that I’ve run into as a programmer. Example prompts are provided with most of the use cases. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github. Please consider starring the Github repository if you find this book useful."
   },
   {
     "objectID": "index.html#prerequisites",
