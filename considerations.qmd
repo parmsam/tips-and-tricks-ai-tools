@@ -20,13 +20,13 @@ Just because something sounds right, doesn't mean it's right. Sometimes AI tools
 
 ## Iterate on it
 
-As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like [temperature in ChatGPT](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/#:~:text=particular%20so%2Dcalled%20%E2%80%9C-,temperature,-%E2%80%9D%20parameter%20that%20determines). Try using different tools.
+As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like [temperature in ChatGPT](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/#:~:text=particular%20so%2Dcalled%20%E2%80%9C-,temperature,-%E2%80%9D%20parameter%20that%20determines). Experiment with different prompts. Try using different tools.
 
 ## List out multiple possibilities
 
 Ask the platform to list out multiple different options. You can specify how many results you want to be generated. You can serve as the curator deciding what is useful vs. throwaway information.
 
-## Use seperators
+## Use separators
 
 Consider using separators like quotation marks (`""` or `''`) or backticks (\`\`) to separate sections of text that should get treated differently in the prompt, as indicated from [the-decoder](https://the-decoder.com/chatgpt-guide-prompt-strategies/).
 
@@ -42,7 +42,11 @@ Break your problem into small pieces or tasks, as suggested [in Nature](https://
 
 Be a good designer and keep your prompts specific and clear. As part of that, you can include the response format or an example response you expect to receive. You could add a word limit or readability level (keep responses at a middle school level for example). You could mention the target audience, desired tone, or a [persona](https://www.howtogeek.com/881659/how-to-create-chatgpt-personas-for-every-occasion/) the tool should adopt. There are a lot of these different *response settings* you can define to mold the responses. Some experimentation is required here, but that's the fun part.
 
-## Be aware of limitations
+## Be familiar with your tool
+
+Be informed about how the tools works and settings you can change. For example, Github Copilot uses a feature called neighboring tabs to contexualize recommendations according to other tabs open in the IDE. Therefore, you may need to keep tabs open with material that may be relevant to current work for the tool.
+
+### Be aware of limitations
 
 You should consider the training cutoff dates for the LLM models that you are using. The training cutoff date for OpenAI's GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results. Other platforms like Bing and Bard can have more recent results since they can search the internet. 
 
