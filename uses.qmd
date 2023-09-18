@@ -413,6 +413,49 @@ You're Travis Bickle, a taxi driver in New York City. It's late at night, and yo
 Feel free to use this prompt to generate text that captures the essence of this persona.
 ```
 
+## Compare text or code
+
+Explain differences between two bodies of text or snippets of code. Here's an example of comparing two code snippets.
+
+```markdown
+Compare the following two R code snippets and explain the differences:
+# Code snippet 1
+x <- 1:5
+y <- 10:15
+output_vector <- c()
+for (i in 1:length(x)) {
+  output_vector[i] <- x[i] + y[i]
+}
+output_vector
+
+# Code snippet 2
+x <- 1:5
+y <- 10:15
+output_vector <- x + y
+output_vector
+```
+
+```markdown
+Both code snippets aim to perform element-wise addition of two vectors `x` and `y` and store the result in `output_vector`. However, there are some notable differences:
+
+### Code snippet 1
+
+1. **Explicit Loop**: This snippet uses a `for` loop to iterate over each element in the vectors `x` and `y`. In each iteration, the loop adds the corresponding elements from the vectors and stores them in `output_vector`.
+2. **Length Calculation**: The length of the vectors is calculated explicitly with `length(x)`.
+3. **Memory Allocation**: An empty vector `output_vector <- c()` is initialized, and elements are filled in one by one in the loop.
+4. **Error-prone**: If `x` and `y` have different lengths, this code will still run but may produce incorrect or unexpected results.
+5. **Less Efficient**: Explicit loops in R are generally slower compared to vectorized operations.
+
+### Code snippet 2
+
+1. **Vectorized Operation**: This snippet uses R's built-in vectorized addition (`x + y`), which is more concise and generally more efficient.
+2. **Implicit Length Handling**: The operation automatically handles the lengths of the vectors, without the need to explicitly calculate them.
+3. **Memory Allocation**: The vector `output_vector` is created and filled in one line, making the code more concise.
+4. **Less Error-prone**: If `x` and `y` have different lengths, R will still execute the code by recycling elements of the shorter vector to match the length of the longer one. While this could also lead to unexpected results, it is a feature of R's vectorized operations.
+
+In summary, the second snippet is more idiomatic, concise, and efficient for this kind of simple element-wise operation in R.
+```
+
 ## Support independent replication
 
 AI assistance tools could aid validation programmers or replicators in speeding up independent replication time. This is relevant [in the pharma industry](https://phuse.s3.eu-central-1.amazonaws.com/Deliverables/Standard+Analyses+and+Code+Sharing/Best+Practices+for+Quality+Control+%26+Validation.pdf) for clinical trial reporting, but could also be useful broadly [in academia](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7403855/) for internal or external replication of code. In the future, one could imagine a code validation LLM tool that could run in parallel or as a replacement to the validation programmers. This needs to be approached with care to ensure the production and validation programmer are not using an AI assistance tool for their work which may lead to errors being missed in the validation process.

@@ -44,7 +44,7 @@ Be a good designer and keep your prompts specific and clear. As part of that, yo
 
 ## Be familiar with your tool
 
-Be informed about how the tools works and settings you can change. For example, Github Copilot uses a feature called neighboring tabs to contexualize recommendations according to other tabs open in the IDE. Therefore, you may need to keep tabs open with material that may be relevant to current work for the tool.
+Learn how your AI tool's features and any settings you can change. For example, Github Copilot uses a feature called neighboring tabs to contextualize recommendations according to other tabs open in the IDE. Therefore, you may need to keep tabs open with material that may be relevant to current work for the tool. You can also tweak keyboard shortcuts or other settings for tools Github Copilot. Customize these tools to your needs.
 
 ### Be aware of limitations
 
@@ -53,6 +53,10 @@ You should consider the training cutoff dates for the LLM models that you are us
 Also be aware that [many of these LLMs do not disclose](https://simonwillison.net/2023/Aug/27/wordcamp-llms/#how-they-are-trained) the training data used. This makes it unclear what it is probably good at answer and isn't good at answering out of box. 
 
 You can augment ChatGPT via [various plugins](https://openai.com/blog/chatgpt-plugins) that are available such as one for [Wolfram Alpha](https://www.wolfram.com/wolfram-plugin-chatgpt/) or [Wikipedia](https://diff.wikimedia.org/2023/07/13/exploring-paths-for-the-future-of-free-knowledge-new-wikipedia-chatgpt-plugin-leveraging-rich-media-social-apps-and-other-experiments/).
+
+### Beware of prompt injections
+
+Prompt injections are ways of crafting prompts that violate safeguards. They can be used to return biased, malicious, or sensitive information. This is a [known issue](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/) with older versions of ChatGPT. You should be aware of this risk when creating apps that use LLMs.
 
 ## Adhere to Simon Willison's Personal AI Ethics
 

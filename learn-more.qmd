@@ -10,6 +10,8 @@ Check out these resources to dive deeper into the tools and tricks covered in th
 
 - [How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
 
+- [Getting started with GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot)
+
 ## Using DALL-E 2
 
 - [How to use DALL·E 2 to create AI images](https://zapier.com/blog/how-to-use-dall-e-2/)
