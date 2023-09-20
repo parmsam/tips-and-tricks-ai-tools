@@ -16,7 +16,7 @@ Consider risk of unintentional plagiarism or copyright violation associated with
 
 ## Trust by verify
 
-Just because something sounds right, doesn't mean it's right. Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucinations (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and [assertive programming](https://www.milesmcbain.com/posts/assertive-programming-for-pipelines/) to ensure results perform as expected in the cases you need to cover.
+Just because something sounds right, doesn't mean it's right. Sometimes AI tools provide incorrect answers, so it's your responsibility to check the results, as recommended [in Nature](https://www.nature.com/articles/d41586-023-01833-0). Check if there are any bugs or hallucinations (such as functions that don't exist) in code you obtain and confirm you understand what each lines is doing. For example, ChatGPT can often generate URLs that don't exist. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and [assertive programming](https://www.milesmcbain.com/posts/assertive-programming-for-pipelines/) to ensure results perform as expected in the cases you need to cover.
 
 ## Iterate on it
 
@@ -48,7 +48,7 @@ Learn how your AI tool's features and any settings you can change. For example, 
 
 ### Be aware of limitations
 
-You should consider the training cutoff dates for the LLM models that you are using. The training cutoff date for OpenAI's GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results. Other platforms like Bing and Bard can have more recent results since they can search the internet. 
+You should consider the training cutoff dates for the LLM models that you are using. The training cutoff date for OpenAI's GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results.  Other platforms like Bing and Bard can have more recent results since they can search the internet. 
 
 Also be aware that [many of these LLMs do not disclose](https://simonwillison.net/2023/Aug/27/wordcamp-llms/#how-they-are-trained) the training data used. This makes it unclear what it is probably good at answer and isn't good at answering out of box. 
 

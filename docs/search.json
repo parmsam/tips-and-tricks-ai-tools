@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "AI Assistants Maximized",
     "section": "",
-    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E. It collects different use cases that I’ve run into as a programmer or just thought of for fun. Example prompts are provided with most of the use cases. The example outputs are primarilty generated using ChatGPT’s GPT-4 model. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github. Please consider starring the Github repository if you find this book useful."
+    "text": "Preface\nThis is a guidance book with tips and tricks for use of AI tools such as ChatGPT, Bard, Github Copilot or DALL-E. It collects different use cases that I’ve run into as a programmer or just thought of for fun. Example prompts are provided with most of the use cases. The example outputs are primarily generated using ChatGPT’s GPT-4 model. This book is created using Quarto. It’s hosted on Github pages, with the source code available on Github. Please consider starring the Github repository if you find this book useful."
   },
   {
     "objectID": "index.html#prerequisites",
@@ -25,7 +25,7 @@
     "href": "intro.html#chatgpt",
     "title": "1  Intro",
     "section": "1.1 ChatGPT",
-    "text": "1.1 ChatGPT\nChatGPT is a large language model chatbot developed by OpenAI. It can be used for a multitude of tasks, such as:\n\nFollowing instructions and completing requests\nAnswering questions in an informative way, even if they are open-ended, challenging, or strange\nGenerating different creative text formats like poems, code, scripts, emails, or letters\n\nYou can augment ChatGPT via various plugins, which extend its capabilities to specialized tasks like coding assistance, real-time translation, and more.\nAs of 2023, ChatGPT has seen improvements in its conversational depth, allowing for more nuanced and context-aware responses. It has also expanded its range of plugins, offering even more specialized functionalities."
+    "text": "1.1 ChatGPT\nChatGPT is a large language model chatbot developed by OpenAI. It can be used for a multitude of tasks, such as:\n\nFollowing instructions and completing requests\nAnswering questions in an informative way, even if they are open-ended, challenging, or strange\nGenerating different creative text formats like poems, code, scripts, emails, or letters\n\nYou can augment ChatGPT via various plugins, which extend its capabilities to specialized tasks like coding assistance, real-time translation, and more.\nAs of 2023, ChatGPT has seen improvements in its conversational depth, allowing for more nuanced and context-aware responses. It has also expanded its range of plugins and added custom instructions, offering even more specialized functionalities."
   },
   {
     "objectID": "intro.html#dalle-2",
@@ -305,7 +305,7 @@
     "href": "learn-more.html#how-chatgpt-works",
     "title": "4  Learn more",
     "section": "4.4 How ChatGPT works",
-    "text": "4.4 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?"
+    "text": "4.4 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?\nWhat are Large Language Models? What are they not?"
   },
   {
     "objectID": "uses.html#support-independent-replication",
@@ -340,7 +340,7 @@
     "href": "uses.html#brainstorm-ideas",
     "title": "\n2  Uses\n",
     "section": "\n2.13 Brainstorm ideas",
-    "text": "2.13 Brainstorm ideas\nGet ideas for a project or a problem you are working on. This is useful when you are stuck and need some inspiration.\nGive me a list of 5 possible titles for a short book on AI Assistant tools.\nCertainly! Here are five possible titles for a short book on AI Assistant tools:\n\n1. \"Mastering the Virtual Assistant: A Guide to AI-Powered Tools\"\n2. \"Speak, Command, Achieve: Unlocking the Potential of AI Assistants\"\n3. \"AI Assistants Demystified: Your Pocket Guide to the Future\"\n4. \"Hey Siri, Write My Book: Exploring the World of AI Assistants\"\n5. \"Voice of the Future: How AI Assistants are Changing Our Lives\"\n\nFeel free to adjust these titles to better fit the specific angle or approach of your book!"
+    "text": "2.13 Brainstorm ideas\nGet ideas for a project or a problem you are working on. This is useful when you are stuck and need some inspiration. You can use this to help you mindmap.\nGive me a list of 5 possible titles for a short book on AI Assistant tools.\nCertainly! Here are five possible titles for a short book on AI Assistant tools:\n\n1. \"Mastering the Virtual Assistant: A Guide to AI-Powered Tools\"\n2. \"Speak, Command, Achieve: Unlocking the Potential of AI Assistants\"\n3. \"AI Assistants Demystified: Your Pocket Guide to the Future\"\n4. \"Hey Siri, Write My Book: Exploring the World of AI Assistants\"\n5. \"Voice of the Future: How AI Assistants are Changing Our Lives\"\n\nFeel free to adjust these titles to better fit the specific angle or approach of your book!"
   },
   {
     "objectID": "considerations.html#use-separators",

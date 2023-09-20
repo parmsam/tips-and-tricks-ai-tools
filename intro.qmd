@@ -1,6 +1,6 @@
 # Intro
 
-This chapter provides an overview of commonly used AI assistance tools that are revolutionizing various industries, from software development to creative writing and beyond.
+This chapter provides an overview of commonly used AI assistance tools that are revolutionizing various areas, from software development to creative writing and beyond.
 
 ## ChatGPT
 
@@ -12,7 +12,7 @@ This chapter provides an overview of commonly used AI assistance tools that are 
 
 You can augment ChatGPT via [various plugins](https://openai.com/blog/chatgpt-plugins), which extend its capabilities to specialized tasks like coding assistance, real-time translation, and more.
 
-As of 2023, ChatGPT has seen improvements in its conversational depth, allowing for more nuanced and context-aware responses. It has also expanded its range of plugins, offering even more specialized functionalities.
+As of 2023, ChatGPT has seen improvements in its conversational depth, allowing for more nuanced and context-aware responses. It has also expanded its range of plugins and added [custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt), offering even more specialized functionalities. 
 
 ## DALLE 2
 

@@ -1,6 +1,6 @@
 # Preface {.unnumbered}
 
-This is a guidance book with tips and tricks for use of AI tools such as [ChatGPT](https://chat.openai.com/), [Bard](https://bard.google.com/), [Github Copilot](https://github.com/features/copilot) or [DALL-E](https://openai.com/dall-e-2). It collects different use cases that I've run into as a programmer or just thought of for fun. Example prompts are provided with most of the use cases. The example outputs are primarilty generated using ChatGPT's GPT-4 model. This book is created using [Quarto](https://quarto.org/). It's hosted on Github pages, with the source code available on [Github](https://github.com/parmsam/tips-and-tricks-ai-tools). Please consider starring the Github repository if you find this book useful.
+This is a guidance book with tips and tricks for use of AI tools such as [ChatGPT](https://chat.openai.com/), [Bard](https://bard.google.com/), [Github Copilot](https://github.com/features/copilot) or [DALL-E](https://openai.com/dall-e-2). It collects different use cases that I've run into as a programmer or just thought of for fun. Example prompts are provided with most of the use cases. The example outputs are primarily generated using ChatGPT's GPT-4 model. This book is created using [Quarto](https://quarto.org/). It's hosted on Github pages, with the source code available on [Github](https://github.com/parmsam/tips-and-tricks-ai-tools). Please consider starring the Github repository if you find this book useful.
 
 ## Prerequisites
 
