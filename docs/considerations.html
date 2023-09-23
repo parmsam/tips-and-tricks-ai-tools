@@ -168,7 +168,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#beware-of-prompt-injections" id="toc-beware-of-prompt-injections" class="nav-link" data-scroll-target="#beware-of-prompt-injections"><span class="toc-section-number">3.11.2</span>  Beware of prompt injections</a></li>
   </ul></li>
   <li><a href="#adhere-to-simon-willisons-personal-ai-ethics" id="toc-adhere-to-simon-willisons-personal-ai-ethics" class="nav-link" data-scroll-target="#adhere-to-simon-willisons-personal-ai-ethics"><span class="toc-section-number">3.12</span>  Adhere to Simon Willison’s Personal AI Ethics</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">3.13</span>  Summary</a></li>
+  <li><a href="#s2c" id="toc-s2c" class="nav-link" data-scroll-target="#s2c"><span class="toc-section-number">3.13</span>  S<sup>2</sup>C</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">3.14</span>  Summary</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/parmsam/tips-and-tricks-ai-tools/edit/master/considerations.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/parmsam/tips-and-tricks-ai-tools/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -251,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="adhere-to-simon-willisons-personal-ai-ethics" class="level2" data-number="3.12">
 <h2 data-number="3.12" class="anchored" data-anchor-id="adhere-to-simon-willisons-personal-ai-ethics"><span class="header-section-number">3.12</span> Adhere to Simon Willison’s Personal AI Ethics</h2>
-<p>Simon Willison had a great talk in August 2023 on <a href="https://simonwillison.net/2023/Aug/27/wordcamp-llms/">Making Large Language Models work for you</a>. In the talk, he shared his personal AI ethical guidelines which included the following (watch <a href="https://www.youtube.com/watch?v=LpDulftMkew&amp;t=29900s&amp;ab_channel=WordPress">the talk</a> to learn why):</p>
+<p>Simon Willison had a great talk in August 2023 called <a href="https://simonwillison.net/2023/Aug/27/wordcamp-llms/">Making Large Language Models work for you</a>. In the talk, he shared his personal AI ethical guidelines which include the following (<a href="https://www.youtube.com/watch?v=LpDulftMkew&amp;t=29900s&amp;ab_channel=WordPress">watch the talk</a> to learn why):</p>
 <ul>
 <li>Don’t publish anything that will take someone longer to read than it took you to write.</li>
 <li>Never commit code you can’t understand and explain every line of.</li>
@@ -259,8 +260,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Be aware of the harm of these AI tools to believably mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The responses are safer, more entertaining, and stick better.</li>
 </ul>
 </section>
-<section id="summary" class="level2" data-number="3.13">
-<h2 data-number="3.13" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.13</span> Summary</h2>
+<section id="s2c" class="level2" data-number="3.13">
+<h2 data-number="3.13" class="anchored" data-anchor-id="s2c"><span class="header-section-number">3.13</span> S<sup>2</sup>C</h2>
+<p>Follow <a href="https://github.com/jthomasmock">Tom Mock</a>’s framework called S<sup>2</sup>C that he <a href="https://colorado.posit.co/rsc/rstudio-copilot/#/11">presented at Posit Conf 2023</a> for Github Copilot prompting: Simple, Specific, and use Comments. This framework can be applied to any AI tool.</p>
+<p>Here are some of the key points from the talk:</p>
+<ul>
+<li>Breakdown complex tasks by providing a high-level description of the project goal at the top level then build off that with more specific tasks.</li>
+<li>Use expressive names for variables, functions, and object.</li>
+<li>Prompt again or in a different way (a mentioned in the <em>iterate on it</em> section) if you don’t get the results you want.</li>
+<li>Use the generative loop to your advantage! Build off your own momentum by writing some of your own code. This can in turn help the AI tool understand what you’re trying to do and provide better results.</li>
+</ul>
+</section>
+<section id="summary" class="level2" data-number="3.14">
+<h2 data-number="3.14" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.14</span> Summary</h2>
 <p>In this chapter, we explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you’ll be able to use these principles to more safely use AI assistance tools.</p>
 
 

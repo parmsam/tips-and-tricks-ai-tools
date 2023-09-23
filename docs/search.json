@@ -270,14 +270,14 @@
     "href": "considerations.html#adhere-to-simon-willisons-personal-ai-ethics",
     "title": "3  Considerations",
     "section": "3.12 Adhere to Simon Willison’s Personal AI Ethics",
-    "text": "3.12 Adhere to Simon Willison’s Personal AI Ethics\nSimon Willison had a great talk in August 2023 on Making Large Language Models work for you. In the talk, he shared his personal AI ethical guidelines which included the following (watch the talk to learn why):\n\nDon’t publish anything that will take someone longer to read than it took you to write.\nNever commit code you can’t understand and explain every line of.\nShare your prompts and help spread knowledge of how to use these tools\nBe aware of the harm of these AI tools to believably mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The responses are safer, more entertaining, and stick better."
+    "text": "3.12 Adhere to Simon Willison’s Personal AI Ethics\nSimon Willison had a great talk in August 2023 called Making Large Language Models work for you. In the talk, he shared his personal AI ethical guidelines which include the following (watch the talk to learn why):\n\nDon’t publish anything that will take someone longer to read than it took you to write.\nNever commit code you can’t understand and explain every line of.\nShare your prompts and help spread knowledge of how to use these tools\nBe aware of the harm of these AI tools to believably mimic humans. Instead of responses that mimic humans, ask tools like ChatGPT to be a sentient cheesecake or a Shakespearean coal miner. The responses are safer, more entertaining, and stick better."
   },
   {
     "objectID": "considerations.html#summary",
     "href": "considerations.html#summary",
     "title": "3  Considerations",
-    "section": "3.13 Summary",
-    "text": "3.13 Summary\nIn this chapter, we explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you’ll be able to use these principles to more safely use AI assistance tools."
+    "section": "3.14 Summary",
+    "text": "3.14 Summary\nIn this chapter, we explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you’ll be able to use these principles to more safely use AI assistance tools."
   },
   {
     "objectID": "learn-more.html#using-github-copilot",
@@ -362,5 +362,12 @@
     "title": "\n2  Uses\n",
     "section": "\n2.17 Compare text or code",
     "text": "2.17 Compare text or code\nExplain differences between two bodies of text or snippets of code. Here’s an example of comparing two code snippets.\nCompare the following two R code snippets and explain the differences:\n# Code snippet 1\nx <- 1:5\ny <- 10:15\noutput_vector <- c()\nfor (i in 1:length(x)) {\n  output_vector[i] <- x[i] + y[i]\n}\noutput_vector\n\n# Code snippet 2\nx <- 1:5\ny <- 10:15\noutput_vector <- x + y\noutput_vector\nBoth code snippets aim to perform element-wise addition of two vectors `x` and `y` and store the result in `output_vector`. However, there are some notable differences:\n\n### Code snippet 1\n\n1. **Explicit Loop**: This snippet uses a `for` loop to iterate over each element in the vectors `x` and `y`. In each iteration, the loop adds the corresponding elements from the vectors and stores them in `output_vector`.\n2. **Length Calculation**: The length of the vectors is calculated explicitly with `length(x)`.\n3. **Memory Allocation**: An empty vector `output_vector <- c()` is initialized, and elements are filled in one by one in the loop.\n4. **Error-prone**: If `x` and `y` have different lengths, this code will still run but may produce incorrect or unexpected results.\n5. **Less Efficient**: Explicit loops in R are generally slower compared to vectorized operations.\n\n### Code snippet 2\n\n1. **Vectorized Operation**: This snippet uses R's built-in vectorized addition (`x + y`), which is more concise and generally more efficient.\n2. **Implicit Length Handling**: The operation automatically handles the lengths of the vectors, without the need to explicitly calculate them.\n3. **Memory Allocation**: The vector `output_vector` is created and filled in one line, making the code more concise.\n4. **Less Error-prone**: If `x` and `y` have different lengths, R will still execute the code by recycling elements of the shorter vector to match the length of the longer one. While this could also lead to unexpected results, it is a feature of R's vectorized operations.\n\nIn summary, the second snippet is more idiomatic, concise, and efficient for this kind of simple element-wise operation in R."
+  },
+  {
+    "objectID": "considerations.html#s2c",
+    "href": "considerations.html#s2c",
+    "title": "3  Considerations",
+    "section": "3.13 S2C",
+    "text": "3.13 S2C\nFollow Tom Mock’s framework called S2C that he presented at Posit Conf 2023 for Github Copilot prompting: Simple, Specific, and use Comments. This framework can be applied to any AI tool.\nHere are some of the key points from the talk:\n\nBreakdown complex tasks by providing a high-level description of the project goal at the top level then build off that with more specific tasks.\nUse expressive names for variables, functions, and object.\nPrompt again or in a different way (a mentioned in the iterate on it section) if you don’t get the results you want.\nUse the generative loop to your advantage! Build off your own momentum by writing some of your own code. This can in turn help the AI tool understand what you’re trying to do and provide better results."
   }
 ]
