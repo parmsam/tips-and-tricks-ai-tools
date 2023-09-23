@@ -42,13 +42,19 @@ Break your problem into small pieces or tasks, as suggested [in Nature](https://
 
 Be a good designer and keep your prompts specific and clear. As part of that, you can include the response format or an example response you expect to receive. You could add a word limit or readability level (keep responses at a middle school level for example). You could mention the target audience, desired tone, or a [persona](https://www.howtogeek.com/881659/how-to-create-chatgpt-personas-for-every-occasion/) the tool should adopt. There are a lot of these different *response settings* you can define to mold the responses. Some experimentation is required here, but that's the fun part.
 
+Tools such as ChatGPT also now have a setting called [custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt). It allows you to specify a set of instructions that the model should follow for responses. The two main instructions you can specify, as of Sept 2023, are the following:
+- What would you like ChatGPT to know about you to provide better responses?
+- How would you like ChatGPT to respond?
+
+These could be used to specify relevant background such as that you're teaching a 3rd grade science class or that you are a Python programmer (these examples are [mentioned in the documentation](https://openai.com/blog/custom-instructions-for-chatgpt)).
+
 ## Be familiar with your tool
 
 Learn how your AI tool's features and any settings you can change. For example, Github Copilot uses a feature called neighboring tabs to contextualize recommendations according to other tabs open in the IDE. Therefore, you may need to keep tabs open with material that may be relevant to current work for the tool. You can also tweak keyboard shortcuts or other settings for tools Github Copilot. Customize these tools to your needs.
 
 ### Be aware of limitations
 
-You should consider the training cutoff dates for the LLM models that you are using. The training cutoff date for OpenAI's GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results.  Other platforms like Bing and Bard can have more recent results since they can search the internet. 
+You should consider the training cutoff dates for the LLM models that you are using. The training cutoff date for OpenAI's GPT-3.5 and GPT-4 models is September 2021. This may limit the ability include more recent information in chat results.  Other platforms like Bing and Bard can have more recent results since they can search the internet. Note that there are token limits which vary depending on the model you are using. For example, the token limit for [GPT-3.5 is 4096 tokens](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/chatgpt?pivots=programming-language-chat-completions#managing-conversations) and [over 8000 tokens for GPT-4](https://help.openai.com/en/articles/7127966-what-is-the-difference-between-the-gpt-4-models). This means that you can only send 4096 tokens to the model at a time. This can be a problem if you are trying to send a lot of information through the conversation.
 
 Also be aware that [many of these LLMs do not disclose](https://simonwillison.net/2023/Aug/27/wordcamp-llms/#how-they-are-trained) the training data used. This makes it unclear what it is probably good at answer and isn't good at answering out of box. 
 

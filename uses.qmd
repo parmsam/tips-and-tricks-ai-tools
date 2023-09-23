@@ -252,6 +252,8 @@ csv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))
 # The names of the elements are set to the CSV file names without the full file paths.
 ```
 
+You could then ask ChatGPT to format responses into templates that you can fill in the blanks with ( (using `____` as blanks for you to edit). This is useful when you want to write code but are not sure of the exact syntax or the exact parameters to use.
+
 ## Debug code
 
 Get help to identify, understand, or fix problems in your code. Here it helps to define expectations.  
