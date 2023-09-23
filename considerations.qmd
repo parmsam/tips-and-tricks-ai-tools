@@ -75,7 +75,7 @@ Simon Willison had a great talk in August 2023 called [Making Large Language Mod
 
 ## S^2^C
 
-Follow [Tom Mock](https://github.com/jthomasmock)'s framework called S^2^C that he [presented at Posit Conf 2023](https://colorado.posit.co/rsc/rstudio-copilot/#/11) for Github Copilot prompting: Simple, Specific, and use Comments. This framework can be applied to any AI tool. 
+Follow [Tom Mock](https://github.com/jthomasmock)'s framework called S^2^C that he [presented at posit::conf(2023)](https://colorado.posit.co/rsc/rstudio-copilot/#/11) for Github Copilot prompting: **Simple, Specific, and use Comments**. This framework can be applied to any AI coding assistant. 
 
 Here are some of the key points from the talk:
 
