@@ -254,6 +254,58 @@ csv_data_list <- set_names(map(csv_files, read_csv), basename(csv_files))
 
 You could then ask ChatGPT to format responses into templates that you can fill in the blanks with ( (using `____` as blanks for you to edit). This is useful when you want to write code but are not sure of the exact syntax or the exact parameters to use.
 
+### Create simple apps
+
+```markdown
+Create a simple Shiny for R app that  displays uploaded CSV data as a DT table that you can build off of
+```
+
+```{r eval = F}
+# app.R
+library(shiny)
+library(DT)
+
+ui <- fluidPage(
+  titlePanel("Upload CSV and Display as DT Table"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      fileInput("file", "Choose CSV File",
+                accept = c(
+                  "text/csv",
+                  "text/comma-separated-values,text/plain",
+                  ".csv")
+      ),
+      tags$hr(),
+      checkboxInput("header", "Header", TRUE)
+    ),
+    
+    mainPanel(
+      DTOutput("table")
+    )
+  )
+)
+
+server <- function(input, output) {
+  output$table <- renderDT({
+    inFile <- input$file
+    
+    if (is.null(inFile)) {
+      return(NULL)
+    }
+    
+    # Read the uploaded CSV
+    data <- read.csv(inFile$datapath, header = input$header)
+    
+    # Return the datatable
+    datatable(data, options = list(pageLength = 25))
+  })
+}
+
+shinyApp(ui, server)
+```
+
+
 ## Debug code
 
 Get help to identify, understand, or fix problems in your code. Here it helps to define expectations.  
