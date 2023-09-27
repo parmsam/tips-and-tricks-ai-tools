@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>parmsam.github.io/tips-and-tricks-ai-tools/index.html</loc>
-    <lastmod>2023-09-23T21:01:05.951Z</lastmod>
-  </url>
-  <url>
-    <loc>parmsam.github.io/tips-and-tricks-ai-tools/intro.html</loc>
-    <lastmod>2023-09-25T13:41:12.775Z</lastmod>
-  </url>
-  <url>
     <loc>parmsam.github.io/tips-and-tricks-ai-tools/uses.html</loc>
-    <lastmod>2023-09-27T12:47:05.024Z</lastmod>
+    <lastmod>2023-09-27T20:01:32.940Z</lastmod>
   </url>
   <url>
-    <loc>parmsam.github.io/tips-and-tricks-ai-tools/considerations.html</loc>
-    <lastmod>2023-09-23T21:07:35.358Z</lastmod>
+    <loc>parmsam.github.io/tips-and-tricks-ai-tools/index.html</loc>
+    <lastmod>2023-09-27T20:05:52.231Z</lastmod>
+  </url>
+  <url>
+    <loc>parmsam.github.io/tips-and-tricks-ai-tools/shiny.html</loc>
+    <lastmod>2023-09-27T20:01:39.370Z</lastmod>
   </url>
   <url>
     <loc>parmsam.github.io/tips-and-tricks-ai-tools/learn-more.html</loc>
-    <lastmod>2023-09-27T12:53:20.419Z</lastmod>
+    <lastmod>2023-09-27T20:01:40.306Z</lastmod>
+  </url>
+  <url>
+    <loc>parmsam.github.io/tips-and-tricks-ai-tools/intro.html</loc>
+    <lastmod>2023-09-27T20:05:15.424Z</lastmod>
+  </url>
+  <url>
+    <loc>parmsam.github.io/tips-and-tricks-ai-tools/considerations.html</loc>
+    <lastmod>2023-09-27T20:01:57.695Z</lastmod>
   </url>
 </urlset>

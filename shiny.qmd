@@ -1,0 +1,75 @@
+---
+title: "Shiny example"
+filters:
+  - shinylive
+---
+
+Wait a minute or two for it to load in your browser...
+
+Here's a dataset for you to try the app with:
+```{r}
+#| echo: false
+library(downloadthis)
+library(palmerpenguins)
+
+penguins %>%
+  download_this(
+    output_name = "palmer_penguins",
+    output_extension = ".csv",
+    button_label = "Download data",
+    button_type = "default",
+    has_icon = TRUE,
+    icon = "fa fa-save",
+    csv2 = FALSE
+  )
+```
+
+ 
+```{shinylive-r}
+#| standalone: true
+#| viewerHeight: 500
+#| components: [viewer]
+webr::install("DT")
+
+library(shiny)
+library(DT)
+
+ui <- fluidPage(
+  titlePanel("Upload CSV and Display as DT Table"),
+
+  sidebarLayout(
+    sidebarPanel(
+      fileInput("file", "Choose CSV File",
+                accept = c(
+                  "text/csv",
+                  "text/comma-separated-values,text/plain",
+                  ".csv")
+      ),
+      tags$hr(),
+      checkboxInput("header", "Header", TRUE)
+    ),
+
+    mainPanel(
+      DTOutput("table")
+    )
+  )
+)
+server <- function(input, output) {
+  output$table <- renderDT({
+    inFile <- input$file
+
+    if (is.null(inFile)) {
+      return(NULL)
+    }
+
+    # Read the uploaded CSV
+    data <- read.csv(inFile$datapath, header = input$header)
+
+    # Return the datatable
+    datatable(data, options = list(pageLength = 25))
+  })
+}
+shinyApp(ui, server)
+```
+
+Click [here](uses.qmd#create-simple-apps) to go back to the previous code book section.

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>AI Assistants Maximized - Appendix A — Shiny example</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./learn-more.html" rel="prev">
+<link href="./images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<meta name="shinylive:serviceworker_dir" content=".">
+<script src="site_libs/quarto-contrib/shinylive-0.2.0/shinylive/load-shinylive-sw.js" type="module"></script>
+<script src="site_libs/quarto-contrib/shinylive-0.2.0/shinylive/run-python-blocks.js" type="module"></script>
+<link href="site_libs/quarto-contrib/shinylive-0.2.0/shinylive/shinylive.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/shinylive-quarto-css/shinylive-quarto.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script src="site_libs/font-awesome-5.13.0/js/script.js"></script>
+</head>
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./shiny.html">Appendices</a></li><li class="breadcrumb-item"><a href="./shiny.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Shiny example</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">AI Assistants Maximized</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <a href="https://github.com/parmsam/tips-and-tricks-ai-tools" rel="" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+<li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=%7Curl%7C">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=%7Curl%7C">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+      </ul>
+</div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Intro</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./uses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Uses</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./considerations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Considerations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./learn-more.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Learn more</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./shiny.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Shiny example</span></span></a>
+  </div>
+</li>
+      </ul>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Appendix A — Shiny example</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><p>Wait a minute or two for it to load in your browser…</p>
+<p>Here’s a dataset for you to try the app with:</p>
+<div class="cell">
+<div class="cell-output-display">
+<a onclick="fetch('data:text/csv;base64,c3BlY2llcyxpc2xhbmQsYmlsbF9sZW5ndGhfbW0sYmlsbF9kZXB0aF9tbSxmbGlwcGVyX2xlbmd0aF9tbSxib2R5X21hc3NfZyxzZXgseWVhcgpBZGVsaWUsVG9yZ2Vyc2VuLDM5LjEsMTguNywxODEsMzc1MCxtYWxlLDIwMDcKQWRlbGllLFRvcmdlcnNlbiwzOS41LDE3LjQsMTg2LDM4MDAsZmVtYWxlLDIwMDcKQWRlbGllLFRvcmdlcnNlbiw0MC4zLDE4LDE5NSwzMjUwLGZlbWFsZSwyMDA3CkFkZWxpZSxUb3JnZXJzZW4sTkEsTkEsTkEsTkEsTkEsMjAwNwpBZGVsaWUsVG9yZ2Vyc2VuLDM2LjcsMTkuMywxOTMsMzQ1MCxmZW1hbGUsMjAwNwpBZGVsaWUsVG9yZ2Vyc2VuLDM5LjMsMjAuNiwxOTAsMzY1MCxtYWxlLDIwMDcKQWRlbGllLFRvcmdlcnNlbiwzOC45LDE3LjgsMTgxLDM2MjUsZmVtYWxlLDIwMDcKQWRlbGllLFRvcmdlcnNlbiwzOS4yLDE5LjYsMTk1LDQ2NzUsbWFsZSwyMDA3CkFkZWxpZSxUb3JnZXJzZW4sMzQuMSwxOC4xLDE5MywzNDc1LE5BLDIwMDcKQWRlbGllLFRvcmdlcnNlbiw0MiwyMC4yLDE5MCw0MjUwLE5BLDIwMDcKQWRlbGllLFRvcmdlcnNlbiwzNy44LDE3LjEsMTg2LDMzMDAsTkEsMjAwNwpBZGVsaWUsVG9yZ2Vyc2VuLDM3LjgsMTcuMywxODAsMzcwMCxOQSwyMDA3CkFkZWxpZSxUb3JnZXJzZW4sNDEuMSwxNy42LDE4MiwzMjAwLGZlbWFsZSwyMDA3CkFkZWxpZSxUb3JnZXJzZW4sMzguNiwyMS4yLDE5MSwzODAwLG1hbGUsMjAwNwpBZGVsaWUsVG9yZ2Vyc2VuLDM0LjYsMjEuMSwxOTgsNDQwMCxtYWxlLDIwMDcKQWRlbGllLFRvcmdlcnNlbiwzNi42LDE3LjgsMTg1LDM3MDAsZmVtYWxlLDIwMDcKQWRlbGllLFRvcmdlcnNlbiwzOC43LDE5LDE5NSwzNDUwLGZlbWFsZSwyMDA3CkFkZWxpZSxUb3JnZXJzZW4sNDIuNSwyMC43LDE5Nyw0NTAwLG1hbGUsMjAwNwpBZGVsaWUsVG9yZ2Vyc2VuLDM0LjQsMTguNCwxODQsMzMyNSxmZW1hbGUsMjAwNwpBZGVsaWUsVG9yZ2Vyc2VuLDQ2LDIxLjUsMTk0LDQyMDAsbWFsZSwyMDA3CkFkZWxpZSxCaXNjb2UsMzcuOCwxOC4zLDE3NCwzNDAwLGZlbWFsZSwyMDA3CkFkZWxpZSxCaXNjb2UsMzcuNywxOC43LDE4MCwzNjAwLG1hbGUsMjAwNwpBZGVsaWUsQmlzY29lLDM1LjksMTkuMiwxODksMzgwMCxmZW1hbGUsMjAwNwpBZGVsaWUsQmlzY29lLDM4LjIsMTguMSwxODUsMzk1MCxtYWxlLDIwMDcKQWRlbGllLEJpc2NvZSwzOC44LDE3LjIsMTgwLDM4MDAsbWFsZSwyMDA3CkFkZWxpZSxCaXNjb2UsMzUuMywxOC45LDE4NywzODAwLGZlbWFsZSwyMDA3CkFkZWxpZSxCaXNjb2UsNDAuNiwxOC42LDE4MywzNTUwLG1hbGUsMjAwNwpBZGVsaWUsQmlzY29lLDQwLjUsMTcuOSwxODcsMzIwMCxmZW1hbGUsMjAwNwpBZGVsaWUsQmlzY29lLDM3LjksMTguNiwxNzIsMzE1MCxmZW1hbGUsMjAwNwpBZGVsaWUsQmlzY29lLDQwLjUsMTguOSwxODAsMzk1MCxtYWxlLDIwMDcKQWRlbGllLERyZWFtLDM5LjUsMTYuNywxNzgsMzI1MCxmZW1hbGUsMjAwNwpBZGVsaWUsRHJlYW0sMzcuMiwxOC4xLDE3OCwzOTAwLG1hbGUsMjAwNwpBZGVsaWUsRHJlYW0sMzkuNSwxNy44LDE4OCwzMzAwLGZlbWFsZSwyMDA3CkFkZWxpZSxEcmVhbSw0MC45LDE4LjksMTg0LDM5MDAsbWFsZSwyMDA3CkFkZWxpZSxEcmVhbSwzNi40LDE3LDE5NSwzMzI1LGZlbWFsZSwyMDA3CkFkZWxpZSxEcmVhbSwzOS4yLDIxLjEsMTk2LDQxNTAsbWFsZSwyMDA3CkFkZWxpZSxEcmVhbSwzOC44LDIwLDE5MCwzOTUwLG1hbGUsMjAwNwpBZGVsaWUsRHJlYW0sNDIuMiwxOC41LDE4MCwzNTUwLGZlbWFsZSwyMDA3CkFkZWxpZSxEcmVhbSwzNy42LDE5LjMsMTgxLDMzMDAsZmVtYWxlLDIwMDcKQWRlbGllLERyZWFtLDM5LjgsMTkuMSwxODQsNDY1MCxtYWxlLDIwMDcKQWRlbGllLERyZWFtLDM2LjUsMTgsMTgyLDMxNTAsZmVtYWxlLDIwMDcKQWRlbGllLERyZWFtLDQwLjgsMTguNCwxOTUsMzkwMCxtYWxlLDIwMDcKQWRlbGllLERyZWFtLDM2LDE4LjUsMTg2LDMxMDAsZmVtYWxlLDIwMDcKQWRlbGllLERyZWFtLDQ0LjEsMTkuNywxOTYsNDQwMCxtYWxlLDIwMDcKQWRlbGllLERyZWFtLDM3LDE2LjksMTg1LDMwMDAsZmVtYWxlLDIwMDcKQWRlbGllLERyZWFtLDM5LjYsMTguOCwxOTAsNDYwMCxtYWxlLDIwMDcKQWRlbGllLERyZWFtLDQxLjEsMTksMTgyLDM0MjUsbWFsZSwyMDA3CkFkZWxpZSxEcmVhbSwzNy41LDE4LjksMTc5LDI5NzUsTkEsMjAwNwpBZGVsaWUsRHJlYW0sMzYsMTcuOSwxOTAsMzQ1MCxmZW1hbGUsMjAwNwpBZGVsaWUsRHJlYW0sNDIuMywyMS4yLDE5MSw0MTUwLG1hbGUsMjAwNwpBZGVsaWUsQmlzY29lLDM5LjYsMTcuNywxODYsMzUwMCxmZW1hbGUsMjAwOApBZGVsaWUsQmlzY29lLDQwLjEsMTguOSwxODgsNDMwMCxtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSwzNSwxNy45LDE5MCwzNDUwLGZlbWFsZSwyMDA4CkFkZWxpZSxCaXNjb2UsNDIsMTkuNSwyMDAsNDA1MCxtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSwzNC41LDE4LjEsMTg3LDI5MDAsZmVtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSw0MS40LDE4LjYsMTkxLDM3MDAsbWFsZSwyMDA4CkFkZWxpZSxCaXNjb2UsMzksMTcuNSwxODYsMzU1MCxmZW1hbGUsMjAwOApBZGVsaWUsQmlzY29lLDQwLjYsMTguOCwxOTMsMzgwMCxtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSwzNi41LDE2LjYsMTgxLDI4NTAsZmVtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSwzNy42LDE5LjEsMTk0LDM3NTAsbWFsZSwyMDA4CkFkZWxpZSxCaXNjb2UsMzUuNywxNi45LDE4NSwzMTUwLGZlbWFsZSwyMDA4CkFkZWxpZSxCaXNjb2UsNDEuMywyMS4xLDE5NSw0NDAwLG1hbGUsMjAwOApBZGVsaWUsQmlzY29lLDM3LjYsMTcsMTg1LDM2MDAsZmVtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSw0MS4xLDE4LjIsMTkyLDQwNTAsbWFsZSwyMDA4CkFkZWxpZSxCaXNjb2UsMzYuNCwxNy4xLDE4NCwyODUwLGZlbWFsZSwyMDA4CkFkZWxpZSxCaXNjb2UsNDEuNiwxOCwxOTIsMzk1MCxtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSwzNS41LDE2LjIsMTk1LDMzNTAsZmVtYWxlLDIwMDgKQWRlbGllLEJpc2NvZSw0MS4xLDE5LjEsMTg4LDQxMDAsbWFsZSwyMDA4CkFkZWxpZSxUb3JnZXJzZW4sMzUuOSwxNi42LDE5MCwzMDUwLGZlbWFsZSwyMDA4CkFkZWxpZSxUb3JnZXJzZW4sNDEuOCwxOS40LDE5OCw0NDUwLG1hbGUsMjAwOApBZGVsaWUsVG9yZ2Vyc2VuLDMzLjUsMTksMTkwLDM2MDAsZmVtYWxlLDIwMDgKQWRlbGllLFRvcmdlcnNlbiwzOS43LDE4LjQsMTkwLDM5MDAsbWFsZSwyMDA4CkFkZWxpZSxUb3JnZXJzZW4sMzkuNiwxNy4yLDE5NiwzNTUwLGZlbWFsZSwyMDA4CkFkZWxpZSxUb3JnZXJzZW4sNDUuOCwxOC45LDE5Nyw0MTUwLG1hbGUsMjAwOApBZGVsaWUsVG9yZ2Vyc2VuLDM1LjUsMTcuNSwxOTAsMzcwMCxmZW1hbGUsMjAwOApBZGVsaWUsVG9yZ2Vyc2VuLDQyLjgsMTguNSwxOTUsNDI1MCxtYWxlLDIwMDgKQWRlbGllLFRvcmdlcnNlbiw0MC45LDE2LjgsMTkxLDM3MDAsZmVtYWxlLDIwMDgKQWRlbGllLFRvcmdlcnNlbiwzNy4yLDE5LjQsMTg0LDM5MDAsbWFsZSwyMDA4CkFkZWxpZSxUb3JnZXJzZW4sMzYuMiwxNi4xLDE4NywzNTUwLGZlbWFsZSwyMDA4CkFkZWxpZSxUb3JnZXJzZW4sNDIuMSwxOS4xLDE5NSw0MDAwLG1hbGUsMjAwOApBZGVsaWUsVG9yZ2Vyc2VuLDM0LjYsMTcuMiwxODksMzIwMCxmZW1hbGUsMjAwOApBZGVsaWUsVG9yZ2Vyc2VuLDQyLjksMTcuNiwxOTYsNDcwMCxtYWxlLDIwMDgKQWRlbGllLFRvcmdlcnNlbiwzNi43LDE4LjgsMTg3LDM4MDAsZmVtYWxlLDIwMDgKQWRlbGllLFRvcmdlcnNlbiwzNS4xLDE5LjQsMTkzLDQyMDAsbWFsZSwyMDA4CkFkZWxpZSxEcmVhbSwzNy4zLDE3LjgsMTkxLDMzNTAsZmVtYWxlLDIwMDgKQWRlbGllLERyZWFtLDQxLjMsMjAuMywxOTQsMzU1MCxtYWxlLDIwMDgKQWRlbGllLERyZWFtLDM2LjMsMTkuNSwxOTAsMzgwMCxtYWxlLDIwMDgKQWRlbGllLERyZWFtLDM2LjksMTguNiwxODksMzUwMCxmZW1hbGUsMjAwOApBZGVsaWUsRHJlYW0sMzguMywxOS4yLDE4OSwzOTUwLG1hbGUsMjAwOApBZGVsaWUsRHJlYW0sMzguOSwxOC44LDE5MCwzNjAwLGZlbWFsZSwyMDA4CkFkZWxpZSxEcmVhbSwzNS43LDE4LDIwMiwzNTUwLGZlbWFsZSwyMDA4CkFkZWxpZSxEcmVhbSw0MS4xLDE4LjEsMjA1LDQzMDAsbWFsZSwyMDA4CkFkZWxpZSxEcmVhbSwzNCwxNy4xLDE4NSwzNDAwLGZlbWFsZSwyMDA4CkFkZWxpZSxEcmVhbSwzOS42LDE4LjEsMTg2LDQ0NTAsbWFsZSwyMDA4CkFkZWxpZSxEcmVhbSwzNi4yLDE3LjMsMTg3LDMzMDAsZmVtYWxlLDIwMDgKQWRlbGllLERyZWFtLDQwLjgsMTguOSwyMDgsNDMwMCxtYWxlLDIwMDgKQWRlbGllLERyZWFtLDM4LjEsMTguNiwxOTAsMzcwMCxmZW1hbGUsMjAwOApBZGVsaWUsRHJlYW0sNDAuMywxOC41LDE5Niw0MzUwLG1hbGUsMjAwOApBZGVsaWUsRHJlYW0sMzMuMSwxNi4xLDE3OCwyOTAwLGZlbWFsZSwyMDA4CkFkZWxpZSxEcmVhbSw0My4yLDE4LjUsMTkyLDQxMDAsbWFsZSwyMDA4CkFkZWxpZSxCaXNjb2UsMzUsMTcuOSwxOTIsMzcyNSxmZW1hbGUsMjAwOQpBZGVsaWUsQmlzY29lLDQxLDIwLDIwMyw0NzI1LG1hbGUsMjAwOQpBZGVsaWUsQmlzY29lLDM3LjcsMTYsMTgzLDMwNzUsZmVtYWxlLDIwMDkKQWRlbGllLEJpc2NvZSwzNy44LDIwLDE5MCw0MjUwLG1hbGUsMjAwOQpBZGVsaWUsQmlzY29lLDM3LjksMTguNiwxOTMsMjkyNSxmZW1hbGUsMjAwOQpBZGVsaWUsQmlzY29lLDM5LjcsMTguOSwxODQsMzU1MCxtYWxlLDIwMDkKQWRlbGllLEJpc2NvZSwzOC42LDE3LjIsMTk5LDM3NTAsZmVtYWxlLDIwMDkKQWRlbGllLEJpc2NvZSwzOC4yLDIwLDE5MCwzOTAwLG1hbGUsMjAwOQpBZGVsaWUsQmlzY29lLDM4LjEsMTcsMTgxLDMxNzUsZmVtYWxlLDIwMDkKQWRlbGllLEJpc2NvZSw0My4yLDE5LDE5Nyw0Nzc1LG1hbGUsMjAwOQpBZGVsaWUsQmlzY29lLDM4LjEsMTYuNSwxOTgsMzgyNSxmZW1hbGUsMjAwOQpBZGVsaWUsQmlzY29lLDQ1LjYsMjAuMywxOTEsNDYwMCxtYWxlLDIwMDkKQWRlbGllLEJpc2NvZSwzOS43LDE3LjcsMTkzLDMyMDAsZmVtYWxlLDIwMDkKQWRlbGllLEJpc2NvZSw0Mi4yLDE5LjUsMTk3LDQyNzUsbWFsZSwyMDA5CkFkZWxpZSxCaXNjb2UsMzkuNiwyMC43LDE5MSwzOTAwLGZlbWFsZSwyMDA5CkFkZWxpZSxCaXNjb2UsNDIuNywxOC4zLDE5Niw0MDc1LG1hbGUsMjAwOQpBZGVsaWUsVG9yZ2Vyc2VuLDM4LjYsMTcsMTg4LDI5MDAsZmVtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiwzNy4zLDIwLjUsMTk5LDM3NzUsbWFsZSwyMDA5CkFkZWxpZSxUb3JnZXJzZW4sMzUuNywxNywxODksMzM1MCxmZW1hbGUsMjAwOQpBZGVsaWUsVG9yZ2Vyc2VuLDQxLjEsMTguNiwxODksMzMyNSxtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiwzNi4yLDE3LjIsMTg3LDMxNTAsZmVtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiwzNy43LDE5LjgsMTk4LDM1MDAsbWFsZSwyMDA5CkFkZWxpZSxUb3JnZXJzZW4sNDAuMiwxNywxNzYsMzQ1MCxmZW1hbGUsMjAwOQpBZGVsaWUsVG9yZ2Vyc2VuLDQxLjQsMTguNSwyMDIsMzg3NSxtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiwzNS4yLDE1LjksMTg2LDMwNTAsZmVtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiw0MC42LDE5LDE5OSw0MDAwLG1hbGUsMjAwOQpBZGVsaWUsVG9yZ2Vyc2VuLDM4LjgsMTcuNiwxOTEsMzI3NSxmZW1hbGUsMjAwOQpBZGVsaWUsVG9yZ2Vyc2VuLDQxLjUsMTguMywxOTUsNDMwMCxtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiwzOSwxNy4xLDE5MSwzMDUwLGZlbWFsZSwyMDA5CkFkZWxpZSxUb3JnZXJzZW4sNDQuMSwxOCwyMTAsNDAwMCxtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiwzOC41LDE3LjksMTkwLDMzMjUsZmVtYWxlLDIwMDkKQWRlbGllLFRvcmdlcnNlbiw0My4xLDE5LjIsMTk3LDM1MDAsbWFsZSwyMDA5CkFkZWxpZSxEcmVhbSwzNi44LDE4LjUsMTkzLDM1MDAsZmVtYWxlLDIwMDkKQWRlbGllLERyZWFtLDM3LjUsMTguNSwxOTksNDQ3NSxtYWxlLDIwMDkKQWRlbGllLERyZWFtLDM4LjEsMTcuNiwxODcsMzQyNSxmZW1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sNDEuMSwxNy41LDE5MCwzOTAwLG1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sMzUuNiwxNy41LDE5MSwzMTc1LGZlbWFsZSwyMDA5CkFkZWxpZSxEcmVhbSw0MC4yLDIwLjEsMjAwLDM5NzUsbWFsZSwyMDA5CkFkZWxpZSxEcmVhbSwzNywxNi41LDE4NSwzNDAwLGZlbWFsZSwyMDA5CkFkZWxpZSxEcmVhbSwzOS43LDE3LjksMTkzLDQyNTAsbWFsZSwyMDA5CkFkZWxpZSxEcmVhbSw0MC4yLDE3LjEsMTkzLDM0MDAsZmVtYWxlLDIwMDkKQWRlbGllLERyZWFtLDQwLjYsMTcuMiwxODcsMzQ3NSxtYWxlLDIwMDkKQWRlbGllLERyZWFtLDMyLjEsMTUuNSwxODgsMzA1MCxmZW1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sNDAuNywxNywxOTAsMzcyNSxtYWxlLDIwMDkKQWRlbGllLERyZWFtLDM3LjMsMTYuOCwxOTIsMzAwMCxmZW1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sMzksMTguNywxODUsMzY1MCxtYWxlLDIwMDkKQWRlbGllLERyZWFtLDM5LjIsMTguNiwxOTAsNDI1MCxtYWxlLDIwMDkKQWRlbGllLERyZWFtLDM2LjYsMTguNCwxODQsMzQ3NSxmZW1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sMzYsMTcuOCwxOTUsMzQ1MCxmZW1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sMzcuOCwxOC4xLDE5MywzNzUwLG1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sMzYsMTcuMSwxODcsMzcwMCxmZW1hbGUsMjAwOQpBZGVsaWUsRHJlYW0sNDEuNSwxOC41LDIwMSw0MDAwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ2LjEsMTMuMiwyMTEsNDUwMCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDUwLDE2LjMsMjMwLDU3MDAsbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDguNywxNC4xLDIxMCw0NDUwLGZlbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNTAsMTUuMiwyMTgsNTcwMCxtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0Ny42LDE0LjUsMjE1LDU0MDAsbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDYuNSwxMy41LDIxMCw0NTUwLGZlbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDUuNCwxNC42LDIxMSw0ODAwLGZlbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDYuNywxNS4zLDIxOSw1MjAwLG1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQzLjMsMTMuNCwyMDksNDQwMCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ2LjgsMTUuNCwyMTUsNTE1MCxtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0MC45LDEzLjcsMjE0LDQ2NTAsZmVtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0OSwxNi4xLDIxNiw1NTUwLG1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ1LjUsMTMuNywyMTQsNDY1MCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ4LjQsMTQuNiwyMTMsNTg1MCxtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0NS44LDE0LjYsMjEwLDQyMDAsZmVtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0OS4zLDE1LjcsMjE3LDU4NTAsbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDIsMTMuNSwyMTAsNDE1MCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ5LjIsMTUuMiwyMjEsNjMwMCxtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0Ni4yLDE0LjUsMjA5LDQ4MDAsZmVtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0OC43LDE1LjEsMjIyLDUzNTAsbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNTAuMiwxNC4zLDIxOCw1NzAwLG1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ1LjEsMTQuNSwyMTUsNTAwMCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ2LjUsMTQuNSwyMTMsNDQwMCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ2LjMsMTUuOCwyMTUsNTA1MCxtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0Mi45LDEzLjEsMjE1LDUwMDAsZmVtYWxlLDIwMDcKR2VudG9vLEJpc2NvZSw0Ni4xLDE1LjEsMjE1LDUxMDAsbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDQuNSwxNC4zLDIxNiw0MTAwLE5BLDIwMDcKR2VudG9vLEJpc2NvZSw0Ny44LDE1LDIxNSw1NjUwLG1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ4LjIsMTQuMywyMTAsNDYwMCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDUwLDE1LjMsMjIwLDU1NTAsbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDcuMywxNS4zLDIyMiw1MjUwLG1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQyLjgsMTQuMiwyMDksNDcwMCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDQ1LjEsMTQuNSwyMDcsNTA1MCxmZW1hbGUsMjAwNwpHZW50b28sQmlzY29lLDU5LjYsMTcsMjMwLDYwNTAsbWFsZSwyMDA3CkdlbnRvbyxCaXNjb2UsNDkuMSwxNC44LDIyMCw1MTUwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDguNCwxNi4zLDIyMCw1NDAwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQyLjYsMTMuNywyMTMsNDk1MCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ0LjQsMTcuMywyMTksNTI1MCxtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0NCwxMy42LDIwOCw0MzUwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDguNywxNS43LDIwOCw1MzUwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQyLjcsMTMuNywyMDgsMzk1MCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ5LjYsMTYsMjI1LDU3MDAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDUuMywxMy43LDIxMCw0MzAwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDkuNiwxNSwyMTYsNDc1MCxtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw1MC41LDE1LjksMjIyLDU1NTAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDMuNiwxMy45LDIxNyw0OTAwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDUuNSwxMy45LDIxMCw0MjAwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNTAuNSwxNS45LDIyNSw1NDAwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ0LjksMTMuMywyMTMsNTEwMCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ1LjIsMTUuOCwyMTUsNTMwMCxtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0Ni42LDE0LjIsMjEwLDQ4NTAsZmVtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0OC41LDE0LjEsMjIwLDUzMDAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDUuMSwxNC40LDIxMCw0NDAwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNTAuMSwxNSwyMjUsNTAwMCxtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0Ni41LDE0LjQsMjE3LDQ5MDAsZmVtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0NSwxNS40LDIyMCw1MDUwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQzLjgsMTMuOSwyMDgsNDMwMCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ1LjUsMTUsMjIwLDUwMDAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDMuMiwxNC41LDIwOCw0NDUwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNTAuNCwxNS4zLDIyNCw1NTUwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ1LjMsMTMuOCwyMDgsNDIwMCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ2LjIsMTQuOSwyMjEsNTMwMCxtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0NS43LDEzLjksMjE0LDQ0MDAsZmVtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw1NC4zLDE1LjcsMjMxLDU2NTAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDUuOCwxNC4yLDIxOSw0NzAwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDkuOCwxNi44LDIzMCw1NzAwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ2LjIsMTQuNCwyMTQsNDY1MCxOQSwyMDA4CkdlbnRvbyxCaXNjb2UsNDkuNSwxNi4yLDIyOSw1ODAwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQzLjUsMTQuMiwyMjAsNDcwMCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDUwLjcsMTUsMjIzLDU1NTAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDcuNywxNSwyMTYsNDc1MCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ2LjQsMTUuNiwyMjEsNTAwMCxtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0OC4yLDE1LjYsMjIxLDUxMDAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDYuNSwxNC44LDIxNyw1MjAwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDYuNCwxNSwyMTYsNDcwMCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ4LjYsMTYsMjMwLDU4MDAsbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNDcuNSwxNC4yLDIwOSw0NjAwLGZlbWFsZSwyMDA4CkdlbnRvbyxCaXNjb2UsNTEuMSwxNi4zLDIyMCw2MDAwLG1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ1LjIsMTMuOCwyMTUsNDc1MCxmZW1hbGUsMjAwOApHZW50b28sQmlzY29lLDQ1LjIsMTYuNCwyMjMsNTk1MCxtYWxlLDIwMDgKR2VudG9vLEJpc2NvZSw0OS4xLDE0LjUsMjEyLDQ2MjUsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw1Mi41LDE1LjYsMjIxLDU0NTAsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDcuNCwxNC42LDIxMiw0NzI1LGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNTAsMTUuOSwyMjQsNTM1MCxtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw0NC45LDEzLjgsMjEyLDQ3NTAsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw1MC44LDE3LjMsMjI4LDU2MDAsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDMuNCwxNC40LDIxOCw0NjAwLGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNTEuMywxNC4yLDIxOCw1MzAwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ3LjUsMTQsMjEyLDQ4NzUsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw1Mi4xLDE3LDIzMCw1NTUwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ3LjUsMTUsMjE4LDQ5NTAsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw1Mi4yLDE3LjEsMjI4LDU0MDAsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDUuNSwxNC41LDIxMiw0NzUwLGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDkuNSwxNi4xLDIyNCw1NjUwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ0LjUsMTQuNywyMTQsNDg1MCxmZW1hbGUsMjAwOQpHZW50b28sQmlzY29lLDUwLjgsMTUuNywyMjYsNTIwMCxtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw0OS40LDE1LjgsMjE2LDQ5MjUsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDYuOSwxNC42LDIyMiw0ODc1LGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDguNCwxNC40LDIwMyw0NjI1LGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNTEuMSwxNi41LDIyNSw1MjUwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ4LjUsMTUsMjE5LDQ4NTAsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw1NS45LDE3LDIyOCw1NjAwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ3LjIsMTUuNSwyMTUsNDk3NSxmZW1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ5LjEsMTUsMjI4LDU1MDAsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDcuMywxMy44LDIxNiw0NzI1LE5BLDIwMDkKR2VudG9vLEJpc2NvZSw0Ni44LDE2LjEsMjE1LDU1MDAsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDEuNywxNC43LDIxMCw0NzAwLGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNTMuNCwxNS44LDIxOSw1NTAwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQzLjMsMTQsMjA4LDQ1NzUsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw0OC4xLDE1LjEsMjA5LDU1MDAsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNTAuNSwxNS4yLDIxNiw1MDAwLGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDkuOCwxNS45LDIyOSw1OTUwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQzLjUsMTUuMiwyMTMsNDY1MCxmZW1hbGUsMjAwOQpHZW50b28sQmlzY29lLDUxLjUsMTYuMywyMzAsNTUwMCxtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw0Ni4yLDE0LjEsMjE3LDQzNzUsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw1NS4xLDE2LDIzMCw1ODUwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ0LjUsMTUuNywyMTcsNDg3NSxOQSwyMDA5CkdlbnRvbyxCaXNjb2UsNDguOCwxNi4yLDIyMiw2MDAwLG1hbGUsMjAwOQpHZW50b28sQmlzY29lLDQ3LjIsMTMuNywyMTQsNDkyNSxmZW1hbGUsMjAwOQpHZW50b28sQmlzY29lLE5BLE5BLE5BLE5BLE5BLDIwMDkKR2VudG9vLEJpc2NvZSw0Ni44LDE0LjMsMjE1LDQ4NTAsZmVtYWxlLDIwMDkKR2VudG9vLEJpc2NvZSw1MC40LDE1LjcsMjIyLDU3NTAsbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDUuMiwxNC44LDIxMiw1MjAwLGZlbWFsZSwyMDA5CkdlbnRvbyxCaXNjb2UsNDkuOSwxNi4xLDIxMyw1NDAwLG1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNDYuNSwxNy45LDE5MiwzNTAwLGZlbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw1MCwxOS41LDE5NiwzOTAwLG1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNTEuMywxOS4yLDE5MywzNjUwLG1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNDUuNCwxOC43LDE4OCwzNTI1LGZlbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw1Mi43LDE5LjgsMTk3LDM3MjUsbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw0NS4yLDE3LjgsMTk4LDM5NTAsZmVtYWxlLDIwMDcKQ2hpbnN0cmFwLERyZWFtLDQ2LjEsMTguMiwxNzgsMzI1MCxmZW1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNTEuMywxOC4yLDE5NywzNzUwLG1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNDYsMTguOSwxOTUsNDE1MCxmZW1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNTEuMywxOS45LDE5OCwzNzAwLG1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNDYuNiwxNy44LDE5MywzODAwLGZlbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw1MS43LDIwLjMsMTk0LDM3NzUsbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw0NywxNy4zLDE4NSwzNzAwLGZlbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw1MiwxOC4xLDIwMSw0MDUwLG1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNDUuOSwxNy4xLDE5MCwzNTc1LGZlbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw1MC41LDE5LjYsMjAxLDQwNTAsbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw1MC4zLDIwLDE5NywzMzAwLG1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNTgsMTcuOCwxODEsMzcwMCxmZW1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNDYuNCwxOC42LDE5MCwzNDUwLGZlbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw0OS4yLDE4LjIsMTk1LDQ0MDAsbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw0Mi40LDE3LjMsMTgxLDM2MDAsZmVtYWxlLDIwMDcKQ2hpbnN0cmFwLERyZWFtLDQ4LjUsMTcuNSwxOTEsMzQwMCxtYWxlLDIwMDcKQ2hpbnN0cmFwLERyZWFtLDQzLjIsMTYuNiwxODcsMjkwMCxmZW1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNTAuNiwxOS40LDE5MywzODAwLG1hbGUsMjAwNwpDaGluc3RyYXAsRHJlYW0sNDYuNywxNy45LDE5NSwzMzAwLGZlbWFsZSwyMDA3CkNoaW5zdHJhcCxEcmVhbSw1MiwxOSwxOTcsNDE1MCxtYWxlLDIwMDcKQ2hpbnN0cmFwLERyZWFtLDUwLjUsMTguNCwyMDAsMzQwMCxmZW1hbGUsMjAwOApDaGluc3RyYXAsRHJlYW0sNDkuNSwxOSwyMDAsMzgwMCxtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDQ2LjQsMTcuOCwxOTEsMzcwMCxmZW1hbGUsMjAwOApDaGluc3RyYXAsRHJlYW0sNTIuOCwyMCwyMDUsNDU1MCxtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDQwLjksMTYuNiwxODcsMzIwMCxmZW1hbGUsMjAwOApDaGluc3RyYXAsRHJlYW0sNTQuMiwyMC44LDIwMSw0MzAwLG1hbGUsMjAwOApDaGluc3RyYXAsRHJlYW0sNDIuNSwxNi43LDE4NywzMzUwLGZlbWFsZSwyMDA4CkNoaW5zdHJhcCxEcmVhbSw1MSwxOC44LDIwMyw0MTAwLG1hbGUsMjAwOApDaGluc3RyYXAsRHJlYW0sNDkuNywxOC42LDE5NSwzNjAwLG1hbGUsMjAwOApDaGluc3RyYXAsRHJlYW0sNDcuNSwxNi44LDE5OSwzOTAwLGZlbWFsZSwyMDA4CkNoaW5zdHJhcCxEcmVhbSw0Ny42LDE4LjMsMTk1LDM4NTAsZmVtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDUyLDIwLjcsMjEwLDQ4MDAsbWFsZSwyMDA4CkNoaW5zdHJhcCxEcmVhbSw0Ni45LDE2LjYsMTkyLDI3MDAsZmVtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDUzLjUsMTkuOSwyMDUsNDUwMCxtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDQ5LDE5LjUsMjEwLDM5NTAsbWFsZSwyMDA4CkNoaW5zdHJhcCxEcmVhbSw0Ni4yLDE3LjUsMTg3LDM2NTAsZmVtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDUwLjksMTkuMSwxOTYsMzU1MCxtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDQ1LjUsMTcsMTk2LDM1MDAsZmVtYWxlLDIwMDgKQ2hpbnN0cmFwLERyZWFtLDUwLjksMTcuOSwxOTYsMzY3NSxmZW1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNTAuOCwxOC41LDIwMSw0NDUwLG1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNTAuMSwxNy45LDE5MCwzNDAwLGZlbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw0OSwxOS42LDIxMiw0MzAwLG1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNTEuNSwxOC43LDE4NywzMjUwLG1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNDkuOCwxNy4zLDE5OCwzNjc1LGZlbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw0OC4xLDE2LjQsMTk5LDMzMjUsZmVtYWxlLDIwMDkKQ2hpbnN0cmFwLERyZWFtLDUxLjQsMTksMjAxLDM5NTAsbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw0NS43LDE3LjMsMTkzLDM2MDAsZmVtYWxlLDIwMDkKQ2hpbnN0cmFwLERyZWFtLDUwLjcsMTkuNywyMDMsNDA1MCxtYWxlLDIwMDkKQ2hpbnN0cmFwLERyZWFtLDQyLjUsMTcuMywxODcsMzM1MCxmZW1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNTIuMiwxOC44LDE5NywzNDUwLG1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNDUuMiwxNi42LDE5MSwzMjUwLGZlbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw0OS4zLDE5LjksMjAzLDQwNTAsbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw1MC4yLDE4LjgsMjAyLDM4MDAsbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw0NS42LDE5LjQsMTk0LDM1MjUsZmVtYWxlLDIwMDkKQ2hpbnN0cmFwLERyZWFtLDUxLjksMTkuNSwyMDYsMzk1MCxtYWxlLDIwMDkKQ2hpbnN0cmFwLERyZWFtLDQ2LjgsMTYuNSwxODksMzY1MCxmZW1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNDUuNywxNywxOTUsMzY1MCxmZW1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNTUuOCwxOS44LDIwNyw0MDAwLG1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNDMuNSwxOC4xLDIwMiwzNDAwLGZlbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw0OS42LDE4LjIsMTkzLDM3NzUsbWFsZSwyMDA5CkNoaW5zdHJhcCxEcmVhbSw1MC44LDE5LDIxMCw0MTAwLG1hbGUsMjAwOQpDaGluc3RyYXAsRHJlYW0sNTAuMiwxOC43LDE5OCwzNzc1LGZlbWFsZSwyMDA5Cg==').then(res => res.blob()).then(blob => {
+      const downloadURL = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      document.body.appendChild(a);
+      a.href = downloadURL;
+      a.download = 'palmer_penguins.csv'; a.click();
+      window.URL.revokeObjectURL(downloadURL);
+      document.body.removeChild(a);
+    });">
+<button class="btn btn-default" has_icon="TRUE"><i class="fa fa-save"></i> Download data</button>
+</a>
+</div>
+</div>
+<pre class="shinylive-r" data-engine="r"><code>#| standalone: true
+#| viewerHeight: 500
+#| components: [viewer]
+webr::install("DT")
+
+library(shiny)
+library(DT)
+
+ui &lt;- fluidPage(
+  titlePanel("Upload CSV and Display as DT Table"),
+
+  sidebarLayout(
+    sidebarPanel(
+      fileInput("file", "Choose CSV File",
+                accept = c(
+                  "text/csv",
+                  "text/comma-separated-values,text/plain",
+                  ".csv")
+      ),
+      tags$hr(),
+      checkboxInput("header", "Header", TRUE)
+    ),
+
+    mainPanel(
+      DTOutput("table")
+    )
+  )
+)
+server &lt;- function(input, output) {
+  output$table &lt;- renderDT({
+    inFile &lt;- input$file
+
+    if (is.null(inFile)) {
+      return(NULL)
+    }
+
+    # Read the uploaded CSV
+    data &lt;- read.csv(inFile$datapath, header = input$header)
+
+    # Return the datatable
+    datatable(data, options = list(pageLength = 25))
+  })
+}
+shinyApp(ui, server)</code></pre>
+<p>Click <a href="./uses.html#create-simple-apps">here</a> to go back to the previous code book section.</p>
+
+
+
+</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./learn-more.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Learn more</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/parmsam/tips-and-tricks-ai-tools/edit/master/shiny.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/parmsam/tips-and-tricks-ai-tools/issues/new" class="toc-action">Report an issue</a></p></div></div></div>
+    <div class="nav-footer-right">This book was built with <a href="https://quarto.org/">Quarto</a></div>
+  </div>
+</footer>
+
+
+</body></html>

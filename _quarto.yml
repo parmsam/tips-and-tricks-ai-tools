@@ -23,6 +23,8 @@ book:
     - uses.qmd
     - considerations.qmd
     - learn-more.qmd
+  appendices:
+    - shiny.qmd
     # - references.qmd
   favicon: "images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png"
   sidebar:
@@ -38,5 +40,3 @@ format:
     code-link: true
     code-copy: true
     code-overflow: wrap
-    
-
