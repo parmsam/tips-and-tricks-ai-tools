@@ -262,8 +262,6 @@ Ask for help to create simple apps. This is useful when you want to create an ap
 Create a simple Shiny for R app that  displays uploaded CSV data as a DT table that you can build off of
 ```
 
-Click [here](shiny.qmd) to interact with the example Shiny app that displays an uploaded CSV data as a DT table.
-
 ```{r eval = F}
 # app.R
 library(shiny)
@@ -308,6 +306,7 @@ server <- function(input, output) {
 shinyApp(ui, server)
 ```
 
+Click [here](shiny.qmd) to interact with the example Shiny app that displays an uploaded CSV data as a DT table.
 
 ## Debug code
 
