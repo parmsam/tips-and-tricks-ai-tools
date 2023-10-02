@@ -49,3 +49,8 @@ Check out these resources to dive deeper into the tools and tricks covered in th
 - [What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
 
 - [What are Large Language Models? What are they not?](https://blogs.rstudio.com/ai/posts/2023-06-20-llm-intro/)
+
+## The future with LLMs
+
+- [Malleable software in the age of LLMs](https://www.geoffreylitt.com/2023/03/25/llm-end-user-programming.html)
+- [Literate Programming at the dawn of LLMs](https://fgiasson.com/blog/index.php/2023/09/22/literate-programming-at-the-dawn-of-llms/#continuereading)

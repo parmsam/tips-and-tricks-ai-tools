@@ -291,7 +291,7 @@
     "href": "considerations.html#trust-by-verify",
     "title": "3  Considerations",
     "section": "3.4 Trust by verify",
-    "text": "3.4 Trust by verify\nJust because something sounds right, doesn’t mean it’s right. Sometimes AI tools provide incorrect answers, so it’s your responsibility to check the results, as recommended in Nature. Check if there are any bugs or hallucinations (such as functions that don’t exist) in code you obtain and confirm you understand what each lines is doing. For example, ChatGPT can often generate URLs that don’t exist. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and assertive programming to ensure results perform as expected in the cases you need to cover."
+    "text": "3.4 Trust by verify\nJust because something sounds right, doesn’t mean it’s right. Sometimes AI tools provide incorrect answers, so it’s your responsibility to check the results, as recommended in Nature. Check if there are any bugs or hallucinations (such as functions that don’t exist) in code you obtain and confirm you understand what each lines is doing. For example, ChatGPT can often generate URLs that don’t exist. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and assertive programming to ensure results perform as expected in the cases you need to cover.\nBe aware that ChatGPT and Bard sometimes mess up basic calculations. For example, as of October 2023 the following prompt in Bard or ChatGPT will give you a wide variety of results (such as 56.60, 67.59, or 58.23 from my runs): 10.99 + 4.99 + 5.99 + 5.69 + 2.00 + 2.49 + 2.99 + 6.99 + 4.99 + 4.69 + 2.00 + 2.00 + 1.00 + 2.89 + 2.89 The correct solution is 62.59. LLMs are clearly bad at this. You can augment ChatGPT Plus with plugins such as the Wolfram Alpha or Advanced Data Analysis plugin to obtain the correct answer. However, you should still confirm that it lines up with your expectations and check your results if possible."
   },
   {
     "objectID": "considerations.html#iterate-on-it",
@@ -362,5 +362,12 @@
     "title": "3  Considerations",
     "section": "3.14 Summary",
     "text": "3.14 Summary\nIn this chapter, we explored a variety of suggestions when using AI code assistants. We covered the importance of understanding, sensitive data, plagiarism, trust but verify, iterating, listing out multiple possibilities, and many other helpful principles. I hope you found this chapter helpful and that you’ll be able to use these principles to more safely use AI assistance tools."
+  },
+  {
+    "objectID": "learn-more.html#the-future-with-llms",
+    "href": "learn-more.html#the-future-with-llms",
+    "title": "4  Learn more",
+    "section": "4.5 The future with LLMs",
+    "text": "4.5 The future with LLMs\n\nMalleable software in the age of LLMs\nLiterate Programming at the dawn of LLMs"
   }
 ]
