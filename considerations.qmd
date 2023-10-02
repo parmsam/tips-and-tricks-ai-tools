@@ -45,6 +45,7 @@ Break your problem into small pieces or tasks, as suggested [in Nature](https://
 Be a good designer and keep your prompts specific and clear. As part of that, you can include the response format or an example response you expect to receive. You could add a word limit or readability level (keep responses at a middle school level for example). You could mention the target audience, desired tone, or a [persona](https://www.howtogeek.com/881659/how-to-create-chatgpt-personas-for-every-occasion/) the tool should adopt. There are a lot of these different *response settings* you can define to mold the responses. Some experimentation is required here, but that's the fun part.
 
 Tools such as ChatGPT also now have a setting called [custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt). It allows you to specify a set of instructions that the model should follow for responses. The two main instructions you can specify, as of Sept 2023, are the following:
+
 - What would you like ChatGPT to know about you to provide better responses?
 - How would you like ChatGPT to respond?
 
