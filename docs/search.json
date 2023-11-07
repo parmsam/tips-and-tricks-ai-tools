@@ -220,15 +220,15 @@
     "objectID": "learn-more.html#prompt-engineering",
     "href": "learn-more.html#prompt-engineering",
     "title": "4  Learn more",
-    "section": "4.3 Prompt engineering",
-    "text": "4.3 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nChatGPT Guide: Use these prompt strategies to maximize your results\nHamel’s notebooks from the deeplearning.ai course on Prompt Engineering\nOpenAI Cookbook\nGPT Best Practices from OpenAI\n\n\n4.3.1 Videos\n\nPrompt Engineering Tutorial – Master ChatGPT and LLM Responses\nAndrew Ng: Opportunities in AI - 2023\n\n\n\n4.3.2 Simon Willison’s talks on LLMs\n\nCatching up on the weird world of LLMs\nMaking Large Language Models work for you"
+    "section": "4.4 Prompt engineering",
+    "text": "4.4 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nChatGPT Guide: Use these prompt strategies to maximize your results\nHamel’s notebooks from the deeplearning.ai course on Prompt Engineering\nOpenAI Cookbook\nGPT Best Practices from OpenAI\n\n\n4.4.1 Videos\n\nPrompt Engineering Tutorial – Master ChatGPT and LLM Responses\nAndrew Ng: Opportunities in AI - 2023\n\n\n\n4.4.2 Simon Willison’s talks on LLMs\n\nCatching up on the weird world of LLMs\nMaking Large Language Models work for you"
   },
   {
     "objectID": "learn-more.html#how-chatgpt-works",
     "href": "learn-more.html#how-chatgpt-works",
     "title": "4  Learn more",
-    "section": "4.4 How ChatGPT works",
-    "text": "4.4 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?\nWhat are Large Language Models? What are they not?"
+    "section": "4.5 How ChatGPT works",
+    "text": "4.5 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?\nWhat are Large Language Models? What are they not?"
   },
   {
     "objectID": "intro.html#chatgpt",
@@ -298,7 +298,7 @@
     "href": "considerations.html#iterate-on-it",
     "title": "3  Considerations",
     "section": "3.5 Iterate on it",
-    "text": "3.5 Iterate on it\nAs noted in Nature, Sometimes you’ll need to have a conversation with an AI tool to get what you want (this is called prompt chaining). You might even need to start all over again. It often doesn’t work on the first try. Try changing your approach. Consider changing settings for the tool you’re using like temperature in ChatGPT. Experiment with different prompts. Try using different tools."
+    "text": "3.5 Iterate on it\nAs noted in Nature, Sometimes you’ll need to have a conversation with an AI tool to get what you want (this is called prompt chaining). You might even need to start all over again. It often doesn’t work on the first try. Try changing your approach. Consider changing settings for the tool you’re using like temperature in ChatGPT. Experiment with different prompts. Try using different tools.\nWith the release of DALL-E 3 for ChatGPT, you can iterate on your prompt to get better image results. For example, if you’re trying to generate a picture of a cat, you can start with a prompt like A picture of a cat: and then add more details to the prompt like A picture of a cat: A cat with a white background. and then A picture of a cat: A cat with a white background. The cat is sitting on a table. and then A picture of a cat: A cat with a white background. The cat is sitting on a table. The cat is looking at the camera. and so on."
   },
   {
     "objectID": "considerations.html#list-out-multiple-possibilities",
@@ -367,7 +367,14 @@
     "objectID": "learn-more.html#the-future-with-llms",
     "href": "learn-more.html#the-future-with-llms",
     "title": "4  Learn more",
-    "section": "4.5 The future with LLMs",
-    "text": "4.5 The future with LLMs\n\nMalleable software in the age of LLMs\nLiterate Programming at the dawn of LLMs"
+    "section": "4.6 The future with LLMs",
+    "text": "4.6 The future with LLMs\n\nMalleable software in the age of LLMs\nLiterate Programming at the dawn of LLMs"
+  },
+  {
+    "objectID": "learn-more.html#using-dall-e-3",
+    "href": "learn-more.html#using-dall-e-3",
+    "title": "4  Learn more",
+    "section": "4.3 Using DALL-E 3",
+    "text": "4.3 Using DALL-E 3\n\nNow add a walrus: Prompt engineering in DALL-E 3"
   }
 ]
