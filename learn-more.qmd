@@ -16,6 +16,10 @@ Check out these resources to dive deeper into the tools and tricks covered in th
 
 - [How to use DALL·E 2 to create AI images](https://zapier.com/blog/how-to-use-dall-e-2/)
 
+## Using DALL-E 3
+
+- [Now add a walrus: Prompt engineering in DALL-E 3](https://simonwillison.net/2023/Oct/26/add-a-walrus/)
+
 ## Prompt engineering
 
 - [Prompt Engineering Guide](https://www.promptingguide.ai/)
