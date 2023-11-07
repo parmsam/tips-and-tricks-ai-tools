@@ -10,9 +10,9 @@ This chapter provides an overview of commonly used AI assistance tools that are 
 - Answering questions in an informative way, even if they are open-ended, challenging, or strange
 - Generating different creative text formats like poems, code, scripts, emails, or letters
 
-You can augment ChatGPT via [various plugins](https://openai.com/blog/chatgpt-plugins), which extend its capabilities to specialized tasks like coding assistance, real-time translation, and more.
+You can augment ChatGPT via [various plugins](https://openai.com/blog/chatgpt-plugins), which extend its capabilities to specialized tasks like data analysis, real-time translation, browsing, and more.
 
-As of 2023, ChatGPT has seen improvements in its conversational depth, allowing for more nuanced and context-aware responses. It has also expanded its range of plugins and added [custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt), offering even more specialized functionalities (see be specific section of the considerations chapter for more on this). For example, in Sept 2023, OpenAI announced [prompting with voice and images](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak) and [DALL-E 3 integration](https://www.theverge.com/2023/9/20/23881241/openai-dalle-third-version-generative-ai) for ChatGPT.
+As of 2023, ChatGPT has seen improvements in its conversational depth, allowing for more nuanced and context-aware responses. It has also expanded its range of plugins and added [custom instructions](https://openai.com/blog/custom-instructions-for-chatgpt), offering even more specialized functionalities (see be specific section of the considerations chapter for more on this). In Sept 2023, OpenAI announced [prompting with voice and images](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak) and [DALL-E 3 integration](https://www.theverge.com/2023/9/20/23881241/openai-dalle-third-version-generative-ai) for ChatGPT. In Nov 2023, OpenAI [introduced GPTs](https://openai.com/blog/introducing-gpts) which are custom versions of ChatGPT that can be created for a specific purpose, along with a [GPT store coming soon](https://www.theverge.com/2023/11/6/23948957/openai-chatgpt-gpt-custom-developer-platform), and the [new GPT-4 Turbo model](https://openai.com/blog/new-models-and-developer-products-announced-at-devday).
 
 ## DALLE 2
 
