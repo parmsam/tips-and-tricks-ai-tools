@@ -24,6 +24,8 @@ Be aware that ChatGPT and Bard sometimes mess up basic calculations. For example
 
 As noted [in Nature](https://www.nature.com/articles/d41586-023-01833-0), Sometimes you'll need to have a conversation with an AI tool to get what you want (this is called [prompt chaining](https://www.voiceflow.com/blog/prompt-chaining-conversational-ai)). You might even need to start all over again. It often doesn't work on the first try. Try changing your approach. Consider changing settings for the tool you're using like [temperature in ChatGPT](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/#:~:text=particular%20so%2Dcalled%20%E2%80%9C-,temperature,-%E2%80%9D%20parameter%20that%20determines). Experiment with different prompts. Try using different tools.
 
+With the release of DALL-E 3 for ChatGPT, you can [iterate on your prompt](https://simonwillison.net/2023/Oct/26/add-a-walrus/) to get better image results. For example, if you're trying to generate a picture of a cat, you can start with a prompt like `A picture of a cat:` and then add more details to the prompt like `A picture of a cat: A cat with a white background.` and then `A picture of a cat: A cat with a white background. The cat is sitting on a table.` and then `A picture of a cat: A cat with a white background. The cat is sitting on a table. The cat is looking at the camera.` and so on. 
+
 ## List out multiple possibilities
 
 Ask the platform to list out multiple different options. You can specify how many results you want to be generated. You can serve as the curator deciding what is useful vs. throwaway information.
@@ -84,7 +86,7 @@ Here are some of the key points from the talk:
 
   - Breakdown complex tasks by providing a high-level description of the project goal at the top level then build off that with more specific tasks.
   - Use expressive names for variables, functions, and object.
-  - Prompt again or in a different way (as mentioned in the *iterate on it* section) if you don't get the results you want.
+  - Prompt again or in a different way (as mentioned in the [iterate on it](#iterate-on-it) section) if you don't get the results you want.
   - Use the generative loop to your advantage! Build off your own momentum by writing some of your own code. This can in turn help the AI tool understand what you're trying to do and provide better results.
 
 ## Summary
