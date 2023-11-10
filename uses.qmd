@@ -34,7 +34,7 @@ Markdown files are a useful file format for notetaking. They're text files so th
 
 ## Transforming information
 
-Summarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points.
+Summarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points. With [recent updates to ChatGPT](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak), you can now upload files such as images to summarize or use as additional context.
 
 ```markdown
 Here's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:
@@ -679,6 +679,12 @@ gen_hex_sticker(
 ```
 
 Alternatively, there is now a [ChatGPT plugin for Canva](https://decrypt.co/154923/chatgpt-canva-plugin-openai-design-tool) to identify relevant Canva templates which can then be edited and downloaded.
+
+## Create custom GPTs
+
+You can now [create custom versions](https://openai.com/blog/introducing-gpts) of ChatGPT  They can be designed for specific tasks such as teaching math to your kids, explain board games, or understanding memes.
+
+For example, you could create a GPT to aid you in Shiny for R app development called [Shiny Guru](https://chat.openai.com/g/g-A1roEKMCP-shiny-guru). Here's another custom example called [Fit Coach](https://chat.openai.com/g/g-8lQST4Iyp-fit-coach) to provide you coaching for strength and longevity between programming sessions. The process of creating GPTs is very easy and is done directly via chat.
 
 ## Summary
 
