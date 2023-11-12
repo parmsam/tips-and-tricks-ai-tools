@@ -1,6 +1,6 @@
 # Uses
 
-This chapter explores several applications of AI assistance tools, from unit testing and code commenting to explaining code and writing documentation. The goal is to showcase the breadth of these tools' capabilities, empowering you to make the most of AI in your projects.
+This chapter explores several applications of AI assistance tools, from unit testing and code commenting to explaining code and writing documentation. The goal is to showcase the breadth of these tools' capabilities, empowering you to make the most of AI in your projects. Example prompts are provided for each use case, along with the resulting output from ChatGPT.
 
 ## Memory aid
 
