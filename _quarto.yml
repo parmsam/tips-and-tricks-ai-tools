@@ -22,6 +22,7 @@ book:
     - intro.qmd
     - uses.qmd
     - considerations.qmd
+    - workflow.qmd
     - learn-more.qmd
   appendices:
     - shiny.qmd

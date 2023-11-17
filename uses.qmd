@@ -308,6 +308,64 @@ shinyApp(ui, server)
 
 Click [here](shiny.qmd) to interact with the example Shiny app that displays an uploaded CSV data as a DT table.
 
+Alternatively, you could start by uploading an image file to provide additional context to ChatGPT. [Here's an example image](images/01_hello.png) from the Shiny tutorial that we could use. It could also be a drawing or wireframe.
+
+```markdown
+Turn this into a Shiny app in R.
+```
+
+```{r eval = F}
+# Load necessary libraries
+library(shiny)
+library(ggplot2)
+
+# Define UI for application
+ui <- fluidPage(
+   
+   # Application title
+   titlePanel("Hello Shiny!"),
+   
+   # Sidebar with a slider input for number of bins 
+   sidebarLayout(
+      sidebarPanel(
+         sliderInput("bins",
+                     "Number of bins:",
+                     min = 1,
+                     max = 50,
+                     value = 30)
+      ),
+      
+      # Show a plot of the generated histogram
+      mainPanel(
+         plotOutput("distPlot")
+      )
+   )
+)
+
+# Define server logic to create histogram
+server <- function(input, output) {
+   
+   output$distPlot <- renderPlot({
+     
+     # For demonstration, using a random dataset since we do not have the actual data
+     x    <- rnorm(500)
+     
+     # Generate histogram with the requested number of bins
+     bins <- seq(min(x), max(x), length.out = input$bins + 1)
+     
+     # Plot the histogram
+     ggplot(data.frame(x), aes(x)) +
+        geom_histogram(bins = input$bins, fill = 'blue', color = 'black') +
+        labs(title = 'Histogram of waiting times',
+             x = 'Waiting time to next eruption (in mins)',
+             y = 'Frequency')
+   })
+}
+
+# Run the application 
+shinyApp(ui = ui, server = server)
+```
+
 ## Debug code
 
 Get help to identify, understand, or fix problems in your code. Here it helps to define expectations.  

@@ -60,7 +60,7 @@
     "href": "uses.html#write-code",
     "title": "\n2  Uses\n",
     "section": "\n2.9 Write code",
-    "text": "2.9 Write code\nAsk for help to write code and automate repetitive coding tasks. The key is to provide an accurate technical specification for the tool to work with. In other cases, you could get an example on how to do something, similar to a tutorial, then apply it to your situation.\nShow me how to read a set of CSV files from a folder in R using list.files(), readr::read_csv(), and the purrr package. \nSet the element names as the csv file names. \nNote that I dont want to change the working directory and dont want to set the element names at the full file paths.\n\n# Load required libraries\nlibrary(readr)\nlibrary(purrr)\n\n# Specify the folder path where the CSV files are located\nfolder_path &lt;- \"/path/to/your/folder\"\n\n# Get a list of CSV files in the folder\ncsv_files &lt;- list.files(path = folder_path, pattern = \"\\\\.csv$\", full.names = TRUE)\n\n# Read CSV files and set element names\ncsv_data_list &lt;- set_names(map(csv_files, read_csv), basename(csv_files))\n\n# Now, csv_data_list is a named list where each element contains the data from the corresponding CSV file.\n# The names of the elements are set to the CSV file names without the full file paths.\n\nYou could then ask ChatGPT to format responses into templates that you can fill in the blanks with ( (using ____ as blanks for you to edit). This is useful when you want to write code but are not sure of the exact syntax or the exact parameters to use.\n\n2.9.1 Create simple apps\nAsk for help to create simple apps. This is useful when you want to create an app but are not sure of the exact syntax or the exact arguments to use. You can generate a simple example to then start building a more complex app.\nCreate a simple Shiny for R app that  displays uploaded CSV data as a DT table that you can build off of\n\n# app.R\nlibrary(shiny)\nlibrary(DT)\nui &lt;- fluidPage(\n  titlePanel(\"Upload CSV and Display as DT Table\"),\n  \n  sidebarLayout(\n    sidebarPanel(\n      fileInput(\"file\", \"Choose CSV File\",\n                accept = c(\n                  \"text/csv\",\n                  \"text/comma-separated-values,text/plain\",\n                  \".csv\")\n      ),\n      tags$hr(),\n      checkboxInput(\"header\", \"Header\", TRUE)\n    ),\n    \n    mainPanel(\n      DTOutput(\"table\")\n    )\n  )\n)\n\nserver &lt;- function(input, output) {\n  output$table &lt;- renderDT({\n    inFile &lt;- input$file\n    \n    if (is.null(inFile)) {\n      return(NULL)\n    }\n    \n    # Read the uploaded CSV\n    data &lt;- read.csv(inFile$datapath, header = input$header)\n    \n    # Return the datatable\n    datatable(data, options = list(pageLength = 25))\n  })\n}\n\nshinyApp(ui, server)\n\nClick here to interact with the example Shiny app that displays an uploaded CSV data as a DT table."
+    "text": "2.9 Write code\nAsk for help to write code and automate repetitive coding tasks. The key is to provide an accurate technical specification for the tool to work with. In other cases, you could get an example on how to do something, similar to a tutorial, then apply it to your situation.\nShow me how to read a set of CSV files from a folder in R using list.files(), readr::read_csv(), and the purrr package. \nSet the element names as the csv file names. \nNote that I dont want to change the working directory and dont want to set the element names at the full file paths.\n\n# Load required libraries\nlibrary(readr)\nlibrary(purrr)\n\n# Specify the folder path where the CSV files are located\nfolder_path &lt;- \"/path/to/your/folder\"\n\n# Get a list of CSV files in the folder\ncsv_files &lt;- list.files(path = folder_path, pattern = \"\\\\.csv$\", full.names = TRUE)\n\n# Read CSV files and set element names\ncsv_data_list &lt;- set_names(map(csv_files, read_csv), basename(csv_files))\n\n# Now, csv_data_list is a named list where each element contains the data from the corresponding CSV file.\n# The names of the elements are set to the CSV file names without the full file paths.\n\nYou could then ask ChatGPT to format responses into templates that you can fill in the blanks with ( (using ____ as blanks for you to edit). This is useful when you want to write code but are not sure of the exact syntax or the exact parameters to use.\n\n2.9.1 Create simple apps\nAsk for help to create simple apps. This is useful when you want to create an app but are not sure of the exact syntax or the exact arguments to use. You can generate a simple example to then start building a more complex app.\nCreate a simple Shiny for R app that  displays uploaded CSV data as a DT table that you can build off of\n\n# app.R\nlibrary(shiny)\nlibrary(DT)\nui &lt;- fluidPage(\n  titlePanel(\"Upload CSV and Display as DT Table\"),\n  \n  sidebarLayout(\n    sidebarPanel(\n      fileInput(\"file\", \"Choose CSV File\",\n                accept = c(\n                  \"text/csv\",\n                  \"text/comma-separated-values,text/plain\",\n                  \".csv\")\n      ),\n      tags$hr(),\n      checkboxInput(\"header\", \"Header\", TRUE)\n    ),\n    \n    mainPanel(\n      DTOutput(\"table\")\n    )\n  )\n)\n\nserver &lt;- function(input, output) {\n  output$table &lt;- renderDT({\n    inFile &lt;- input$file\n    \n    if (is.null(inFile)) {\n      return(NULL)\n    }\n    \n    # Read the uploaded CSV\n    data &lt;- read.csv(inFile$datapath, header = input$header)\n    \n    # Return the datatable\n    datatable(data, options = list(pageLength = 25))\n  })\n}\n\nshinyApp(ui, server)\n\nClick here to interact with the example Shiny app that displays an uploaded CSV data as a DT table.\nAlternatively, you could start by uploading an image file to provide additional context to ChatGPT. Here’s an example image from the Shiny tutorial that we could use. It could also be a drawing or wireframe.\nTurn this into a Shiny app in R.\n\n# Load necessary libraries\nlibrary(shiny)\nlibrary(ggplot2)\n\n# Define UI for application\nui &lt;- fluidPage(\n   \n   # Application title\n   titlePanel(\"Hello Shiny!\"),\n   \n   # Sidebar with a slider input for number of bins \n   sidebarLayout(\n      sidebarPanel(\n         sliderInput(\"bins\",\n                     \"Number of bins:\",\n                     min = 1,\n                     max = 50,\n                     value = 30)\n      ),\n      \n      # Show a plot of the generated histogram\n      mainPanel(\n         plotOutput(\"distPlot\")\n      )\n   )\n)\n\n# Define server logic to create histogram\nserver &lt;- function(input, output) {\n   \n   output$distPlot &lt;- renderPlot({\n     \n     # For demonstration, using a random dataset since we do not have the actual data\n     x    &lt;- rnorm(500)\n     \n     # Generate histogram with the requested number of bins\n     bins &lt;- seq(min(x), max(x), length.out = input$bins + 1)\n     \n     # Plot the histogram\n     ggplot(data.frame(x), aes(x)) +\n        geom_histogram(bins = input$bins, fill = 'blue', color = 'black') +\n        labs(title = 'Histogram of waiting times',\n             x = 'Waiting time to next eruption (in mins)',\n             y = 'Frequency')\n   })\n}\n\n# Run the application \nshinyApp(ui = ui, server = server)"
   },
   {
     "objectID": "uses.html#debug-code",
@@ -205,30 +205,30 @@
   {
     "objectID": "learn-more.html#using-github-copilot",
     "href": "learn-more.html#using-github-copilot",
-    "title": "4  Learn more",
-    "section": "4.1 Using Github Copilot",
-    "text": "4.1 Using Github Copilot\n\nHow to use GitHub Copilot: Prompts, tips, and use cases\nHow to Use GitHub Copilot to Become a Happier and More Productive Developer\nHow to use GitHub Copilot: Prompts, tips, and use cases\nGetting started with GitHub Copilot"
+    "title": "5  Learn more",
+    "section": "5.1 Using Github Copilot",
+    "text": "5.1 Using Github Copilot\n\nHow to use GitHub Copilot: Prompts, tips, and use cases\nHow to Use GitHub Copilot to Become a Happier and More Productive Developer\nHow to use GitHub Copilot: Prompts, tips, and use cases\nGetting started with GitHub Copilot"
   },
   {
     "objectID": "learn-more.html#using-dall-e-2",
     "href": "learn-more.html#using-dall-e-2",
-    "title": "4  Learn more",
-    "section": "4.2 Using DALL-E 2",
-    "text": "4.2 Using DALL-E 2\n\nHow to use DALL·E 2 to create AI images"
+    "title": "5  Learn more",
+    "section": "5.2 Using DALL-E 2",
+    "text": "5.2 Using DALL-E 2\n\nHow to use DALL·E 2 to create AI images"
   },
   {
     "objectID": "learn-more.html#prompt-engineering",
     "href": "learn-more.html#prompt-engineering",
-    "title": "4  Learn more",
-    "section": "4.4 Prompt engineering",
-    "text": "4.4 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nChatGPT Guide: Use these prompt strategies to maximize your results\nHamel’s notebooks from the deeplearning.ai course on Prompt Engineering\nOpenAI Cookbook\nGPT Best Practices from OpenAI\n\n\n4.4.1 Videos\n\nPrompt Engineering Tutorial – Master ChatGPT and LLM Responses\nAndrew Ng: Opportunities in AI - 2023\n\n\n\n4.4.2 Simon Willison’s talks on LLMs\n\nCatching up on the weird world of LLMs\nMaking Large Language Models work for you"
+    "title": "5  Learn more",
+    "section": "5.4 Prompt engineering",
+    "text": "5.4 Prompt engineering\n\nPrompt Engineering Guide\nSix tips for better coding with ChatGPT\nHow to write an effective GPT-3 or GPT-4 prompt\nChatGPT Guide: Use these prompt strategies to maximize your results\nHamel’s notebooks from the deeplearning.ai course on Prompt Engineering\nOpenAI Cookbook\nGPT Best Practices from OpenAI\n\n\n5.4.1 Videos\n\nPrompt Engineering Tutorial – Master ChatGPT and LLM Responses\nAndrew Ng: Opportunities in AI - 2023\n\n\n\n5.4.2 Simon Willison’s talks on LLMs\n\nCatching up on the weird world of LLMs\nMaking Large Language Models work for you"
   },
   {
     "objectID": "learn-more.html#how-chatgpt-works",
     "href": "learn-more.html#how-chatgpt-works",
-    "title": "4  Learn more",
-    "section": "4.5 How ChatGPT works",
-    "text": "4.5 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?\nWhat are Large Language Models? What are they not?"
+    "title": "5  Learn more",
+    "section": "5.5 How ChatGPT works",
+    "text": "5.5 How ChatGPT works\n\nWhat Is ChatGPT Doing … and Why Does It Work?\nWhat are Large Language Models? What are they not?"
   },
   {
     "objectID": "intro.html#chatgpt",
@@ -366,16 +366,16 @@
   {
     "objectID": "learn-more.html#the-future-with-llms",
     "href": "learn-more.html#the-future-with-llms",
-    "title": "4  Learn more",
-    "section": "4.6 The future with LLMs",
-    "text": "4.6 The future with LLMs\n\nMalleable software in the age of LLMs\nLiterate Programming at the dawn of LLMs"
+    "title": "5  Learn more",
+    "section": "5.6 The future with LLMs",
+    "text": "5.6 The future with LLMs\n\nMalleable software in the age of LLMs\nLiterate Programming at the dawn of LLMs"
   },
   {
     "objectID": "learn-more.html#using-dall-e-3",
     "href": "learn-more.html#using-dall-e-3",
-    "title": "4  Learn more",
-    "section": "4.3 Using DALL-E 3",
-    "text": "4.3 Using DALL-E 3\n\nNow add a walrus: Prompt engineering in DALL-E 3"
+    "title": "5  Learn more",
+    "section": "5.3 Using DALL-E 3",
+    "text": "5.3 Using DALL-E 3\n\nNow add a walrus: Prompt engineering in DALL-E 3"
   },
   {
     "objectID": "uses.html#create-custom-gpts",
@@ -383,5 +383,12 @@
     "title": "\n2  Uses\n",
     "section": "\n2.25 Create custom GPTs",
     "text": "2.25 Create custom GPTs\nYou can now create custom versions of ChatGPT They can be designed for specific tasks such as teaching math to your kids, explain board games, or understanding memes.\nFor example, you could create a GPT to aid you in Shiny for R app development called Shiny Guru. Here’s another custom example called Fit Coach to provide you coaching for strength and longevity between programming sessions. The process of creating GPTs is very easy and is done directly via chat."
+  },
+  {
+    "objectID": "workflow.html",
+    "href": "workflow.html",
+    "title": "4  Workflow",
+    "section": "",
+    "text": "This chapter is a work in progress. Follow the repo on Github to get notified about updates."
   }
 ]
