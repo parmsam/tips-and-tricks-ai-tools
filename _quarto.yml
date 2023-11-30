@@ -30,8 +30,14 @@ book:
   favicon: "images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png"
   sidebar:
     logo: "images/DALL·E 2023-07-17 23.32.52 - Ukrainian dog wearing a beret and black turtleneck.png"
+  comments: 
+    hypothesis:
+      theme: classic
+      openSidebar: false
+      showHighlights: always
 
 bibliography: references.bib
+
 
 format:
   html:
