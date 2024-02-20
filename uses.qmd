@@ -1,6 +1,8 @@
 # Uses
 
-This chapter explores several applications of AI assistance tools, from unit testing and code commenting to explaining code and writing documentation. The goal is to showcase the breadth of these tools' capabilities, empowering you to make the most of AI in your projects. Example prompts are provided for each use case, along with the resulting output from ChatGPT.
+This chapter explores several applications of AI assistance tools, from unit testing and code commenting to explaining code and writing documentation. The goal is to showcase the breadth of these tools' capabilities, empowering you to make the most of AI in your projects. 
+
+Example prompts are provided for each use case, along with the resulting output from ChatGPT.
 
 ## Memory aid
 
@@ -34,7 +36,7 @@ Markdown files are a useful file format for notetaking. They're text files so th
 
 ## Transforming information
 
-Summarize educational content into a list of bullet points or table. Content be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points. With [recent updates to ChatGPT](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak), you can now upload files such as images to summarize or use as additional context.
+Summarize educational content into a list of bullet points or table. The content could be a video transcript or an article. Or you could go in the opposite direction and ask for a description of a table or set of bullet points. With [recent updates to ChatGPT](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak), you can now upload files such as images to summarize or use as additional context.
 
 ```markdown
 Here's the transcript from a Youtube video I just saw. Give me a short summary of in 4 bullet points:
@@ -115,6 +117,25 @@ Sure, here are the steps to make a PBJ sandwich with emojis:
 5. 🥪 Put the two slices of bread together, peanut butter and jelly sides facing each other. 🥪
 6. ✂️ Cut the sandwich in half. 🥪
 7. 🥪 Enjoy! 😋
+```
+## Generate datasets
+
+Ask for a dataset to be generated based on specific criteria. This can be useful for testing or educational purposes. Here's an [example dataset](https://github.com/parmsam/icebreaker-py/blob/main/data/icebreakers.csv) I used for a small [icebreaker app](https://github.com/parmsam/icebreaker-py/blob/main/data/icebreakers.csv).
+
+```markdown
+Here is my current icebreakers dataset. I want you to give me 5 more in the CSV format.
+question,emoji,difficulty
+"What's your favorite snack?",🍿🍪,False
+"What's the best candy?",🍬🍭,False
+"What’s your beverage of choice?",🍹☕️,False
+```
+
+```markdown
+"What's your favorite type of weather?",⛅🌧️🌈,False
+"Are you an early bird or night owl?",🐦🌙,False
+"What's your zodiac sign and do you think it's accurate?",♒♏🔮,False
+"If you could meet any fictional character, who would it be?",📚🎥🦸,True
+"Do you play any musical instruments?",🎹🎷🎸,False
 ```
 
 ## Unit testing
