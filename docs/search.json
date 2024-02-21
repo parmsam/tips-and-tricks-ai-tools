@@ -397,5 +397,12 @@
     "title": "\n2  Uses\n",
     "section": "\n2.5 Generate datasets",
     "text": "2.5 Generate datasets\nAsk for a dataset to be generated based on specific criteria. This can be useful for testing or educational purposes. Here’s an example dataset I used for a small icebreaker app.\nHere is my current icebreakers dataset. I want you to give me 5 more in the CSV format.\nquestion,emoji,difficulty\n\"What's your favorite snack?\",🍿🍪,False\n\"What's the best candy?\",🍬🍭,False\n\"What’s your beverage of choice?\",🍹☕️,False\n\"What's your favorite type of weather?\",⛅🌧️🌈,False\n\"Are you an early bird or night owl?\",🐦🌙,False\n\"What's your zodiac sign and do you think it's accurate?\",♒♏🔮,False\n\"If you could meet any fictional character, who would it be?\",📚🎥🦸,True\n\"Do you play any musical instruments?\",🎹🎷🎸,False"
+  },
+  {
+    "objectID": "considerations.html#trust-but-verify",
+    "href": "considerations.html#trust-but-verify",
+    "title": "3  Considerations",
+    "section": "3.4 Trust but verify",
+    "text": "3.4 Trust but verify\nJust because something sounds right, doesn’t mean it’s right. Sometimes AI tools provide incorrect answers, so it’s your responsibility to check the results, as recommended in Nature. Check if there are any bugs or hallucinations (such as functions that don’t exist) in code you obtain and confirm you understand what each lines is doing. For example, ChatGPT can often generate URLs that don’t exist. You can use AI tools to support this verification process but you should be an active part of it. Use unit testing and assertive programming to ensure results perform as expected in the cases you need to cover.\nBe aware that ChatGPT and Bard sometimes mess up basic calculations. For example, as of October 2023 the following prompt in Bard or ChatGPT will give you a wide variety of results (such as 56.60, 67.59, or 58.23 from my runs): 10.99 + 4.99 + 5.99 + 5.69 + 2.00 + 2.49 + 2.99 + 6.99 + 4.99 + 4.69 + 2.00 + 2.00 + 1.00 + 2.89 + 2.89 The correct solution is 62.59. LLMs are clearly bad at this. You can augment ChatGPT Plus with plugins such as the Wolfram Alpha or Advanced Data Analysis plugin to obtain the correct answer. However, you should still confirm that it lines up with your expectations and check your results if possible."
   }
 ]
